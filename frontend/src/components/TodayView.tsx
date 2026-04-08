@@ -39,7 +39,7 @@ export function TodayView() {
               style={{
                 fontSize: '2.5rem',
                 fontWeight: 700,
-                color: '#fff',
+                color: '#ffffff',
                 background: windColour(current.speed),
                 padding: '2px 12px',
                 borderRadius: 6,
@@ -75,7 +75,7 @@ export function TodayView() {
 
       <ResponsiveContainer width="100%" height={300}>
         <ComposedChart data={hourly} margin={{ top: 10, right: 16, left: 0, bottom: 0 }}>
-          <ReferenceArea y1={0}  y2={15} fill="#4a4a4a" fillOpacity={0.12} />
+          <ReferenceArea y1={0}  y2={15} fill="#94a3b8" fillOpacity={0.12} />
           <ReferenceArea y1={15} y2={20} fill="#ffd700" fillOpacity={0.12} />
           <ReferenceArea y1={20} y2={25} fill="#ff8c00" fillOpacity={0.12} />
           <ReferenceArea y1={25} y2={32} fill="#dc143c" fillOpacity={0.12} />
@@ -115,7 +115,7 @@ export function TodayView() {
             x={currentHour}
             stroke="var(--now-line)"
             strokeDasharray="4 4"
-            label={{ value: 'Now', fill: '#fff', fontSize: 11 }}
+            label={{ value: 'Now', fill: 'var(--text-primary)', fontSize: 11 }}
           />
           <XAxis
             dataKey="hour"

@@ -31,10 +31,10 @@ const PERIOD_LABELS: Record<number, string> = { 6: 'morning', 12: 'afternoon', 1
 
 const COLORS = {
   tooLight: { bg: 'var(--bg-muted)',  text: 'var(--text-primary)' },
-  light:    { bg: '#1a3a2e',          text: '#5DCAA5' },
-  rideable: { bg: '#1D6B52',          text: '#9FE1CB',  label: '#5DCAA5' },
-  pumping:  { bg: '#1D9E75',          text: '#E1F5EE',  label: '#E1F5EE', gust: '#9FE1CB' },
-  strong:   { bg: '#085041',          text: '#E1F5EE',  label: '#9FE1CB', gust: '#5DCAA5' },
+  light:    { bg: '#d1fae5',          text: '#065f46' },
+  rideable: { bg: '#6ee7b7',          text: '#064e3b',  label: '#065f46' },
+  pumping:  { bg: '#10b981',          text: '#ffffff',  label: '#ffffff', gust: '#d1fae5' },
+  strong:   { bg: '#047857',          text: '#ffffff',  label: '#a7f3d0', gust: '#6ee7b7' },
 }
 
 function windBand(kn: number, rideableMin: number, pumpingMin: number) {
@@ -113,8 +113,8 @@ function TideCurve({ tides }: { tides: TidePoint[] }) {
       </div>
       <div style={{ position: 'relative', height: 52 }}>
         <svg width="100%" height="52" viewBox="0 0 400 52" preserveAspectRatio="none" style={{ display: 'block' }}>
-          <path d={pathD} fill="none" stroke="#58a6ff" strokeWidth="2" opacity="0.5" />
-          <path d={fillD} fill="#58a6ff" opacity="0.08" />
+          <path d={pathD} fill="none" stroke="#0369a1" strokeWidth="2" opacity="0.6" />
+          <path d={fillD} fill="#0369a1" opacity="0.1" />
         </svg>
         {points.map((p, i) => (
           <div
@@ -308,9 +308,9 @@ export function ForecastDay({
 const rootStyle: React.CSSProperties = {
   fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
   padding: '0',
-  '--bg-muted': '#1c2128',
-  '--text-tertiary': '#6b7280',
-  '--tide-accent': '#58a6ff',
+  '--bg-muted': '#f1f5f9',
+  '--text-tertiary': '#94a3b8',
+  '--tide-accent': '#0369a1',
 } as React.CSSProperties
 
 const bannerStyle: React.CSSProperties = {
@@ -318,8 +318,8 @@ const bannerStyle: React.CSSProperties = {
   alignItems: 'center',
   gap: 6,
   fontSize: 12,
-  color: '#5DCAA5',
-  background: '#0d2b21',
+  color: '#065f46',
+  background: '#d1fae5',
   padding: '6px 12px',
   borderRadius: 8,
   marginBottom: 12,
@@ -345,7 +345,7 @@ const tileStyle: React.CSSProperties = {
   flexDirection: 'column',
   alignItems: 'center',
   justifyContent: 'center',
-  border: '0.5px solid rgba(255,255,255,0.06)',
+  border: '0.5px solid rgba(0,0,0,0.06)',
 }
 
 const precipDotStyle: React.CSSProperties = {

@@ -1,12 +1,12 @@
 :root {
-  --bg: #0d1117;
-  --bg-surface: #161b22;
-  --text-primary: #e6edf3;
-  --text-secondary: #8b949e;
-  --border: #30363d;
-  --teal: #2dd4bf;
-  --pink: #f472b6;
-  --now-line: #ffffff;
+  --bg: #f0f4f8;
+  --bg-surface: #ffffff;
+  --text-primary: #1a2332;
+  --text-secondary: #64748b;
+  --border: #dde3ea;
+  --teal: #0d9488;
+  --pink: #db2777;
+  --now-line: #1a2332;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
