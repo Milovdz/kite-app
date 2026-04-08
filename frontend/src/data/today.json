@@ -1,0 +1,30 @@
+{
+  "spot": "IJmuiden",
+  "current": { "speed": 18, "gusts": 24, "direction": 225 },
+  "hourly": [
+    { "hour": 0,  "forecastSpeed": 12, "forecastGusts": 17, "direction": 220, "actualSpeed": 11, "actualGusts": 16 },
+    { "hour": 1,  "forecastSpeed": 13, "forecastGusts": 18, "direction": 222, "actualSpeed": 14, "actualGusts": 19 },
+    { "hour": 2,  "forecastSpeed": 14, "forecastGusts": 19, "direction": 220, "actualSpeed": 13, "actualGusts": 18 },
+    { "hour": 3,  "forecastSpeed": 14, "forecastGusts": 20, "direction": 218, "actualSpeed": 15, "actualGusts": 21 },
+    { "hour": 4,  "forecastSpeed": 15, "forecastGusts": 21, "direction": 215, "actualSpeed": 16, "actualGusts": 22 },
+    { "hour": 5,  "forecastSpeed": 15, "forecastGusts": 21, "direction": 218, "actualSpeed": 14, "actualGusts": 20 },
+    { "hour": 6,  "forecastSpeed": 16, "forecastGusts": 22, "direction": 220, "actualSpeed": 17, "actualGusts": 23 },
+    { "hour": 7,  "forecastSpeed": 17, "forecastGusts": 23, "direction": 222, "actualSpeed": 16, "actualGusts": 22 },
+    { "hour": 8,  "forecastSpeed": 18, "forecastGusts": 24, "direction": 225, "actualSpeed": 19, "actualGusts": 25 },
+    { "hour": 9,  "forecastSpeed": 19, "forecastGusts": 25, "direction": 228, "actualSpeed": 20, "actualGusts": 26 },
+    { "hour": 10, "forecastSpeed": 20, "forecastGusts": 26, "direction": 230, "actualSpeed": 21, "actualGusts": 27 },
+    { "hour": 11, "forecastSpeed": 21, "forecastGusts": 27, "direction": 228, "actualSpeed": 22, "actualGusts": 28 },
+    { "hour": 12, "forecastSpeed": 22, "forecastGusts": 28, "direction": 230, "actualSpeed": 21, "actualGusts": 27 },
+    { "hour": 13, "forecastSpeed": 21, "forecastGusts": 27, "direction": 232, "actualSpeed": 20, "actualGusts": 26 },
+    { "hour": 14, "forecastSpeed": 18, "forecastGusts": 24, "direction": 230, "actualSpeed": 17, "actualGusts": 23 },
+    { "hour": 15, "forecastSpeed": 17, "forecastGusts": 23, "direction": 232, "actualSpeed": null, "actualGusts": null },
+    { "hour": 16, "forecastSpeed": 18, "forecastGusts": 24, "direction": 235, "actualSpeed": null, "actualGusts": null },
+    { "hour": 17, "forecastSpeed": 19, "forecastGusts": 25, "direction": 235, "actualSpeed": null, "actualGusts": null },
+    { "hour": 18, "forecastSpeed": 20, "forecastGusts": 26, "direction": 238, "actualSpeed": null, "actualGusts": null },
+    { "hour": 19, "forecastSpeed": 19, "forecastGusts": 25, "direction": 240, "actualSpeed": null, "actualGusts": null },
+    { "hour": 20, "forecastSpeed": 18, "forecastGusts": 24, "direction": 238, "actualSpeed": null, "actualGusts": null },
+    { "hour": 21, "forecastSpeed": 17, "forecastGusts": 23, "direction": 235, "actualSpeed": null, "actualGusts": null },
+    { "hour": 22, "forecastSpeed": 16, "forecastGusts": 22, "direction": 238, "actualSpeed": null, "actualGusts": null },
+    { "hour": 23, "forecastSpeed": 15, "forecastGusts": 21, "direction": 240, "actualSpeed": null, "actualGusts": null }
+  ]
+}
