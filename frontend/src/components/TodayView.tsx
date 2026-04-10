@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useMemo } from 'react'
 import WindGraph from './WindGraph'
 import { DATA_BASE_URL_FOR, SPOTS, APP_TZ } from '../config'
 import type { SpotSlug } from '../config'
@@ -18,7 +18,7 @@ interface TodayData {
 interface CurrentData {
   spot: string
   generatedAt: string
-  current: { windKn: number; gustKn: number; dirDeg: number }
+  current: { windKn: number; gustKn: number; dirDeg: number } | null
   actuals: Array<{ time: string; windKn: number | null; gustKn: number | null; dirDeg: number | null }>
 }
 
@@ -39,6 +39,10 @@ function SpotTodayCard({ slug, name }: { slug: SpotSlug; name: string }) {
 
   const now = new Date().toLocaleString('en-GB', { hour: '2-digit', minute: '2-digit', hour12: false, timeZone: APP_TZ })
 
+  const forecastWind = useMemo(() => todayData?.hourly.map(h => h.forecastWindKn) ?? [], [todayData])
+  const forecastGust = useMemo(() => todayData?.hourly.map(h => h.forecastGustKn) ?? [], [todayData])
+  const actuals = useMemo(() => currentData?.actuals ?? [], [currentData])
+
   return (
     <div style={{
       background: 'var(--bg-surface)',
@@ -53,14 +57,14 @@ function SpotTodayCard({ slug, name }: { slug: SpotSlug; name: string }) {
       {todayData && currentData && (
         <WindGraph
           spotName={name}
-          currentWind={currentData.current.windKn}
-          currentGust={currentData.current.gustKn}
-          currentDirDeg={currentData.current.dirDeg}
+          currentWind={currentData.current?.windKn ?? 0}
+          currentGust={currentData.current?.gustKn ?? 0}
+          currentDirDeg={currentData.current?.dirDeg ?? 0}
           threshold={17}
           yMax={40}
-          forecastWind={todayData.hourly.map(h => h.forecastWindKn)}
-          forecastGust={todayData.hourly.map(h => h.forecastGustKn)}
-          actuals={currentData.actuals}
+          forecastWind={forecastWind}
+          forecastGust={forecastGust}
+          actuals={actuals}
           nowTime={now}
         />
       )}

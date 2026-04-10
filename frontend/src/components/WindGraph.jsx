@@ -192,6 +192,10 @@ const COLORS = {
   actualGust: "rgba(29,158,117,0.4)",
 };
 
+// ── Unique instance counter (avoids Chart.js duplicate plugin id errors) ──
+
+let _instanceCounter = 0;
+
 // ── Component ──
 
 export default function WindGraph({
@@ -208,6 +212,7 @@ export default function WindGraph({
 }) {
   const canvasRef = useRef(null);
   const chartRef = useRef(null);
+  const instanceId = useRef(++_instanceCounter);
 
   const compassDir = useMemo(
     () => degreesToCompass(currentDirDeg),
@@ -251,11 +256,12 @@ export default function WindGraph({
 
     Chart.defaults.color = tickColor;
 
+    const id = instanceId.current;
     chartRef.current = new Chart(canvasRef.current, {
       type: "line",
       plugins: [
-        makeZonesPlugin(threshold, nowSlot, isDark),
-        makeFillPlugin(isDark),
+        { ...makeZonesPlugin(threshold, nowSlot, isDark), id: `zones-${id}` },
+        { ...makeFillPlugin(isDark), id: `fillBetween-${id}` },
       ],
       data: {
         labels: TIME_LABELS,

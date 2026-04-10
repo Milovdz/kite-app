@@ -23,7 +23,7 @@ The four spots and their coordinates:
 - [x] Milestone 5 — Frontend: update config.ts and add location constants
 - [x] Milestone 6 — Frontend: Today view → 2×2 grid
 - [x] Milestone 7 — Frontend: WeekView → collapsible per-spot rows
-- [ ] Milestone 8 — Frontend: NavBar cleanup
+- [x] Milestone 8 — Frontend: NavBar cleanup
 - [ ] Milestone 9 — Verification and deploy (Phase 1)
 
 **Phase 2 — Exact tides per spot (follow-up)**

@@ -23,10 +23,7 @@ export function NavBar({ view, onSwitch }: Props) {
       <span style={{ fontWeight: 700, fontSize: '1.1rem', color: 'var(--teal)', marginRight: 'auto' }}>
         KiteWind
       </span>
-      <span style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
-        IJmuiden
-      </span>
-      <div style={{ display: 'flex', gap: 4 }}>
+<div style={{ display: 'flex', gap: 4 }}>
         {(['today', 'week'] as View[]).map((v) => (
           <button
             key={v}
