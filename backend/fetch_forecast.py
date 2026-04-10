@@ -5,6 +5,8 @@ import json
 import os
 from datetime import datetime, timezone
 
+import math
+
 import openmeteo_requests
 import requests_cache
 from retry_requests import retry
@@ -19,6 +21,14 @@ SPOTS = [
 ]
 
 OUTPUT_DIR = os.path.join(os.path.dirname(__file__), "output")
+
+
+def _safe(arr, i, decimals):
+    """Return rounded float from arr[i], or 0.0 if out of bounds or NaN."""
+    if i >= len(arr):
+        return 0.0
+    v = float(arr[i])
+    return round(v, decimals) if not math.isnan(v) else 0.0
 
 
 def make_client():
@@ -101,8 +111,8 @@ def fetch_spot(client, spot):
             "windKn": round(float(speeds[i]) * KMH_TO_KN, 1),
             "gustKn": round(float(gusts[i]) * KMH_TO_KN, 1),
             "dirDeg": round(float(dirs[i])),
-            "waveM": round(float(wave_heights[i]), 2) if i < len(wave_heights) else 0.0,
-            "wavePeriodS": round(float(wave_periods[i]), 1) if i < len(wave_periods) else 0.0,
+            "waveM": _safe(wave_heights, i, 2),
+            "wavePeriodS": _safe(wave_periods, i, 1),
             "tempC": round(float(temps[i]), 1),
             "rainMm": round(float(rain[i]), 2),
         }
