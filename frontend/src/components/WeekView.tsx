@@ -47,11 +47,16 @@ function toSlots(entries: ForecastEntry[]): Slot[] {
 
 export function WeekView() {
   const [weekData, setWeekData] = useState<{ spot: string; forecast: ForecastEntry[] } | null>(null)
+  const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
-    fetch(`${DATA_BASE_URL}/week.json`).then(r => r.json()).then(setWeekData)
+    fetch(`${DATA_BASE_URL}/week.json`)
+      .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json() })
+      .then(setWeekData)
+      .catch(e => setError(String(e)))
   }, [])
 
+  if (error) return <div style={{ padding: 24, color: 'red' }}>Week fetch error: {error}</div>
   if (!weekData) return <div style={{ padding: 24 }}>Loading...</div>
 
   const groups = groupByDay(weekData.forecast)
