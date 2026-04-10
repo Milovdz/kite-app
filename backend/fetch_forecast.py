@@ -7,6 +7,7 @@ from datetime import datetime, timezone
 
 import math
 
+import numpy as np
 import openmeteo_requests
 import requests_cache
 from retry_requests import retry
@@ -84,7 +85,6 @@ def fetch_spot(client, spot):
     wave_periods = mh.Variables(1).ValuesAsNumpy()
 
     # Build timestamps — Open-Meteo returns a start time + interval
-    import numpy as np
     start = wh.Time()
     interval = wh.Interval()
     n = len(speeds)
