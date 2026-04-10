@@ -168,9 +168,20 @@ function makeFillPlugin(isDark) {
   };
 }
 
-// ── Hour labels ──
+// ── 10-minute time grid (00:00 … 23:50, 144 slots) ──
 
-const HOUR_LABELS = Array.from({ length: 24 }, (_, i) => `${i}:00`);
+const TIME_LABELS = [];
+for (let h = 0; h < 24; h++) {
+  for (let m = 0; m < 60; m += 10) {
+    TIME_LABELS.push(`${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}`);
+  }
+}
+
+// Map a "HH:MM" string to its slot index in TIME_LABELS
+function timeToSlot(time) {
+  const [h, m] = time.split(':').map(Number);
+  return h * 6 + Math.round(m / 10);
+}
 
 // ── Colors ──
 
@@ -192,9 +203,8 @@ export default function WindGraph({
   yMax = 40,
   forecastWind = [],
   forecastGust = [],
-  actualWind = [],
-  actualGust = [],
-  nowIndex,
+  actuals = [],
+  nowTime,
 }) {
   const canvasRef = useRef(null);
   const chartRef = useRef(null);
@@ -216,43 +226,55 @@ export default function WindGraph({
   useEffect(() => {
     if (!canvasRef.current) return;
 
-    // Destroy previous instance
     if (chartRef.current) {
       chartRef.current.destroy();
     }
 
-    const gridColor = isDark
-      ? "rgba(255,255,255,0.06)"
-      : "rgba(0,0,0,0.06)";
-    const tickColor = isDark
-      ? "rgba(255,255,255,0.7)"
-      : "rgba(0,0,0,0.6)";
+    // Build 144-slot arrays (10-min resolution)
+    const forecastWindSlots = Array(144).fill(null);
+    const forecastGustSlots = Array(144).fill(null);
+    forecastWind.forEach((v, h) => { forecastWindSlots[h * 6] = v; });
+    forecastGust.forEach((v, h) => { forecastGustSlots[h * 6] = v; });
+
+    const actualWindSlots = Array(144).fill(null);
+    const actualGustSlots = Array(144).fill(null);
+    for (const obs of actuals) {
+      const slot = timeToSlot(obs.time);
+      actualWindSlots[slot] = obs.windKn;
+      actualGustSlots[slot] = obs.gustKn;
+    }
+
+    const nowSlot = nowTime ? timeToSlot(nowTime) : null;
+
+    const gridColor = isDark ? "rgba(255,255,255,0.06)" : "rgba(0,0,0,0.06)";
+    const tickColor = isDark ? "rgba(255,255,255,0.7)" : "rgba(0,0,0,0.6)";
 
     Chart.defaults.color = tickColor;
 
     chartRef.current = new Chart(canvasRef.current, {
       type: "line",
       plugins: [
-        makeZonesPlugin(threshold, nowIndex, isDark),
+        makeZonesPlugin(threshold, nowSlot, isDark),
         makeFillPlugin(isDark),
       ],
       data: {
-        labels: HOUR_LABELS,
+        labels: TIME_LABELS,
         datasets: [
           {
             label: "Forecast wind",
-            data: forecastWind,
+            data: forecastWindSlots,
             borderColor: COLORS.forecastWind,
             borderWidth: 2,
             pointRadius: 0,
             pointHoverRadius: 4,
             tension: 0.4,
             fill: false,
+            spanGaps: true,
             order: 2,
           },
           {
             label: "Forecast gust",
-            data: forecastGust,
+            data: forecastGustSlots,
             borderColor: COLORS.forecastGust,
             borderWidth: 1.5,
             pointRadius: 0,
@@ -260,11 +282,12 @@ export default function WindGraph({
             tension: 0.4,
             borderDash: [4, 3],
             fill: false,
+            spanGaps: true,
             order: 3,
           },
           {
             label: "Actual wind",
-            data: actualWind,
+            data: actualWindSlots,
             borderColor: COLORS.actualWind,
             borderWidth: 2.5,
             pointRadius: 0,
@@ -276,7 +299,7 @@ export default function WindGraph({
           },
           {
             label: "Actual gust",
-            data: actualGust,
+            data: actualGustSlots,
             borderColor: COLORS.actualGust,
             borderWidth: 1.5,
             pointRadius: 0,
@@ -298,12 +321,8 @@ export default function WindGraph({
           tooltip: {
             backgroundColor: isDark ? "#2C2C2A" : "#fff",
             titleColor: isDark ? "#fff" : "#1a1a1a",
-            bodyColor: isDark
-              ? "rgba(255,255,255,0.7)"
-              : "rgba(0,0,0,0.6)",
-            borderColor: isDark
-              ? "rgba(255,255,255,0.1)"
-              : "rgba(0,0,0,0.08)",
+            bodyColor: isDark ? "rgba(255,255,255,0.7)" : "rgba(0,0,0,0.6)",
+            borderColor: isDark ? "rgba(255,255,255,0.1)" : "rgba(0,0,0,0.08)",
             borderWidth: 1,
             padding: 10,
             cornerRadius: 8,
@@ -312,12 +331,7 @@ export default function WindGraph({
               label: (ctx) => {
                 const v = ctx.parsed.y;
                 if (v === null || isNaN(v)) return null;
-                const names = [
-                  "Forecast",
-                  "Forecast gust",
-                  "Actual",
-                  "Actual gust",
-                ];
+                const names = ["Forecast", "Forecast gust", "Actual", "Actual gust"];
                 return `${names[ctx.datasetIndex]}: ${Math.round(v)} kn`;
               },
             },
@@ -329,11 +343,11 @@ export default function WindGraph({
             ticks: {
               color: "#374151",
               font: { size: 12, weight: "500" },
-              autoSkip: true,
-              maxTicksLimit: 9,
-              callback: function (val, idx) {
-                const h = parseInt(HOUR_LABELS[idx]);
-                return h % 3 === 0 ? `${h}:00` : "";
+              autoSkip: false,
+              maxRotation: 0,
+              callback: function (_val, idx) {
+                // Show label every 3 hours (every 18 slots)
+                return idx % 18 === 0 ? TIME_LABELS[idx] : "";
               },
             },
             border: { display: false },
@@ -364,9 +378,8 @@ export default function WindGraph({
   }, [
     forecastWind,
     forecastGust,
-    actualWind,
-    actualGust,
-    nowIndex,
+    actuals,
+    nowTime,
     threshold,
     yMax,
     isDark,

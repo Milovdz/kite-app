@@ -9,9 +9,8 @@ interface WindGraphProps {
   yMax?: number
   forecastWind?: number[]
   forecastGust?: number[]
-  actualWind?: (number | null)[]
-  actualGust?: (number | null)[]
-  nowIndex?: number
+  actuals?: Array<{ time: string; windKn: number | null; gustKn: number | null; dirDeg: number | null }>
+  nowTime?: string
 }
 
 declare const WindGraph: FC<WindGraphProps>

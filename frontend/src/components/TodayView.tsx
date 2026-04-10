@@ -39,15 +39,7 @@ export function TodayView() {
   if (error) return <div style={{ padding: 24, color: 'red' }}>Today fetch error: {error}</div>
   if (!todayData || !currentData) return <div style={{ padding: 24 }}>Loading...</div>
 
-  const nowIndex = parseInt(new Date().toLocaleString('en-GB', { hour: '2-digit', hour12: false, timeZone: APP_TZ }), 10) % 24
-
-  const actualWind: (number | null)[] = Array(24).fill(null)
-  const actualGust: (number | null)[] = Array(24).fill(null)
-  for (const obs of currentData.actuals) {
-    const hour = parseInt(obs.time.split(':')[0], 10)
-    actualWind[hour] = obs.windKn
-    actualGust[hour] = obs.gustKn
-  }
+  const now = new Date().toLocaleString('en-GB', { hour: '2-digit', minute: '2-digit', hour12: false, timeZone: APP_TZ })
 
   return (
     <div style={{ display: 'flex', gap: 12 }}>
@@ -67,9 +59,8 @@ export function TodayView() {
           yMax={40}
           forecastWind={todayData.hourly.map(h => h.forecastWindKn)}
           forecastGust={todayData.hourly.map(h => h.forecastGustKn)}
-          actualWind={actualWind}
-          actualGust={actualGust}
-          nowIndex={nowIndex}
+          actuals={currentData.actuals}
+          nowTime={now}
         />
       </div>
     </div>
