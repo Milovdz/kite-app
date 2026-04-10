@@ -320,7 +320,6 @@ const bannerStyle: React.CSSProperties = {
   background: '#d1fae5',
   padding: '6px 12px',
   borderRadius: 8,
-  marginBottom: 12,
   width: 'fit-content',
 }
 
