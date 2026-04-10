@@ -24,7 +24,7 @@ jobs:
 
       - name: Install dependencies
         working-directory: source
-        run: pip install openmeteo-requests requests-cache retry-requests numpy --quiet
+        run: pip install -r backend/requirements-forecast.txt --quiet
 
       - name: Run forecast fetcher
         working-directory: source

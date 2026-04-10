@@ -158,22 +158,30 @@ export function ForecastDay({
     [allSlots, resolution],
   )
 
-  const kiteableWindow = useMemo(() => {
-    const rideable = slots.filter((s) => s.windKn >= rideableMin)
-    if (rideable.length === 0) return null
-    const first = rideable[0]
-    const last = rideable[rideable.length - 1]
-    const avgWind = Math.round(rideable.reduce((a, s) => a + s.windKn, 0) / rideable.length)
-    const maxWave = Math.max(...rideable.map((s) => s.waveM))
-    const minWave = Math.min(...rideable.map((s) => s.waveM))
-    const waveStr = minWave === maxWave ? `${minWave}m` : `${minWave}-${maxWave}m`
-    return {
-      from: `${String(first.hour).padStart(2, '0')}:00`,
-      to: `${String(last.hour).padStart(2, '0')}:00`,
-      dir: degreesToCompass(first.dirDeg),
-      avgWind,
-      waveStr,
+  const kiteableWindows = useMemo(() => {
+    const windows: { from: string; to: string; dir: string; avgWind: number; waveStr: string }[] = []
+    let run: Slot[] = []
+    const flush = () => {
+      if (run.length === 0) return
+      const avgWind = Math.round(run.reduce((a, s) => a + s.windKn, 0) / run.length)
+      const maxWave = Math.max(...run.map((s) => s.waveM))
+      const minWave = Math.min(...run.map((s) => s.waveM))
+      const waveStr = minWave === maxWave ? `${minWave}m` : `${minWave}-${maxWave}m`
+      windows.push({
+        from: `${String(run[0].hour).padStart(2, '0')}:00`,
+        to: `${String(run[run.length - 1].hour).padStart(2, '0')}:00`,
+        dir: degreesToCompass(run[0].dirDeg),
+        avgWind,
+        waveStr,
+      })
+      run = []
     }
+    for (const s of slots) {
+      if (s.windKn >= rideableMin) run.push(s)
+      else flush()
+    }
+    flush()
+    return windows
   }, [slots, rideableMin])
 
   const colCount = slots.length
@@ -201,10 +209,13 @@ export function ForecastDay({
         </button>
       </div>
 
-      {kiteableWindow && (
-        <div style={bannerStyle}>
-          ▸ Kiteable {kiteableWindow.from} – {kiteableWindow.to} · {kiteableWindow.dir}{' '}
-          {kiteableWindow.avgWind} kn · {kiteableWindow.waveStr}
+      {kiteableWindows.length > 0 && (
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 4, marginBottom: 12 }}>
+          {kiteableWindows.map((w, i) => (
+            <div key={i} style={bannerStyle}>
+              ▸ Kiteable {w.from} – {w.to} · {w.dir} {w.avgWind} kn · {w.waveStr}
+            </div>
+          ))}
         </div>
       )}
 

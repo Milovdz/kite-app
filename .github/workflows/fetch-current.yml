@@ -24,7 +24,7 @@ jobs:
 
       - name: Install dependencies
         working-directory: source
-        run: pip install requests python-dotenv --quiet
+        run: pip install -r backend/requirements-actuals.txt --quiet
 
       - name: Run actuals fetcher
         working-directory: source
