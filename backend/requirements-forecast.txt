@@ -2,3 +2,4 @@ openmeteo-requests>=1.0
 requests-cache>=1.2,<2
 retry-requests>=2.0,<3
 numpy>=1.26,<3
+scipy>=1.10
