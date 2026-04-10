@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import { getWindZone, type WindZones, type WindZoneName } from '../utils/windZone'
 
 export interface Slot {
   hour: number
@@ -24,10 +25,18 @@ export interface ForecastDayProps {
   allSlots: Slot[]
   tides?: TidePoint[]
   rideableMin?: number
+  windZones?: WindZones
 }
 
 const SLOT_3H = [6, 9, 12, 15, 18, 21]
 const PERIOD_LABELS: Record<number, string> = { 6: 'morning', 12: 'afternoon', 18: 'evening' }
+
+const ZONE_ARROW_COLOR: Record<WindZoneName, string> = {
+  onshore:      '#5DCAA5',
+  crossOnshore: '#5DCAA5',
+  sideShore:    '#f59e0b',
+  offshore:     '#ef4444',
+}
 
 const COLORS = {
   tooLight: { bg: 'var(--bg-muted)', text: 'var(--text-primary)' },
@@ -145,6 +154,7 @@ export function ForecastDay({
   allSlots = [],
   tides = [],
   rideableMin = 16,
+  windZones,
 }: ForecastDayProps) {
   const [resolution, setResolution] = useState<'3h' | '1h'>('3h')
   const { day, short } = useMemo(() => formatDay(date), [date])
@@ -154,6 +164,11 @@ export function ForecastDay({
       ? allSlots.filter((s) => SLOT_3H.includes(s.hour))
       : allSlots,
     [allSlots, resolution],
+  )
+
+  const slotZones = useMemo(
+    () => slots.map(s => windZones ? getWindZone(s.dirDeg, windZones) : null),
+    [slots, windZones],
   )
 
   const kiteableWindows = useMemo(() => {
@@ -175,12 +190,14 @@ export function ForecastDay({
       run = []
     }
     for (const s of allSlots) {
-      if (s.windKn >= rideableMin) run.push(s)
+      const zone = windZones ? getWindZone(s.dirDeg, windZones) : 'onshore'
+      const kiteable = s.windKn >= rideableMin && zone !== 'offshore'
+      if (kiteable) run.push(s)
       else flush()
     }
     flush()
     return windows
-  }, [allSlots, rideableMin])
+  }, [allSlots, rideableMin, windZones])
 
   const colCount = slots.length
   const gridStyle: React.CSSProperties = {
@@ -247,11 +264,21 @@ export function ForecastDay({
 
       {/* Direction arrows */}
       <div style={gridStyle}>
-        {slots.map((s) => (
-          <div key={s.hour} style={{ textAlign: 'center', padding: '4px 0' }}>
-            <WindArrow deg={s.dirDeg} size={resolution === '1h' ? 12 : 18} />
-          </div>
-        ))}
+        {slots.map((s, idx) => {
+          const zone = slotZones[idx]
+          const safe = zone === 'onshore' || zone === 'crossOnshore'
+          const kiteableSpeed = s.windKn >= rideableMin
+          const arrowColor = (safe && kiteableSpeed) ? ZONE_ARROW_COLOR.onshore : 'var(--text-secondary)'
+          const label = degreesToCompass(s.dirDeg) + (zone === 'offshore' ? ' ⚠' : '')
+          return (
+            <div key={s.hour} style={{ textAlign: 'center', padding: '4px 0' }}>
+              <WindArrow deg={s.dirDeg + 180} size={resolution === '1h' ? 12 : 18} color={arrowColor} />
+              <div style={{ fontSize: resolution === '1h' ? 8 : 10, color: arrowColor, marginTop: 1 }}>
+                {label}
+              </div>
+            </div>
+          )
+        })}
       </div>
 
       {/* Wave */}

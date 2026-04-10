@@ -192,6 +192,20 @@ const COLORS = {
   actualGust: "rgba(29,158,117,0.4)",
 };
 
+const ZONE_ARROW_COLOR = {
+  onshore:      '#5DCAA5',
+  crossOnshore: '#5DCAA5',
+  sideShore:    '#f59e0b',
+  offshore:     '#ef4444',
+};
+
+const ZONE_DISPLAY = {
+  onshore:      'Onshore ✓',
+  crossOnshore: 'Cross-onshore ✓',
+  sideShore:    'Side-shore ✓',
+  offshore:     'Offshore ⚠',
+};
+
 // ── Unique instance counter (avoids Chart.js duplicate plugin id errors) ──
 
 let _instanceCounter = 0;
@@ -205,6 +219,7 @@ export default function WindGraph({
   currentDirDeg = 225,
   threshold = 17,
   yMax = 40,
+  windZone = 'onshore',
   forecastWind = [],
   forecastGust = [],
   actuals = [],
@@ -410,11 +425,13 @@ export default function WindGraph({
           <svg width={20} height={20} viewBox="0 0 20 20">
             <path
               d="M10 2 L14 10 L11 9 L11 18 L9 18 L9 9 L6 10 Z"
-              fill="currentColor"
-              transform={`rotate(${currentDirDeg}, 10, 10)`}
+              fill={windZone === 'onshore' || windZone === 'crossOnshore' ? ZONE_ARROW_COLOR.onshore : '#94a3b8'}
+              transform={`rotate(${currentDirDeg + 180}, 10, 10)`}
             />
           </svg>
-          <span style={styles.dirLabel}>{compassDir}</span>
+          <span style={{ ...styles.dirLabel, color: windZone === 'onshore' || windZone === 'crossOnshore' ? ZONE_ARROW_COLOR.onshore : '#94a3b8' }}>
+            {compassDir} · {ZONE_DISPLAY[windZone]}
+          </span>
         </div>
       </div>
 

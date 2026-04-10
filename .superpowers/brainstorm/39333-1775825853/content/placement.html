@@ -1,0 +1,108 @@
+<h2>Where should wind direction safety appear?</h2>
+<p class="subtitle">IJmuiden safe directions: S, SW, W, NW, N — dangerous: E, SE. Where should the app show this?</p>
+
+<div class="cards">
+
+  <div class="card" data-choice="a" onclick="toggleSelect(this)">
+    <div class="card-image" style="background:#1a2332;padding:16px;border-radius:8px;font-family:monospace;font-size:13px;color:#e2e8f0">
+      <div style="background:#0f172a;border-radius:8px;padding:12px;margin-bottom:8px">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px">
+          <div style="font-size:22px;font-weight:700;color:#fff">24 kn</div>
+          <div style="display:flex;align-items:center;gap:6px">
+            <svg width="20" height="20" viewBox="0 0 20 20"><polygon points="10,2 14,14 10,11 6,14" fill="#5DCAA5" transform="rotate(225,10,10)"/></svg>
+            <span style="color:#5DCAA5;font-weight:600">SW</span>
+          </div>
+          <div style="margin-left:auto;background:#16a34a22;border:1px solid #16a34a;color:#4ade80;border-radius:20px;padding:3px 10px;font-size:12px;font-weight:600">✓ Onshore</div>
+        </div>
+        <div style="color:#94a3b8;font-size:12px">Wind badge on the current-conditions header</div>
+      </div>
+      <div style="background:#0f172a;border-radius:8px;padding:10px;display:flex;gap:8px">
+        <div style="flex:1;background:#1e293b;border-radius:6px;padding:8px;text-align:center">
+          <div style="color:#6ee7b7;font-size:14px;font-weight:700">18</div>
+          <div style="font-size:10px;color:#94a3b8">kn</div>
+          <div style="font-size:10px;color:#4ade80;margin-top:4px">✓</div>
+        </div>
+        <div style="flex:1;background:#1e293b;border-radius:6px;padding:8px;text-align:center">
+          <div style="color:#6ee7b7;font-size:14px;font-weight:700">22</div>
+          <div style="font-size:10px;color:#94a3b8">kn</div>
+          <div style="font-size:10px;color:#4ade80;margin-top:4px">✓</div>
+        </div>
+        <div style="flex:1;background:#1e293b;border-radius:6px;padding:8px;text-align:center">
+          <div style="color:#6ee7b7;font-size:14px;font-weight:700">15</div>
+          <div style="font-size:10px;color:#94a3b8">kn</div>
+          <div style="font-size:10px;color:#94a3b8;margin-top:4px">—</div>
+        </div>
+        <div style="flex:1;background:#dc262622;border:1px solid #dc2626;border-radius:6px;padding:8px;text-align:center">
+          <div style="color:#6ee7b7;font-size:14px;font-weight:700">19</div>
+          <div style="font-size:10px;color:#94a3b8">kn</div>
+          <div style="font-size:10px;color:#f87171;margin-top:4px">✗</div>
+        </div>
+      </div>
+      <div style="color:#64748b;font-size:11px;margin-top:6px">Direction safety shown on each hourly tile + current header</div>
+    </div>
+    <div class="card-body">
+      <h3>A — Inline on every tile + header</h3>
+      <p>A ✓/✗ badge on each hourly tile in ForecastDay, plus a direction-safety label next to the live conditions header. Most granular — you see danger slot-by-slot.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="b" onclick="toggleSelect(this)">
+    <div class="card-image" style="background:#1a2332;padding:16px;border-radius:8px;font-family:monospace;font-size:13px;color:#e2e8f0">
+      <div style="background:#0f172a;border-radius:8px;padding:12px;margin-bottom:8px">
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <div style="background:#16a34a22;border:1.5px solid #16a34a;border-radius:8px;padding:8px 14px;color:#4ade80;font-size:13px;font-weight:600">Mon · SW · ✓ Onshore</div>
+          <div style="background:#16a34a22;border:1.5px solid #16a34a;border-radius:8px;padding:8px 14px;color:#4ade80;font-size:13px;font-weight:600">Tue · W · ✓ Side-shore</div>
+          <div style="background:#dc262622;border:1.5px solid #dc2626;border-radius:8px;padding:8px 14px;color:#f87171;font-size:13px;font-weight:600">Wed · SE · ✗ Offshore</div>
+          <div style="background:#16a34a22;border:1.5px solid #16a34a;border-radius:8px;padding:8px 14px;color:#4ade80;font-size:13px;font-weight:600">Thu · NW · ✓ Onshore</div>
+        </div>
+        <div style="color:#64748b;font-size:11px;margin-top:8px">Day-card border tinted green (safe) or red (offshore) in the week view</div>
+      </div>
+      <div style="background:#0f172a;border-radius:8px;padding:10px">
+        <div style="color:#94a3b8;font-size:12px;margin-bottom:6px">Kiteable window banner</div>
+        <div style="background:#16a34a33;border-left:3px solid #4ade80;padding:8px 12px;border-radius:4px;color:#4ade80;font-size:12px">▸ Kiteable 09:00–13:00 · SW · 22 kn · ✓ Onshore direction</div>
+        <div style="background:#dc262633;border-left:3px solid #f87171;padding:8px 12px;border-radius:4px;color:#f87171;font-size:12px;margin-top:6px">▸ Kiteable 17:00–19:00 · SE · 18 kn · ✗ Offshore — avoid</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B — Day-level summary (WeekView cards + banners)</h3>
+      <p>Colour-tint the day cards in WeekView based on dominant wind direction. Enhance the kiteable banners with a direction safety label. At-a-glance for the week.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="c" onclick="toggleSelect(this)">
+    <div class="card-image" style="background:#1a2332;padding:16px;border-radius:8px;font-family:monospace;font-size:13px;color:#e2e8f0">
+      <div style="background:#0f172a;border-radius:8px;padding:12px;margin-bottom:8px">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:10px">
+          <div style="position:relative;width:64px;height:64px">
+            <svg width="64" height="64" viewBox="0 0 64 64">
+              <circle cx="32" cy="32" r="28" fill="none" stroke="#1e293b" stroke-width="2"/>
+              <!-- safe arc SW-NW (green) -->
+              <path d="M32,32 L4,32 A28,28 0 0,0 32,4 Z" fill="#16a34a33"/>
+              <path d="M32,32 L32,60 A28,28 0 0,0 4,32 Z" fill="#16a34a33"/>
+              <!-- danger arc SE-E -->
+              <path d="M32,32 L60,32 A28,28 0 0,1 32,60 Z" fill="#dc262633"/>
+              <text x="32" y="12" text-anchor="middle" fill="#94a3b8" font-size="8">N</text>
+              <text x="56" y="35" text-anchor="middle" fill="#f87171" font-size="8">E</text>
+              <text x="32" y="58" text-anchor="middle" fill="#94a3b8" font-size="8">S</text>
+              <text x="8" y="35" text-anchor="middle" fill="#94a3b8" font-size="8">W</text>
+              <!-- current wind arrow -->
+              <polygon points="32,18 34,30 32,28 30,30" fill="#5DCAA5" transform="rotate(225,32,32)"/>
+            </svg>
+          </div>
+          <div>
+            <div style="color:#4ade80;font-size:13px;font-weight:600">✓ SW — Onshore</div>
+            <div style="color:#64748b;font-size:11px">Green = safe, Red = offshore</div>
+          </div>
+        </div>
+        <div style="color:#64748b;font-size:11px">Wind rose compass showing safe/unsafe arcs in TodayView header</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>C — Visual compass rose in TodayView</h3>
+      <p>A mini compass rose in the TodayView header with colour-coded arcs (green = safe, red = offshore). The current wind direction arrow lands in the arc, making safety instantly legible.</p>
+    </div>
+  </div>
+
+</div>
+
+<p class="subtitle" style="margin-top:16px">You can select multiple — these aren't mutually exclusive.</p>

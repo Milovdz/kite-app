@@ -2,6 +2,7 @@ import { useState, useEffect, useMemo } from 'react'
 import WindGraph from './WindGraph'
 import { DATA_BASE_URL_FOR, SPOTS, APP_TZ } from '../config'
 import type { SpotSlug } from '../config'
+import { getWindZone, type WindZones, type WindZoneName } from '../utils/windZone'
 
 interface TodayData {
   spot: string
@@ -22,7 +23,7 @@ interface CurrentData {
   actuals: Array<{ time: string; windKn: number | null; gustKn: number | null; dirDeg: number | null }>
 }
 
-function SpotTodayCard({ slug, name }: { slug: SpotSlug; name: string }) {
+function SpotTodayCard({ slug, name, windZones }: { slug: SpotSlug; name: string; windZones: WindZones }) {
   const [todayData, setTodayData] = useState<TodayData | null>(null)
   const [currentData, setCurrentData] = useState<CurrentData | null>(null)
   const [error, setError] = useState<string | null>(null)
@@ -55,6 +56,9 @@ function SpotTodayCard({ slug, name }: { slug: SpotSlug; name: string }) {
 
   const now = new Date().toLocaleString('en-GB', { hour: '2-digit', minute: '2-digit', hour12: false, timeZone: APP_TZ })
 
+  const currentDirDeg = currentData?.current?.dirDeg ?? 0
+  const currentZone: WindZoneName = getWindZone(currentDirDeg, windZones)
+
   const forecastWind = useMemo(() => todayData?.hourly.map(h => h.forecastWindKn) ?? [], [todayData])
   const forecastGust = useMemo(() => todayData?.hourly.map(h => h.forecastGustKn) ?? [], [todayData])
   const actuals = useMemo(() => currentData?.actuals ?? [], [currentData])
@@ -75,7 +79,8 @@ function SpotTodayCard({ slug, name }: { slug: SpotSlug; name: string }) {
           spotName={name}
           currentWind={currentData.current?.windKn ?? 0}
           currentGust={currentData.current?.gustKn ?? 0}
-          currentDirDeg={currentData.current?.dirDeg ?? 0}
+          currentDirDeg={currentDirDeg}
+          windZone={currentZone}
           threshold={17}
           yMax={40}
           forecastWind={forecastWind}
@@ -92,7 +97,7 @@ export function TodayView() {
   return (
     <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem' }}>
       {SPOTS.map(s => (
-        <SpotTodayCard key={s.slug} slug={s.slug} name={s.name} />
+        <SpotTodayCard key={s.slug} slug={s.slug} name={s.name} windZones={s.windZones} />
       ))}
     </div>
   )

@@ -3,6 +3,7 @@ import { ForecastDay } from './ForecastDay'
 import type { Slot, TidePoint } from './ForecastDay'
 import { DATA_BASE_URL_FOR, SPOTS, APP_TZ } from '../config'
 import type { SpotSlug } from '../config'
+import type { WindZones } from '../utils/windZone'
 
 interface ForecastEntry {
   iso: string
@@ -38,9 +39,10 @@ function toSlots(entries: ForecastEntry[]): Slot[] {
   }))
 }
 
-function SpotWeekRow({ slug, name, isExpanded, onToggle }: {
+function SpotWeekRow({ slug, name, windZones, isExpanded, onToggle }: {
   slug: SpotSlug
   name: string
+  windZones: WindZones
   isExpanded: boolean
   onToggle: () => void
 }) {
@@ -120,6 +122,7 @@ function SpotWeekRow({ slug, name, isExpanded, onToggle }: {
                       allSlots={toSlots(entries)}
                       tides={weekData.tidesByDate?.[dateKey] ?? []}
                       rideableMin={16}
+                      windZones={windZones}
                     />
                   </div>
                 ))}
@@ -142,6 +145,7 @@ export function WeekView() {
           key={s.slug}
           slug={s.slug}
           name={s.name}
+          windZones={s.windZones}
           isExpanded={expanded.has(s.slug)}
           onToggle={() => setExpanded(prev => {
             const next = new Set(prev)
