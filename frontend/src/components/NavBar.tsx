@@ -1,8 +1,14 @@
-type View = 'today' | 'week'
+import type { View } from '../App'
 
 interface Props {
   view: View
   onSwitch: (v: View) => void
+}
+
+const TAB_LABELS: Record<View, string> = {
+  home: 'Home',
+  today: 'Today',
+  week: '7 Days',
 }
 
 export function NavBar({ view, onSwitch }: Props) {
@@ -23,8 +29,8 @@ export function NavBar({ view, onSwitch }: Props) {
       <span style={{ fontWeight: 700, fontSize: '1.1rem', color: 'var(--teal)', marginRight: 'auto' }}>
         KiteWind
       </span>
-<div style={{ display: 'flex', gap: 4 }}>
-        {(['today', 'week'] as View[]).map((v) => (
+      <div style={{ display: 'flex', gap: 4 }}>
+        {(['home', 'today', 'week'] as View[]).map((v) => (
           <button
             key={v}
             onClick={() => onSwitch(v)}
@@ -41,7 +47,7 @@ export function NavBar({ view, onSwitch }: Props) {
               transition: 'color 0.15s',
             }}
           >
-            {v === 'today' ? 'Today' : '7 Days'}
+            {TAB_LABELS[v]}
           </button>
         ))}
       </div>
