@@ -116,7 +116,8 @@ def fetch_spot(client, spot):
             "tempC": round(float(temps[i]), 1),
             "rainMm": round(float(rain[i]), 2),
         }
-        hourly_all.append(entry)
+        if date_str >= today_str:
+            hourly_all.append(entry)
 
         if date_str == today_str:
             today_hourly.append({
