@@ -243,9 +243,6 @@ export function ForecastDay({
           return (
             <div key={s.hour} style={{ ...tileStyle, background: c.bg, minHeight: compact ? 40 : 52, padding: compact ? '4px 1px' : '8px 2px' }}>
               <span style={{ fontSize: compact ? 13 : 20, fontWeight: 500, lineHeight: 1.1, color: c.text }}>{s.windKn}</span>
-              {!compact && label && (
-                <span style={{ fontSize: 10, fontWeight: 500, color: (c as typeof COLORS.rideable).label, marginTop: 2 }}>{label}</span>
-              )}
               <span style={{ fontSize: compact ? 9 : 11, color: (c as typeof COLORS.pumping).gust || 'var(--text-tertiary)', marginTop: 1 }}>
                 G{s.gustKn}
               </span>
