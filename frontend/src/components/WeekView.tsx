@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { ForecastDay } from './ForecastDay'
 import type { Slot, TidePoint } from './ForecastDay'
-import { DATA_BASE_URL } from '../config'
+import { DATA_BASE_URL, APP_TZ } from '../config'
 
 interface ForecastEntry {
   iso: string
@@ -34,7 +34,7 @@ function groupByDay(entries: ForecastEntry[]): { dateKey: string; entries: Forec
 
 function toSlots(entries: ForecastEntry[]): Slot[] {
   return entries.map((e) => ({
-    hour: new Date(e.iso).getHours(),
+    hour: parseInt(new Date(e.iso).toLocaleString('en-GB', { hour: 'numeric', hour12: false, timeZone: APP_TZ }), 10),
     windKn: e.windKn,
     gustKn: e.gustKn,
     dirDeg: e.dirDeg,

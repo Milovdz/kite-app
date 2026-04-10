@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import WindGraph from './WindGraph'
-import { DATA_BASE_URL } from '../config'
+import { DATA_BASE_URL, APP_TZ } from '../config'
 
 interface TodayData {
   spot: string
@@ -39,7 +39,7 @@ export function TodayView() {
   if (error) return <div style={{ padding: 24, color: 'red' }}>Today fetch error: {error}</div>
   if (!todayData || !currentData) return <div style={{ padding: 24 }}>Loading...</div>
 
-  const nowIndex = new Date().getHours()
+  const nowIndex = parseInt(new Date().toLocaleString('en-GB', { hour: 'numeric', hour12: false, timeZone: APP_TZ }), 10)
 
   const actualWind: (number | null)[] = Array(24).fill(null)
   const actualGust: (number | null)[] = Array(24).fill(null)
