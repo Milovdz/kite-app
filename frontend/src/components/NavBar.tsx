@@ -6,7 +6,6 @@ interface Props {
 }
 
 const TAB_LABELS: Record<View, string> = {
-  home: 'Home',
   today: 'Today',
   week: '7 Days',
 }
@@ -30,7 +29,7 @@ export function NavBar({ view, onSwitch }: Props) {
         KiteWind
       </span>
       <div style={{ display: 'flex', gap: 4 }}>
-        {(['home', 'today', 'week'] as View[]).map((v) => (
+        {(['today', 'week'] as View[]).map((v) => (
           <button
             key={v}
             onClick={() => onSwitch(v)}

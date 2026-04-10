@@ -195,7 +195,7 @@ const COLORS = {
 const ZONE_ARROW_COLOR = {
   onshore:      '#5DCAA5',
   crossOnshore: '#5DCAA5',
-  sideShore:    '#f59e0b',
+  sideShore:    '#5DCAA5',
   offshore:     '#ef4444',
 };
 
@@ -425,11 +425,11 @@ export default function WindGraph({
           <svg width={20} height={20} viewBox="0 0 20 20">
             <path
               d="M10 2 L14 10 L11 9 L11 18 L9 18 L9 9 L6 10 Z"
-              fill={windZone === 'onshore' || windZone === 'crossOnshore' ? ZONE_ARROW_COLOR.onshore : '#94a3b8'}
+              fill={windZone === 'onshore' || windZone === 'crossOnshore' || windZone === 'sideShore' ? ZONE_ARROW_COLOR.onshore : '#94a3b8'}
               transform={`rotate(${currentDirDeg + 180}, 10, 10)`}
             />
           </svg>
-          <span style={{ ...styles.dirLabel, color: windZone === 'onshore' || windZone === 'crossOnshore' ? ZONE_ARROW_COLOR.onshore : '#94a3b8' }}>
+          <span style={{ ...styles.dirLabel, color: windZone === 'onshore' || windZone === 'crossOnshore' || windZone === 'sideShore' ? ZONE_ARROW_COLOR.onshore : '#94a3b8' }}>
             {compassDir} · {ZONE_DISPLAY[windZone]}
           </span>
         </div>

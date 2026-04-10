@@ -35,7 +35,7 @@ const PERIOD_LABELS: Record<number, string> = { 6: 'morning', 12: 'afternoon', 1
 const ZONE_ARROW_COLOR: Record<WindZoneName, string> = {
   onshore:      '#5DCAA5',
   crossOnshore: '#5DCAA5',
-  sideShore:    '#f59e0b',
+  sideShore:    '#5DCAA5',
   offshore:     '#ef4444',
 }
 
@@ -244,7 +244,7 @@ export function ForecastDay({
       <div style={gridStyle}>
         {slots.map((s, idx) => {
           const zone = slotZones[idx]
-          const safe = zone === 'onshore' || zone === 'crossOnshore'
+          const safe = zone === 'onshore' || zone === 'crossOnshore' || zone === 'sideShore'
           const kiteableSpeed = s.windKn >= rideableMin
           const arrowColor = (safe && kiteableSpeed) ? ZONE_ARROW_COLOR.onshore : 'var(--text-secondary)'
           const label = degreesToCompass(s.dirDeg) + (zone === 'offshore' ? ' ⚠' : '')
