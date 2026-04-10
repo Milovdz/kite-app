@@ -20,7 +20,7 @@ The four spots and their coordinates:
 - [x] Milestone 2 — Backend: update fetch_actuals.py with per-spot KNMI station IDs
 - [x] Milestone 3 — GitHub Actions: loop over all active spots
 - [x] Milestone 4 — Data branch: create directories and seed initial JSON
-- [ ] Milestone 5 — Frontend: update config.ts and add location constants
+- [x] Milestone 5 — Frontend: update config.ts and add location constants
 - [ ] Milestone 6 — Frontend: Today view → 2×2 grid
 - [ ] Milestone 7 — Frontend: WeekView → collapsible per-spot rows
 - [ ] Milestone 8 — Frontend: NavBar cleanup

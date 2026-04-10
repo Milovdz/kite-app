@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react'
 import WindGraph from './WindGraph'
-import { DATA_BASE_URL, APP_TZ } from '../config'
+import { DATA_BASE_URL_FOR, APP_TZ } from '../config'
+
+const DATA_BASE_URL = DATA_BASE_URL_FOR('ijmuiden')
 
 interface TodayData {
   spot: string

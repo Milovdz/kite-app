@@ -1,7 +1,9 @@
 import { useState, useEffect } from 'react'
 import { ForecastDay } from './ForecastDay'
 import type { Slot, TidePoint } from './ForecastDay'
-import { DATA_BASE_URL, APP_TZ } from '../config'
+import { DATA_BASE_URL_FOR, APP_TZ } from '../config'
+
+const DATA_BASE_URL = DATA_BASE_URL_FOR('ijmuiden')
 
 interface ForecastEntry {
   iso: string
