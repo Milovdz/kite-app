@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { HomeView } from './HomeView'
 import { ForecastDay } from './ForecastDay'
 import type { TidePoint } from './ForecastDay'
 import { DATA_BASE_URL_FOR, SPOTS } from '../config'
@@ -107,6 +108,7 @@ export function WeekView() {
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+      <HomeView />
       {SPOTS.map(s => (
         <SpotWeekRow
           key={s.slug}
