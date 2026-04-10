@@ -207,15 +207,6 @@ export function ForecastDay({
         </button>
       </div>
 
-      {kiteableWindows.length > 0 && (
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 4, marginBottom: 12 }}>
-          {kiteableWindows.map((w, i) => (
-            <div key={i} style={bannerStyle}>
-              ▸ Kiteable {w.from} – {w.to} · {w.dir} {w.avgWind} kn · {w.waveStr}
-            </div>
-          ))}
-        </div>
-      )}
 
       {/* Period labels — only in 3h mode */}
       {resolution === '3h' && (
@@ -287,20 +278,27 @@ export function ForecastDay({
       <div style={{ ...gridStyle, marginTop: 6 }}>
         {slots.map((s) => (
           <div key={s.hour} style={{ textAlign: 'center' }}>
-            {s.rainMm > 0 ? (
-              <>
-                <div style={{ fontSize: 10, color: 'var(--text-tertiary)' }}>rain</div>
-                <div style={{ fontSize: resolution === '1h' ? 11 : 13, color: 'var(--text-secondary)' }}>
-                  <span style={precipDotStyle} />
-                  {s.rainMm}
-                </div>
-              </>
-            ) : null}
+            <>
+              <div style={{ fontSize: 10, color: 'var(--text-tertiary)' }}>rain</div>
+              <div style={{ fontSize: resolution === '1h' ? 11 : 13, color: 'var(--text-secondary)' }}>
+                {s.rainMm > 0 ? <><span style={precipDotStyle} />{s.rainMm}</> : '–'}
+              </div>
+            </>
           </div>
         ))}
       </div>
 
       <TideCurve tides={tides} />
+
+      {kiteableWindows.length > 0 && (
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 4, marginTop: 12 }}>
+          {kiteableWindows.map((w, i) => (
+            <div key={i} style={bannerStyle}>
+              ▸ Kiteable {w.from} – {w.to} · {w.dir} {w.avgWind} kn · {w.waveStr}
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   )
 }

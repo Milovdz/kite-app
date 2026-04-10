@@ -1,8 +1,8 @@
 # KiteWind — Product Requirements Document
 
-**Version:** 1.0  
+**Version:** 1.1  
 **Date:** 2026-04-10  
-**Status:** Current frontend baseline (pre-backend)
+**Status:** Live — backend pipeline active
 
 ---
 
@@ -10,7 +10,7 @@
 
 KiteWind is a single-page web app showing a kitesurf wind forecast for IJmuiden, Netherlands. It gives kiters a quick read on whether conditions are rideable today and across the coming week, presenting wind speed, gusts, direction, wave height, temperature, and precipitation in a compact, scannable layout.
 
-The app currently runs entirely on static mock data. This document captures the complete frontend as built, to serve as the baseline for backend integration.
+The app is live at **https://kite-app-three.vercel.app**. Data is fetched from a GitHub `data` branch (orphan) updated by two GitHub Actions cron jobs — see §9.
 
 ---
 
@@ -22,7 +22,7 @@ The app currently runs entirely on static mock data. This document captures the 
 | Build tool | Vite 8.0.4 |
 | Charting | Recharts 3.8.1 |
 | Styling | CSS custom properties + inline styles (no framework) |
-| Data | Static JSON files (no API) |
+| Data | JSON fetched from GitHub `data` branch at runtime |
 | Font | Inter (body), JetBrains Mono / Fira Code (numbers) |
 
 ---
@@ -61,7 +61,7 @@ frontend/src/
     └── windColour.ts
 ```
 
-Both views import their data directly via static `import` — no fetch calls.
+Both views fetch data at runtime via `DATA_BASE_URL` defined in `src/config.ts`, which points to `https://raw.githubusercontent.com/Milovdz/kite-app/data/ijmuiden/`. The `data` branch is an orphan updated by cron — see §9.
 
 ---
 
@@ -304,25 +304,33 @@ body { font-family: 'Inter', system-ui, sans-serif; }
 
 ---
 
-## 8. Current Limitations (Mock / Stubbed)
+## 8. Known Limitations
 
-| Area | Current state | What's needed for backend |
-|---|---|---|
-| Wind data | Static `today.json` + `week.json` | Replace with API response |
-| Tide data | Not present in JSON; `TidePoint[]` prop defaults to `[]` | Real tidal data source (e.g. Rijkswaterstaat) |
-| Spot | Hardcoded "IJmuiden" | Spot switcher / parameterisation |
-| `actualSpeed` | Mock values for hours 0–14 | Real observed data from KNMI or similar |
-| Wave height / period | Present in week data only | Add to today data if needed |
-| Refresh / staleness | No refresh logic | Polling or cache-bust strategy |
-| Error states | None | Loading / error UI |
+| Area | Current state |
+|---|---|
+| Tide data | Not present in JSON; `TidePoint[]` prop defaults to `[]` — Rijkswaterstaat Waterinfo integration planned (phase 2) |
+| Spot | Hardcoded "IJmuiden" — spot switcher planned for phase 3 (Schellinkhout, Kijkduin, Brouwersdam) |
+| Wave height / period | Present in `week.json` only; not surfaced in `TodayView` |
+| Refresh / staleness | No client-side refresh — user must reload to get latest data |
 
 ---
 
-## 9. Data Source (Python Fetcher)
+## 9. Data Pipeline
 
-A Python script at `.claude/skills/fetch-wind-data/scripts/fetch_wind.py` calls the Open-Meteo KNMI Seamless API for IJmuiden (52.482630, 4.581581) with a 1-hour SQLite cache. It currently produces mock data and will become the backend data pipeline.
+JSON files are published to the `data` branch (orphan — no shared history with `master`) under `ijmuiden/` by two GitHub Actions workflows:
 
-Run:
+| Workflow | Schedule | Script | Outputs |
+|---|---|---|---|
+| `fetch-forecast.yml` | Hourly (`0 * * * *`) | `backend/fetch_forecast.py` | `today.json`, `week.json` |
+| `fetch-current.yml` | Every 15 min (`*/15 * * * *`) | `backend/fetch_actuals.py` | `current.json` |
+
+**Sources:**
+- Open-Meteo KNMI Seamless (`api.open-meteo.com/v1/forecast`) — wind, gusts, direction, temp, precipitation
+- Open-Meteo Marine (`marine-api.open-meteo.com/v1/marine`) — wave height, wave period
+- KNMI EDR API (`api.dataplatform.knmi.nl/edr`) — 10-min observed actuals, station `0-20000-0-06225` (IJmuiden)
+
+A local Python fetcher at `.claude/skills/fetch-wind-data/scripts/fetch_wind.py` calls Open-Meteo with a 1-hour SQLite cache and is used for local data inspection:
+
 ```bash
 source .venv/bin/activate && python .claude/skills/fetch-wind-data/scripts/fetch_wind.py
 ```

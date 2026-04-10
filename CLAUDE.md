@@ -29,12 +29,17 @@ Single-page React + TypeScript app (Vite) showing a kitesurf wind forecast for I
 **Components** (`frontend/src/components/`):
 - `NavBar` — fixed top bar; receives `view` and `onSwitch` callback
 - `TodayView` — 24-hour Recharts line graph combining observed + forecast wind
-- `WeekView` — 7-day hourly table (8 metrics per row)
+- `WeekView` — 7-day scrollable cards, one per day; delegates to `ForecastDay`
+- `ForecastDay` — per-day card with wind tiles (colour-banded), direction arrows, wave, temp, rain, tide curve, kiteable-window banners, and 1h/3h toggle
 
-Both views import static JSON directly from `src/data/` (`today.json`, `week.json`) — there is no live API call yet.
+Both views fetch live JSON from the `data` branch on GitHub via `DATA_BASE_URL` in `src/config.ts` (`today.json`, `week.json`, `current.json`). The `data` branch is an orphan branch (no shared history with `master`) updated by GitHub Actions cron jobs — do not rebase or merge it.
 
-**Styling** — dark theme via CSS custom properties in `index.css`; inline styles throughout components; no CSS framework. Wind speed colour-coding is centralised in `src/utils/windColour.ts` (knots → hex across 5 bands: <15 grey, 16–20 yellow, 21–25 orange, 26–32 red, 32+ purple).
+**Deployment** — app is live at https://kite-app-three.vercel.app (Vercel, `frontend/` root).
 
-**Data schemas** are defined in `.plans/frontend-ui.md` and the design spec at `docs/superpowers/specs/2026-04-08-frontend-ui-design.md`.
+**Data pipeline:**
+- `backend/fetch_forecast.py` — hourly cron, writes `today.json` + `week.json` from Open-Meteo (forecast + marine)
+- `backend/fetch_actuals.py` — every 15 min cron, writes `current.json` from KNMI EDR API (station 06225, IJmuiden)
 
-**Python wind fetcher** — `.claude/skills/fetch-wind-data/scripts/fetch_wind.py` calls the Open-Meteo KNMI Seamless API (IJmuiden: 52.482630, 4.581581) with a 1-hour SQLite response cache. Used for generating mock data and will feed the future backend.
+**Styling** — dark theme via CSS custom properties in `index.css`; inline styles throughout components; no CSS framework. Wind speed colour-coding is centralised in `src/utils/windColour.ts` (knots → hex across 5 bands: <15 grey, 16–20 yellow, 21–25 orange, 26–32 red, 32+ purple). `ForecastDay` uses its own green-band colour scheme for kiteable wind tiles.
+
+**Python wind fetcher** — `.claude/skills/fetch-wind-data/scripts/fetch_wind.py` calls the Open-Meteo KNMI Seamless API (IJmuiden: 52.482630, 4.581581) with a 1-hour SQLite response cache. Used for local data inspection.
