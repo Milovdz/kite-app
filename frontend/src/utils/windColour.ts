@@ -1,6 +1,6 @@
 export function windColour(knots: number): string {
-  if (knots < 15) return interpolate('#4a4a4a', '#6b6b6b', knots, 0, 14)
-  if (knots <= 20) return interpolate('#b8860b', '#ffd700', knots, 15, 20)
+  if (knots < 16) return interpolate('#4a4a4a', '#6b6b6b', knots, 0, 15)
+  if (knots <= 20) return interpolate('#b8860b', '#ffd700', knots, 16, 20)
   if (knots <= 25) return interpolate('#cc5500', '#ff8c00', knots, 21, 25)
   if (knots <= 32) return interpolate('#8b0000', '#dc143c', knots, 26, 32)
   return interpolate('#4b0082', '#800080', knots, 33, 45)

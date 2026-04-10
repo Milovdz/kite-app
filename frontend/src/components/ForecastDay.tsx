@@ -24,25 +24,24 @@ export interface ForecastDayProps {
   allSlots: Slot[]
   tides?: TidePoint[]
   rideableMin?: number
-  pumpingMin?: number
 }
 
 const SLOT_3H = [6, 9, 12, 15, 18, 21]
 const PERIOD_LABELS: Record<number, string> = { 6: 'morning', 12: 'afternoon', 18: 'evening' }
 
 const COLORS = {
-  tooLight: { bg: 'var(--bg-muted)',  text: 'var(--text-primary)' },
-  light:    { bg: '#d1fae5',          text: '#065f46' },
-  rideable: { bg: '#6ee7b7',          text: '#064e3b',  label: '#065f46' },
-  pumping:  { bg: '#10b981',          text: '#ffffff',  label: '#ffffff', gust: '#d1fae5' },
-  strong:   { bg: '#047857',          text: '#ffffff',  label: '#a7f3d0', gust: '#6ee7b7' },
+  tooLight: { bg: 'var(--bg-muted)', text: 'var(--text-primary)' },
+  green1:   { bg: '#d1fae5',         text: '#065f46' },
+  green2:   { bg: '#6ee7b7',         text: '#064e3b' },
+  green3:   { bg: '#10b981',         text: '#ffffff', gust: '#d1fae5' },
+  green4:   { bg: '#047857',         text: '#ffffff', gust: '#6ee7b7' },
 }
 
-function windBand(kn: number, rideableMin: number, pumpingMin: number) {
-  if (kn >= 29) return 'strong'
-  if (kn >= pumpingMin) return 'pumping'
-  if (kn >= rideableMin) return 'rideable'
-  if (kn >= 10) return 'light'
+function windBand(kn: number) {
+  if (kn >= 30) return 'green4'
+  if (kn >= 25) return 'green3'
+  if (kn >= 20) return 'green2'
+  if (kn >= 16) return 'green1'
   return 'tooLight'
 }
 
@@ -146,7 +145,6 @@ export function ForecastDay({
   allSlots = [],
   tides = [],
   rideableMin = 16,
-  pumpingMin = 22,
 }: ForecastDayProps) {
   const [resolution, setResolution] = useState<'3h' | '1h'>('3h')
   const { day, short } = useMemo(() => formatDay(date), [date])
@@ -242,13 +240,13 @@ export function ForecastDay({
       {/* Wind tiles */}
       <div style={{ ...gridStyle, marginBottom: 2 }}>
         {slots.map((s) => {
-          const band = windBand(s.windKn, rideableMin, pumpingMin)
+          const band = windBand(s.windKn)
           const c = COLORS[band]
           const compact = resolution === '1h'
           return (
             <div key={s.hour} style={{ ...tileStyle, background: c.bg, minHeight: compact ? 40 : 52, padding: compact ? '4px 1px' : '8px 2px' }}>
               <span style={{ fontSize: compact ? 13 : 20, fontWeight: 500, lineHeight: 1.1, color: c.text }}>{s.windKn}</span>
-              <span style={{ fontSize: compact ? 9 : 11, color: (c as typeof COLORS.pumping).gust || 'var(--text-tertiary)', marginTop: 1 }}>
+              <span style={{ fontSize: compact ? 9 : 11, color: ('gust' in c ? c.gust : undefined) || 'var(--text-tertiary)', marginTop: 1 }}>
                 G{s.gustKn}
               </span>
             </div>
