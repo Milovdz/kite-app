@@ -25,11 +25,18 @@ export function TodayView() {
   const [todayData, setTodayData] = useState<TodayData | null>(null)
   const [currentData, setCurrentData] = useState<CurrentData | null>(null)
 
+  const [error, setError] = useState<string | null>(null)
+
   useEffect(() => {
-    fetch(`${DATA_BASE_URL}/today.json`).then(r => r.json()).then(setTodayData)
-    fetch(`${DATA_BASE_URL}/current.json`).then(r => r.json()).then(setCurrentData)
+    Promise.all([
+      fetch(`${DATA_BASE_URL}/today.json`).then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json() }),
+      fetch(`${DATA_BASE_URL}/current.json`).then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json() }),
+    ])
+      .then(([today, current]) => { setTodayData(today); setCurrentData(current) })
+      .catch(e => setError(String(e)))
   }, [])
 
+  if (error) return <div style={{ padding: 24, color: 'red' }}>Today fetch error: {error}</div>
   if (!todayData || !currentData) return <div style={{ padding: 24 }}>Loading...</div>
 
   const nowIndex = new Date().getHours()

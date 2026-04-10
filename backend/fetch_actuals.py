@@ -4,7 +4,8 @@
 import json
 import os
 import sys
-from datetime import datetime, timezone, timedelta
+from datetime import datetime, timezone
+from zoneinfo import ZoneInfo
 
 import requests
 
@@ -34,15 +35,7 @@ SPOTS = [
 
 OUTPUT_DIR = os.path.join(os.path.dirname(__file__), "output")
 
-# Amsterdam timezone offset — CEST (UTC+2) Apr–Oct, CET (UTC+1) Oct–Apr
-def amsterdam_offset():
-    now = datetime.now(timezone.utc)
-    # DST in Netherlands: last Sunday March → last Sunday October
-    year = now.year
-    # Rough check: April–October = CEST (UTC+2)
-    if 3 < now.month < 11:
-        return timedelta(hours=2)
-    return timedelta(hours=1)
+AMSTERDAM_TZ = ZoneInfo("Europe/Amsterdam")
 
 
 def fetch_actuals(api_key: str, spot: dict) -> dict:
@@ -85,13 +78,10 @@ def fetch_actuals(api_key: str, spot: dict) -> dict:
     dd_vals = ranges.get("dd", {}).get("values", [])   # direction degrees
     gff_vals = ranges.get("gff", {}).get("values", []) # gust m/s
 
-    offset = amsterdam_offset()
-    amsterdam_tz = timezone(offset)
-
     actuals = []
     for i, ts_str in enumerate(timestamps):
         ts_utc = datetime.fromisoformat(ts_str.replace("Z", "+00:00"))
-        ts_local = ts_utc.astimezone(amsterdam_tz)
+        ts_local = ts_utc.astimezone(AMSTERDAM_TZ)
         time_label = ts_local.strftime("%H:%M")
 
         speed_ms = ff_vals[i] if i < len(ff_vals) else None
