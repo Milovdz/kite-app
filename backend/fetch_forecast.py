@@ -3,7 +3,8 @@
 
 import json
 import os
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
+from zoneinfo import ZoneInfo
 
 import math
 
@@ -11,6 +12,8 @@ import numpy as np
 import openmeteo_requests
 import requests_cache
 from retry_requests import retry
+from pytides.tide import Tide
+from pytides.constituent import noaa as ALL_CONSTITUENTS
 
 KMH_TO_KN = 0.539957
 
@@ -22,6 +25,86 @@ SPOTS = [
 ]
 
 OUTPUT_DIR = os.path.join(os.path.dirname(__file__), "output")
+
+# IJmuiden (IJMH) harmonic constituents from IHO, referenced to NAP.
+# Format: (constituent_name, amplitude_m, phase_deg)
+_IJMUIDEN_CONSTITUENTS = [
+    ("M2",  0.726, 114.0),
+    ("S2",  0.176, 152.0),
+    ("N2",  0.139,  97.0),
+    ("K2",  0.048, 152.0),
+    ("K1",  0.077, 210.0),
+    ("O1",  0.027, 178.0),
+    ("P1",  0.025, 210.0),
+    ("Q1",  0.006, 161.0),
+    ("Mf",  0.012,   0.0),
+    ("Mm",  0.007,   0.0),
+    ("Ssa", 0.047,   0.0),
+]
+
+_AMSTERDAM = ZoneInfo("Europe/Amsterdam")
+
+_TIDE_MODEL = None
+
+
+def _get_tide_model():
+    global _TIDE_MODEL
+    if _TIDE_MODEL is not None:
+        return _TIDE_MODEL
+    constituent_map = {c.name: c for c in ALL_CONSTITUENTS}
+    constituents = []
+    amplitudes = []
+    phases = []
+    for name, amp, phase in _IJMUIDEN_CONSTITUENTS:
+        if name in constituent_map:
+            constituents.append(constituent_map[name])
+            amplitudes.append(amp)
+            phases.append(phase)
+    _TIDE_MODEL = Tide(constituents=constituents, amplitudes=amplitudes, phases=phases)
+    return _TIDE_MODEL
+
+
+def compute_tides(start_date: datetime, days: int = 7) -> dict:
+    """
+    Compute astronomical tide extrema for IJmuiden for `days` days starting at start_date.
+    Returns {date_str: [{"time": "HH:MM", "heightM": float, "type": "high"|"low"}, ...]}
+    """
+    tide = _get_tide_model()
+    ams_midnight = start_date.replace(hour=0, minute=0, second=0, microsecond=0, tzinfo=_AMSTERDAM)
+
+    # Generate heights every 10 minutes for the full window to find accurate extrema
+    total_minutes = days * 24 * 60
+    step_minutes = 10
+    n_steps = total_minutes // step_minutes + 1
+    times = [ams_midnight + timedelta(minutes=i * step_minutes) for i in range(n_steps)]
+    times_utc = [t.astimezone(timezone.utc).replace(tzinfo=None) for t in times]
+
+    heights = tide.at(times_utc)
+
+    # Find local extrema by scanning for direction changes
+    tides_by_date: dict = {}
+    prev_direction = None
+    for i in range(1, len(heights) - 1):
+        direction = heights[i] - heights[i - 1]
+        if prev_direction is not None:
+            if prev_direction > 0 and direction <= 0:
+                kind = "high"
+            elif prev_direction < 0 and direction >= 0:
+                kind = "low"
+            else:
+                prev_direction = direction
+                continue
+            local_t = times[i].astimezone(_AMSTERDAM)
+            date_str = local_t.strftime("%Y-%m-%d")
+            entry = {
+                "time": local_t.strftime("%H:%M"),
+                "heightM": round(float(heights[i]), 2),
+                "type": kind,
+            }
+            tides_by_date.setdefault(date_str, []).append(entry)
+        prev_direction = direction
+
+    return tides_by_date
 
 
 def _safe(arr, i, decimals):
@@ -131,6 +214,8 @@ def fetch_spot(client, spot):
                 "rainMm": entry["rainMm"],
             })
 
+    tides_by_date = compute_tides(datetime.now(tz=_AMSTERDAM), days=7)
+
     return {
         "today": {
             "spot": spot["name"],
@@ -142,6 +227,7 @@ def fetch_spot(client, spot):
             "spot": spot["name"],
             "generatedAt": generated_at,
             "forecast": hourly_all,
+            "tidesByDate": tides_by_date,
         },
     }
 

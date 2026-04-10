@@ -14,13 +14,6 @@ interface ForecastEntry {
   rainMm: number
 }
 
-// Mock tide data — two tidal cycles per day, typical North Sea pattern
-const MOCK_TIDES: TidePoint[] = [
-  { time: '01:18', heightM: 1.7, type: 'high' },
-  { time: '07:32', heightM: 0.3, type: 'low' },
-  { time: '13:45', heightM: 1.8, type: 'high' },
-  { time: '19:58', heightM: 0.4, type: 'low' },
-]
 
 function groupByDay(entries: ForecastEntry[]): { dateKey: string; entries: ForecastEntry[] }[] {
   const groups: Record<string, ForecastEntry[]> = {}
@@ -46,7 +39,7 @@ function toSlots(entries: ForecastEntry[]): Slot[] {
 }
 
 export function WeekView() {
-  const [weekData, setWeekData] = useState<{ spot: string; forecast: ForecastEntry[] } | null>(null)
+  const [weekData, setWeekData] = useState<{ spot: string; forecast: ForecastEntry[]; tidesByDate?: Record<string, TidePoint[]> } | null>(null)
   const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
@@ -86,7 +79,7 @@ export function WeekView() {
               date={dateKey}
               spotName={weekData.spot}
               allSlots={toSlots(entries)}
-              tides={MOCK_TIDES}
+              tides={weekData.tidesByDate?.[dateKey] ?? []}
               rideableMin={16}
             />
           </div>
