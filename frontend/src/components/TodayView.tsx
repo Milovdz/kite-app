@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react'
 import WindGraph from './WindGraph'
-import { DATA_BASE_URL_FOR, APP_TZ } from '../config'
-
-const DATA_BASE_URL = DATA_BASE_URL_FOR('ijmuiden')
+import { DATA_BASE_URL_FOR, SPOTS, APP_TZ } from '../config'
+import type { SpotSlug } from '../config'
 
 interface TodayData {
   spot: string
@@ -23,37 +22,37 @@ interface CurrentData {
   actuals: Array<{ time: string; windKn: number | null; gustKn: number | null; dirDeg: number | null }>
 }
 
-export function TodayView() {
+function SpotTodayCard({ slug, name }: { slug: SpotSlug; name: string }) {
   const [todayData, setTodayData] = useState<TodayData | null>(null)
   const [currentData, setCurrentData] = useState<CurrentData | null>(null)
-
   const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
+    const base = DATA_BASE_URL_FOR(slug)
     Promise.all([
-      fetch(`${DATA_BASE_URL}/today.json`).then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json() }),
-      fetch(`${DATA_BASE_URL}/current.json`).then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json() }),
+      fetch(`${base}/today.json`).then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json() }),
+      fetch(`${base}/current.json`).then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json() }),
     ])
       .then(([today, current]) => { setTodayData(today); setCurrentData(current) })
       .catch(e => setError(String(e)))
-  }, [])
-
-  if (error) return <div style={{ padding: 24, color: 'red' }}>Today fetch error: {error}</div>
-  if (!todayData || !currentData) return <div style={{ padding: 24 }}>Loading...</div>
+  }, [slug])
 
   const now = new Date().toLocaleString('en-GB', { hour: '2-digit', minute: '2-digit', hour12: false, timeZone: APP_TZ })
 
   return (
-    <div style={{ display: 'flex', gap: 12 }}>
-      <div style={{
-        background: 'var(--bg-surface)',
-        borderRadius: 12,
-        padding: '12px 14px',
-        border: '1px solid var(--border)',
-        flex: '0 0 calc(50% - 6px)',
-      }}>
+    <div style={{
+      background: 'var(--bg-surface)',
+      borderRadius: 12,
+      padding: '12px 14px',
+      border: '1px solid var(--border)',
+    }}>
+      {error && <div style={{ color: 'red', padding: 8 }}>{name}: {error}</div>}
+      {!error && (!todayData || !currentData) && (
+        <div style={{ padding: 8, color: 'var(--text-secondary)' }}>Loading {name}…</div>
+      )}
+      {todayData && currentData && (
         <WindGraph
-          spotName={todayData.spot}
+          spotName={name}
           currentWind={currentData.current.windKn}
           currentGust={currentData.current.gustKn}
           currentDirDeg={currentData.current.dirDeg}
@@ -64,7 +63,17 @@ export function TodayView() {
           actuals={currentData.actuals}
           nowTime={now}
         />
-      </div>
+      )}
+    </div>
+  )
+}
+
+export function TodayView() {
+  return (
+    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem' }}>
+      {SPOTS.map(s => (
+        <SpotTodayCard key={s.slug} slug={s.slug} name={s.name} />
+      ))}
     </div>
   )
 }
