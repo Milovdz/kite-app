@@ -1,16 +1,17 @@
-import weekData from '../data/week.json'
+import { useState, useEffect } from 'react'
 import { ForecastDay } from './ForecastDay'
 import type { Slot, TidePoint } from './ForecastDay'
+import { DATA_BASE_URL } from '../config'
 
 interface ForecastEntry {
   iso: string
-  speed: number
-  gusts: number
-  direction: number
-  waveHeight: number
-  wavePeriod: number
+  windKn: number
+  gustKn: number
+  dirDeg: number
+  waveM: number
+  wavePeriodS: number
   tempC: number
-  precipMm: number
+  rainMm: number
 }
 
 // Mock tide data — two tidal cycles per day, typical North Sea pattern
@@ -34,17 +35,26 @@ function groupByDay(entries: ForecastEntry[]): { dateKey: string; entries: Forec
 function toSlots(entries: ForecastEntry[]): Slot[] {
   return entries.map((e) => ({
     hour: new Date(e.iso).getHours(),
-    windKn: e.speed,
-    gustKn: e.gusts,
-    dirDeg: e.direction,
-    waveM: e.waveHeight,
+    windKn: e.windKn,
+    gustKn: e.gustKn,
+    dirDeg: e.dirDeg,
+    waveM: e.waveM,
+    wavePeriodS: e.wavePeriodS,
     tempC: e.tempC,
-    rainMm: e.precipMm,
+    rainMm: e.rainMm,
   }))
 }
 
 export function WeekView() {
-  const groups = groupByDay(weekData.forecast as ForecastEntry[])
+  const [weekData, setWeekData] = useState<{ spot: string; forecast: ForecastEntry[] } | null>(null)
+
+  useEffect(() => {
+    fetch(`${DATA_BASE_URL}/week.json`).then(r => r.json()).then(setWeekData)
+  }, [])
+
+  if (!weekData) return <div style={{ padding: 24 }}>Loading...</div>
+
+  const groups = groupByDay(weekData.forecast)
 
   return (
     <div style={{ overflowX: 'auto', WebkitOverflowScrolling: 'touch' } as React.CSSProperties}>

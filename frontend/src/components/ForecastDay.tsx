@@ -6,6 +6,7 @@ export interface Slot {
   gustKn: number
   dirDeg: number
   waveM: number
+  wavePeriodS: number
   tempC: number
   rainMm: number
 }
@@ -45,12 +46,6 @@ function windBand(kn: number, rideableMin: number, pumpingMin: number) {
   return 'tooLight'
 }
 
-function bandLabel(band: string) {
-  if (band === 'rideable') return 'RIDE'
-  if (band === 'pumping') return 'PUMP'
-  if (band === 'strong') return 'STRONG'
-  return null
-}
 
 function formatDay(dateStr: string) {
   const d = new Date(dateStr + 'T00:00:00')
@@ -238,7 +233,6 @@ export function ForecastDay({
         {slots.map((s) => {
           const band = windBand(s.windKn, rideableMin, pumpingMin)
           const c = COLORS[band]
-          const label = bandLabel(band)
           const compact = resolution === '1h'
           return (
             <div key={s.hour} style={{ ...tileStyle, background: c.bg, minHeight: compact ? 40 : 52, padding: compact ? '4px 1px' : '8px 2px' }}>

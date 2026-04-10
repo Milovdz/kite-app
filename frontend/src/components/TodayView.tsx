@@ -1,33 +1,70 @@
+import { useState, useEffect } from 'react'
 import WindGraph from './WindGraph'
-import todayData from '../data/today.json'
+import { DATA_BASE_URL } from '../config'
 
-const nowIndex = new Date().getHours()
+interface TodayData {
+  spot: string
+  generatedAt: string
+  current: { windKn: number; gustKn: number; dirDeg: number }
+  hourly: Array<{
+    hour: number
+    forecastWindKn: number
+    forecastGustKn: number
+    dirDeg: number
+  }>
+}
+
+interface CurrentData {
+  spot: string
+  generatedAt: string
+  current: { windKn: number; gustKn: number; dirDeg: number }
+  actuals: Array<{ time: string; windKn: number | null; gustKn: number | null; dirDeg: number | null }>
+}
 
 export function TodayView() {
-  const { spot, current, hourly } = todayData
+  const [todayData, setTodayData] = useState<TodayData | null>(null)
+  const [currentData, setCurrentData] = useState<CurrentData | null>(null)
+
+  useEffect(() => {
+    fetch(`${DATA_BASE_URL}/today.json`).then(r => r.json()).then(setTodayData)
+    fetch(`${DATA_BASE_URL}/current.json`).then(r => r.json()).then(setCurrentData)
+  }, [])
+
+  if (!todayData || !currentData) return <div style={{ padding: 24 }}>Loading...</div>
+
+  const nowIndex = new Date().getHours()
+
+  const actualWind: (number | null)[] = Array(24).fill(null)
+  const actualGust: (number | null)[] = Array(24).fill(null)
+  for (const obs of currentData.actuals) {
+    const hour = parseInt(obs.time.split(':')[0], 10)
+    actualWind[hour] = obs.windKn
+    actualGust[hour] = obs.gustKn
+  }
+
   return (
     <div style={{ display: 'flex', gap: 12 }}>
-    <div style={{
-      background: 'var(--bg-surface)',
-      borderRadius: 12,
-      padding: '12px 14px',
-      border: '1px solid var(--border)',
-      flex: '0 0 calc(50% - 6px)',
-    }}>
-    <WindGraph
-      spotName={spot}
-      currentWind={current.speed}
-      currentGust={current.gusts}
-      currentDirDeg={current.direction}
-      threshold={17}
-      yMax={40}
-      forecastWind={hourly.map(h => h.forecastSpeed)}
-      forecastGust={hourly.map(h => h.forecastGusts)}
-      actualWind={hourly.map(h => h.actualSpeed ?? null)}
-      actualGust={hourly.map(h => h.actualGusts ?? null)}
-      nowIndex={nowIndex}
-    />
-    </div>
+      <div style={{
+        background: 'var(--bg-surface)',
+        borderRadius: 12,
+        padding: '12px 14px',
+        border: '1px solid var(--border)',
+        flex: '0 0 calc(50% - 6px)',
+      }}>
+        <WindGraph
+          spotName={todayData.spot}
+          currentWind={currentData.current.windKn}
+          currentGust={currentData.current.gustKn}
+          currentDirDeg={currentData.current.dirDeg}
+          threshold={17}
+          yMax={40}
+          forecastWind={todayData.hourly.map(h => h.forecastWindKn)}
+          forecastGust={todayData.hourly.map(h => h.forecastGustKn)}
+          actualWind={actualWind}
+          actualGust={actualGust}
+          nowIndex={nowIndex}
+        />
+      </div>
     </div>
   )
 }
