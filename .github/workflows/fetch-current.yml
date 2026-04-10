@@ -1,0 +1,45 @@
+name: Fetch current conditions
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: data
+          path: data-branch
+
+      - uses: actions/checkout@v4
+        with:
+          path: source
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        working-directory: source
+        run: pip install requests python-dotenv --quiet
+
+      - name: Run actuals fetcher
+        working-directory: source
+        env:
+          EDR_API_KEY: ${{ secrets.EDR_API_KEY }}
+        run: python backend/fetch_actuals.py
+
+      - name: Copy output to data branch
+        run: cp source/backend/output/ijmuiden/current.json data-branch/ijmuiden/current.json
+
+      - name: Commit and push
+        working-directory: data-branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add ijmuiden/current.json
+          git diff --cached --quiet || git commit -m "current update $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          git push origin data

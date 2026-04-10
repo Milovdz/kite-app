@@ -1,0 +1,45 @@
+name: Fetch forecast data
+
+on:
+  schedule:
+    - cron: '0 * * * *'
+  workflow_dispatch:
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: data
+          path: data-branch
+
+      - uses: actions/checkout@v4
+        with:
+          path: source
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        working-directory: source
+        run: pip install openmeteo-requests requests-cache retry-requests numpy --quiet
+
+      - name: Run forecast fetcher
+        working-directory: source
+        run: python backend/fetch_forecast.py
+
+      - name: Copy output to data branch
+        run: |
+          cp source/backend/output/ijmuiden/today.json data-branch/ijmuiden/today.json
+          cp source/backend/output/ijmuiden/week.json data-branch/ijmuiden/week.json
+
+      - name: Commit and push
+        working-directory: data-branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add ijmuiden/today.json ijmuiden/week.json
+          git diff --cached --quiet || git commit -m "forecast update $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          git push origin data
