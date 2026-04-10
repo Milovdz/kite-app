@@ -18,10 +18,10 @@ from pytides.constituent import noaa as ALL_CONSTITUENTS
 KMH_TO_KN = 0.539957
 
 SPOTS = [
-    {"slug": "ijmuiden", "name": "IJmuiden", "lat": 52.482630, "lon": 4.581581, "active": True},
-    {"slug": "schellinkhout", "name": "Schellinkhout", "lat": 52.658889, "lon": 5.241944, "active": False},
-    {"slug": "kijkduin", "name": "Kijkduin", "lat": 52.044444, "lon": 4.224722, "active": False},
-    {"slug": "brouwersdam", "name": "Brouwersdam", "lat": 51.741667, "lon": 3.883333, "active": False},
+    {"slug": "ijmuiden",      "name": "IJmuiden",      "lat": 52.456281, "lon": 4.559704, "active": True},
+    {"slug": "wijk-aan-zee",  "name": "Wijk aan Zee",  "lat": 52.482630, "lon": 4.581581, "active": True},
+    {"slug": "schellinkhout", "name": "Schellinkhout", "lat": 52.633241, "lon": 5.121027, "active": True},
+    {"slug": "kijkduin",      "name": "Kijkduin",      "lat": 52.052664, "lon": 4.195335, "active": True},
 ]
 
 OUTPUT_DIR = os.path.join(os.path.dirname(__file__), "output")

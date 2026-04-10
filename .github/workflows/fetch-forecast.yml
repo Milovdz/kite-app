@@ -32,14 +32,17 @@ jobs:
 
       - name: Copy output to data branch
         run: |
-          cp source/backend/output/ijmuiden/today.json data-branch/ijmuiden/today.json
-          cp source/backend/output/ijmuiden/week.json data-branch/ijmuiden/week.json
+          for slug in ijmuiden wijk-aan-zee schellinkhout kijkduin; do
+            mkdir -p data-branch/$slug
+            cp source/backend/output/$slug/today.json data-branch/$slug/today.json
+            cp source/backend/output/$slug/week.json  data-branch/$slug/week.json
+          done
 
       - name: Commit and push
         working-directory: data-branch
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add ijmuiden/today.json ijmuiden/week.json
+          git add ijmuiden/ wijk-aan-zee/ schellinkhout/ kijkduin/
           git diff --cached --quiet || git commit -m "forecast update $(date -u +%Y-%m-%dT%H:%M:%SZ)"
           git push origin data

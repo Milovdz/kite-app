@@ -33,13 +33,17 @@ jobs:
         run: python backend/fetch_actuals.py
 
       - name: Copy output to data branch
-        run: cp source/backend/output/ijmuiden/current.json data-branch/ijmuiden/current.json
+        run: |
+          for slug in ijmuiden wijk-aan-zee schellinkhout kijkduin; do
+            mkdir -p data-branch/$slug
+            cp source/backend/output/$slug/current.json data-branch/$slug/current.json
+          done
 
       - name: Commit and push
         working-directory: data-branch
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add ijmuiden/current.json
+          git add ijmuiden/ wijk-aan-zee/ schellinkhout/ kijkduin/
           git diff --cached --quiet || git commit -m "current update $(date -u +%Y-%m-%dT%H:%M:%SZ)"
           git push origin data

@@ -17,8 +17,6 @@ except ImportError:
 
 MS_TO_KN = 1.94384
 
-# IJmuiden weather platform station (KNMI station 06225)
-STATION_ID = "0-20000-0-06225"
 EDR_BASE = "https://api.dataplatform.knmi.nl/edr/v1/collections/10-minute-in-situ-meteorological-observations"
 
 # ff = 10-min mean wind speed (m/s, 10m representative)
@@ -27,10 +25,10 @@ EDR_BASE = "https://api.dataplatform.knmi.nl/edr/v1/collections/10-minute-in-sit
 PARAMETERS = "ff,dd,gff"
 
 SPOTS = [
-    {"slug": "ijmuiden", "name": "IJmuiden", "lat": 52.482630, "lon": 4.581581, "active": True},
-    {"slug": "schellinkhout", "name": "Schellinkhout", "lat": 52.658889, "lon": 5.241944, "active": False},
-    {"slug": "kijkduin", "name": "Kijkduin", "lat": 52.044444, "lon": 4.224722, "active": False},
-    {"slug": "brouwersdam", "name": "Brouwersdam", "lat": 51.741667, "lon": 3.883333, "active": False},
+    {"slug": "ijmuiden",      "name": "IJmuiden",      "lat": 52.456281, "lon": 4.559704, "active": True,  "station_id": "0-20000-0-06225"},
+    {"slug": "wijk-aan-zee",  "name": "Wijk aan Zee",  "lat": 52.482630, "lon": 4.581581, "active": True,  "station_id": "0-20000-0-06225"},
+    {"slug": "schellinkhout", "name": "Schellinkhout", "lat": 52.633241, "lon": 5.121027, "active": True,  "station_id": "0-20000-0-06235"},
+    {"slug": "kijkduin",      "name": "Kijkduin",      "lat": 52.052664, "lon": 4.195335, "active": True,  "station_id": "0-20000-0-06290"},
 ]
 
 OUTPUT_DIR = os.path.join(os.path.dirname(__file__), "output")
@@ -47,7 +45,7 @@ def fetch_actuals(api_key: str, spot: dict) -> dict:
         f"/{now_utc.strftime('%Y-%m-%dT%H:%MZ')}"
     )
 
-    url = f"{EDR_BASE}/locations/{STATION_ID}"
+    url = f"{EDR_BASE}/locations/{spot['station_id']}"
     params = {
         "parameter-name": PARAMETERS,
         "datetime": datetime_param,
