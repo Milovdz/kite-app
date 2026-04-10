@@ -29,12 +29,28 @@ function SpotTodayCard({ slug, name }: { slug: SpotSlug; name: string }) {
 
   useEffect(() => {
     const base = DATA_BASE_URL_FOR(slug)
-    Promise.all([
-      fetch(`${base}/today.json`).then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json() }),
-      fetch(`${base}/current.json`).then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json() }),
-    ])
-      .then(([today, current]) => { setTodayData(today); setCurrentData(current) })
-      .catch(e => setError(String(e)))
+    const fetchForecast = () =>
+      fetch(`${base}/today.json`)
+        .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json() })
+        .then(setTodayData)
+        .catch(e => setError(String(e)))
+
+    fetchForecast()
+    const id = setInterval(fetchForecast, 60 * 60 * 1000)
+    return () => clearInterval(id)
+  }, [slug])
+
+  useEffect(() => {
+    const base = DATA_BASE_URL_FOR(slug)
+    const fetchCurrent = () =>
+      fetch(`${base}/current.json`)
+        .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json() })
+        .then(setCurrentData)
+        .catch(e => setError(String(e)))
+
+    fetchCurrent()
+    const id = setInterval(fetchCurrent, 10 * 60 * 1000)
+    return () => clearInterval(id)
   }, [slug])
 
   const now = new Date().toLocaleString('en-GB', { hour: '2-digit', minute: '2-digit', hour12: false, timeZone: APP_TZ })

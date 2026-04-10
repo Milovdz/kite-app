@@ -48,10 +48,15 @@ function SpotWeekRow({ slug, name, isExpanded, onToggle }: {
   const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
-    fetch(`${DATA_BASE_URL_FOR(slug)}/week.json`)
-      .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json() })
-      .then(setWeekData)
-      .catch(e => setError(String(e)))
+    const fetchWeek = () =>
+      fetch(`${DATA_BASE_URL_FOR(slug)}/week.json`)
+        .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json() })
+        .then(setWeekData)
+        .catch(e => setError(String(e)))
+
+    fetchWeek()
+    const id = setInterval(fetchWeek, 60 * 60 * 1000)
+    return () => clearInterval(id)
   }, [slug])
 
   const groups = weekData ? groupByDay(weekData.forecast) : []
