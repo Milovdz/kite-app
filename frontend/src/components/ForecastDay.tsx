@@ -174,13 +174,13 @@ export function ForecastDay({
       })
       run = []
     }
-    for (const s of slots) {
+    for (const s of allSlots) {
       if (s.windKn >= rideableMin) run.push(s)
       else flush()
     }
     flush()
     return windows
-  }, [slots, rideableMin])
+  }, [allSlots, rideableMin])
 
   const colCount = slots.length
   const gridStyle: React.CSSProperties = {

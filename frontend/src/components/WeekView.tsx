@@ -34,7 +34,7 @@ function groupByDay(entries: ForecastEntry[]): { dateKey: string; entries: Forec
 
 function toSlots(entries: ForecastEntry[]): Slot[] {
   return entries.map((e) => ({
-    hour: parseInt(new Date(e.iso).toLocaleString('en-GB', { hour: 'numeric', hour12: false, timeZone: APP_TZ }), 10),
+    hour: parseInt(new Date(e.iso).toLocaleString('en-GB', { hour: '2-digit', hour12: false, timeZone: APP_TZ }), 10) % 24,
     windKn: e.windKn,
     gustKn: e.gustKn,
     dirDeg: e.dirDeg,
@@ -88,7 +88,6 @@ export function WeekView() {
               allSlots={toSlots(entries)}
               tides={MOCK_TIDES}
               rideableMin={16}
-              pumpingMin={22}
             />
           </div>
         ))}
