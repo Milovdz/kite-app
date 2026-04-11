@@ -1,9 +1,9 @@
 {
   "spot": "Schellinkhout",
-  "generatedAt": "2026-04-11T08:25:22+00:00",
+  "generatedAt": "2026-04-11T09:05:35+00:00",
   "current": {
-    "windKn": 15.1,
-    "gustKn": 20.0,
+    "windKn": 14.5,
+    "gustKn": 21.8,
     "dirDeg": 130
   },
   "actuals": [
@@ -311,6 +311,30 @@
       "time": "10:20",
       "windKn": 15.1,
       "gustKn": 20.0,
+      "dirDeg": 130
+    },
+    {
+      "time": "10:30",
+      "windKn": 14.2,
+      "gustKn": 19.0,
+      "dirDeg": 130
+    },
+    {
+      "time": "10:40",
+      "windKn": 13.7,
+      "gustKn": 19.7,
+      "dirDeg": 131
+    },
+    {
+      "time": "10:50",
+      "windKn": 16.2,
+      "gustKn": 22.0,
+      "dirDeg": 129
+    },
+    {
+      "time": "11:00",
+      "windKn": 14.5,
+      "gustKn": 21.8,
       "dirDeg": 130
     }
   ]
