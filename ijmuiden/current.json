@@ -1,10 +1,10 @@
 {
   "spot": "IJmuiden",
-  "generatedAt": "2026-04-15T02:08:42+00:00",
+  "generatedAt": "2026-04-15T04:52:34+00:00",
   "current": {
-    "windKn": 10.0,
-    "gustKn": 13.2,
-    "dirDeg": 133
+    "windKn": 6.8,
+    "gustKn": 10.8,
+    "dirDeg": 144
   },
   "actuals": [
     {
@@ -84,6 +84,102 @@
       "windKn": 10.0,
       "gustKn": 13.2,
       "dirDeg": 133
+    },
+    {
+      "time": "04:10",
+      "windKn": 10.7,
+      "gustKn": 13.8,
+      "dirDeg": 134
+    },
+    {
+      "time": "04:20",
+      "windKn": 10.7,
+      "gustKn": 14.8,
+      "dirDeg": 136
+    },
+    {
+      "time": "04:30",
+      "windKn": 9.4,
+      "gustKn": 12.4,
+      "dirDeg": 142
+    },
+    {
+      "time": "04:40",
+      "windKn": 10.0,
+      "gustKn": 14.4,
+      "dirDeg": 146
+    },
+    {
+      "time": "04:50",
+      "windKn": 11.2,
+      "gustKn": 16.3,
+      "dirDeg": 144
+    },
+    {
+      "time": "05:00",
+      "windKn": 11.0,
+      "gustKn": 16.4,
+      "dirDeg": 139
+    },
+    {
+      "time": "05:10",
+      "windKn": 11.0,
+      "gustKn": 14.9,
+      "dirDeg": 145
+    },
+    {
+      "time": "05:20",
+      "windKn": 9.1,
+      "gustKn": 12.7,
+      "dirDeg": 150
+    },
+    {
+      "time": "05:30",
+      "windKn": 10.4,
+      "gustKn": 15.4,
+      "dirDeg": 146
+    },
+    {
+      "time": "05:40",
+      "windKn": 13.1,
+      "gustKn": 16.6,
+      "dirDeg": 147
+    },
+    {
+      "time": "05:50",
+      "windKn": 12.7,
+      "gustKn": 15.9,
+      "dirDeg": 148
+    },
+    {
+      "time": "06:00",
+      "windKn": 12.1,
+      "gustKn": 16.1,
+      "dirDeg": 141
+    },
+    {
+      "time": "06:10",
+      "windKn": 8.5,
+      "gustKn": 14.9,
+      "dirDeg": 148
+    },
+    {
+      "time": "06:20",
+      "windKn": 6.2,
+      "gustKn": 8.5,
+      "dirDeg": 146
+    },
+    {
+      "time": "06:30",
+      "windKn": 5.4,
+      "gustKn": 9.8,
+      "dirDeg": 149
+    },
+    {
+      "time": "06:40",
+      "windKn": 6.8,
+      "gustKn": 10.8,
+      "dirDeg": 144
     }
   ]
 }
