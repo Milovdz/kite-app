@@ -11,6 +11,7 @@ export interface Slot {
   wavePeriodS: number
   tempC: number
   rainMm: number
+  cloudPct: number
 }
 
 export interface TidePoint {
@@ -45,6 +46,14 @@ const COLORS = {
   green2:   { bg: '#6ee7b7',         text: '#064e3b' },
   green3:   { bg: '#10b981',         text: '#ffffff', gust: '#d1fae5' },
   green4:   { bg: '#047857',         text: '#ffffff', gust: '#6ee7b7' },
+}
+
+function skyEmoji(pct: number): string {
+  if (pct <= 20) return '☀️'
+  if (pct <= 40) return '🌤'
+  if (pct <= 60) return '⛅'
+  if (pct <= 80) return '🌥'
+  return '☁️'
 }
 
 function windBand(kn: number) {
@@ -238,6 +247,15 @@ export function ForecastDay({
             </div>
           )
         })}
+      </div>
+
+      {/* Sky conditions */}
+      <div style={gridStyle}>
+        {slots.map((s) => (
+          <div key={s.hour} style={{ textAlign: 'center', fontSize: resolution === '1h' ? 13 : 16, padding: '2px 0' }}>
+            {skyEmoji(s.cloudPct)}
+          </div>
+        ))}
       </div>
 
       {/* Direction arrows */}

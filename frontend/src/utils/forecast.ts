@@ -10,6 +10,7 @@ export interface ForecastEntry {
   wavePeriodS: number
   tempC: number
   rainMm: number
+  cloudPct: number
 }
 
 export function groupByDay(entries: ForecastEntry[]): { dateKey: string; entries: ForecastEntry[] }[] {
@@ -32,5 +33,6 @@ export function toSlots(entries: ForecastEntry[]): Slot[] {
     wavePeriodS: e.wavePeriodS,
     tempC: e.tempC,
     rainMm: e.rainMm,
+    cloudPct: e.cloudPct,
   }))
 }

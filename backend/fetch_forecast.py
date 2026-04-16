@@ -130,7 +130,7 @@ def fetch_spot(client, spot):
         "longitude": lon,
         "hourly": [
             "wind_speed_10m", "wind_direction_10m", "wind_gusts_10m",
-            "temperature_2m", "precipitation",
+            "temperature_2m", "precipitation", "cloud_cover",
         ],
         "current": ["wind_speed_10m", "wind_direction_10m", "wind_gusts_10m"],
         "models": "knmi_seamless",
@@ -162,6 +162,7 @@ def fetch_spot(client, spot):
     gusts = wh.Variables(2).ValuesAsNumpy()
     temps = wh.Variables(3).ValuesAsNumpy()
     rain = wh.Variables(4).ValuesAsNumpy()
+    cloud = wh.Variables(5).ValuesAsNumpy()
 
     mh = wave_resp.Hourly()
     wave_heights = mh.Variables(0).ValuesAsNumpy()
@@ -198,6 +199,7 @@ def fetch_spot(client, spot):
             "wavePeriodS": _safe(wave_periods, i, 1),
             "tempC": round(float(temps[i]), 1),
             "rainMm": round(float(rain[i]), 2),
+            "cloudPct": round(float(cloud[i])),
         }
         if date_str >= today_str:
             hourly_all.append(entry)
@@ -212,6 +214,7 @@ def fetch_spot(client, spot):
                 "wavePeriodS": entry["wavePeriodS"],
                 "tempC": entry["tempC"],
                 "rainMm": entry["rainMm"],
+                "cloudPct": entry["cloudPct"],
             })
 
     tides_by_date = compute_tides(datetime.now(tz=_AMSTERDAM), days=7)
