@@ -183,10 +183,12 @@ def fetch_spot(client, spot):
     for j in range(len(arome_speeds)):
         ts = datetime.fromtimestamp(arome_start + j * arome_interval, tz=timezone.utc).astimezone()
         key = ts.strftime("%Y-%m-%dT%H:%M")
-        spd = float(arome_speeds[j])
-        gst = float(arome_gusts[j])
-        if not (math.isnan(spd) or math.isnan(gst)):
-            arome_lookup[key] = (round(spd * KMH_TO_KN, 1), round(gst * KMH_TO_KN, 1))
+        if np.isnan(arome_speeds[j]) or np.isnan(arome_gusts[j]):
+            continue
+        arome_lookup[key] = (
+            round(float(arome_speeds[j]) * KMH_TO_KN, 1),
+            round(float(arome_gusts[j])  * KMH_TO_KN, 1),
+        )
 
     mh = wave_resp.Hourly()
     wave_heights = mh.Variables(0).ValuesAsNumpy()
@@ -278,10 +280,10 @@ def main():
         week_path = os.path.join(out_dir, "week.json")
 
         with open(today_path, "w") as f:
-            json.dump(data["today"], f, indent=2)
+            json.dump(data["today"], f, indent=2, allow_nan=False)
 
         with open(week_path, "w") as f:
-            json.dump(data["week"], f, indent=2)
+            json.dump(data["week"], f, indent=2, allow_nan=False)
 
         print(f"  today.json: {len(data['today']['hourly'])} hourly entries")
         print(f"  week.json:  {len(data['week']['forecast'])} hourly entries")
