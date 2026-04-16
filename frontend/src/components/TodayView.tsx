@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo } from 'react'
 import WindGraph from './WindGraph'
-import { DATA_BASE_URL_FOR, SPOTS, APP_TZ } from '../config'
+import { DATA_BASE_URL_FOR, CURRENT_API_URL_FOR, SPOTS, APP_TZ } from '../config'
 import type { SpotSlug } from '../config'
 import { getWindZone, type WindZones, type WindZoneName } from '../utils/windZone'
 
@@ -42,9 +42,8 @@ function SpotTodayCard({ slug, name, windZones }: { slug: SpotSlug; name: string
   }, [slug])
 
   useEffect(() => {
-    const base = DATA_BASE_URL_FOR(slug)
     const fetchCurrent = () =>
-      fetch(`${base}/current.json`)
+      fetch(CURRENT_API_URL_FOR(slug))
         .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json() })
         .then(setCurrentData)
         .catch(e => setError(String(e)))

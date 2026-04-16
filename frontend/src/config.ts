@@ -3,6 +3,9 @@ import type { WindZones } from './utils/windZone'
 export const DATA_BASE_URL_FOR = (slug: string) =>
   `https://raw.githubusercontent.com/Milovdz/kite-app/data/${slug}`
 
+export const CURRENT_API_URL_FOR = (slug: string) =>
+  `/api/current?spot=${slug}`
+
 export type SpotSlug = 'ijmuiden' | 'wijk-aan-zee' | 'schellinkhout' | 'kijkduin'
 
 // Given an offshore arc (from→to, clockwise), divides the remaining 360° into:
