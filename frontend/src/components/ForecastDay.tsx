@@ -265,6 +265,9 @@ export function ForecastDay({
           <div key={s.hour} style={{ textAlign: 'center' }}>
             <div style={{ fontSize: 10, color: 'var(--text-tertiary)' }}>wave</div>
             <div style={{ fontSize: resolution === '1h' ? 11 : 13, color: 'var(--text-secondary)' }}>{s.waveM}m</div>
+            {resolution === '1h' && (
+              <div style={{ fontSize: 10, color: 'var(--text-tertiary)' }}>{s.wavePeriodS}s</div>
+            )}
           </div>
         ))}
       </div>
