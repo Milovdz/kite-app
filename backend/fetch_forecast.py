@@ -183,10 +183,10 @@ def fetch_spot(client, spot):
     for j in range(len(arome_speeds)):
         ts = datetime.fromtimestamp(arome_start + j * arome_interval, tz=timezone.utc).astimezone()
         key = ts.strftime("%Y-%m-%dT%H:%M")
-        arome_lookup[key] = (
-            round(float(arome_speeds[j]) * KMH_TO_KN, 1),
-            round(float(arome_gusts[j])  * KMH_TO_KN, 1),
-        )
+        spd = float(arome_speeds[j])
+        gst = float(arome_gusts[j])
+        if not (math.isnan(spd) or math.isnan(gst)):
+            arome_lookup[key] = (round(spd * KMH_TO_KN, 1), round(gst * KMH_TO_KN, 1))
 
     mh = wave_resp.Hourly()
     wave_heights = mh.Variables(0).ValuesAsNumpy()
