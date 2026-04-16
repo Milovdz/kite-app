@@ -11,7 +11,7 @@ export interface Slot {
   wavePeriodS: number
   tempC: number
   rainMm: number
-  cloudPct: number
+  cloudPct?: number
 }
 
 export interface TidePoint {
@@ -48,7 +48,8 @@ const COLORS = {
   green4:   { bg: '#047857',         text: '#ffffff', gust: '#6ee7b7' },
 }
 
-function skyEmoji(pct: number): string {
+function skyEmoji(pct: number | undefined): string {
+  if (pct == null) return '⛅'
   if (pct <= 20) return '☀️'
   if (pct <= 40) return '🌤'
   if (pct <= 60) return '⛅'

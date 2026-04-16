@@ -10,7 +10,7 @@ export interface ForecastEntry {
   wavePeriodS: number
   tempC: number
   rainMm: number
-  cloudPct: number
+  cloudPct?: number
 }
 
 export function groupByDay(entries: ForecastEntry[]): { dateKey: string; entries: ForecastEntry[] }[] {
