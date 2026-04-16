@@ -7,12 +7,13 @@ import type { SpotSlug } from '../config'
 import type { WindZones } from '../utils/windZone'
 import { type ForecastEntry, groupByDay, toSlots } from '../utils/forecast'
 
-function SpotWeekRow({ slug, name, windZones, isExpanded, onToggle }: {
+function SpotWeekRow({ slug, name, windZones, isExpanded, onToggle, showArome }: {
   slug: SpotSlug
   name: string
   windZones: WindZones
   isExpanded: boolean
   onToggle: () => void
+  showArome: boolean
 }) {
   const [weekData, setWeekData] = useState<{ spot: string; forecast: ForecastEntry[]; tidesByDate?: Record<string, TidePoint[]> } | null>(null)
   const [error, setError] = useState<string | null>(null)
@@ -91,6 +92,7 @@ function SpotWeekRow({ slug, name, windZones, isExpanded, onToggle }: {
                       tides={weekData.tidesByDate?.[dateKey] ?? []}
                       rideableMin={16}
                       windZones={windZones}
+                      showArome={showArome}
                     />
                   </div>
                 ))}
@@ -105,10 +107,28 @@ function SpotWeekRow({ slug, name, windZones, isExpanded, onToggle }: {
 
 export function WeekView() {
   const [expanded, setExpanded] = useState<Set<SpotSlug>>(new Set(SPOTS.map(s => s.slug)))
+  const [showArome, setShowArome] = useState(false)
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
       <HomeView />
+      <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+        <button
+          onClick={() => setShowArome(v => !v)}
+          style={{
+            background: showArome ? 'var(--text-secondary)' : 'transparent',
+            border: '1px solid var(--border)',
+            borderRadius: 4,
+            color: showArome ? 'var(--bg-surface)' : 'var(--text-secondary)',
+            cursor: 'pointer',
+            fontSize: 12,
+            padding: '4px 12px',
+            fontFamily: 'inherit',
+          }}
+        >
+          AROME
+        </button>
+      </div>
       {SPOTS.map(s => (
         <SpotWeekRow
           key={s.slug}
@@ -116,9 +136,10 @@ export function WeekView() {
           name={s.name}
           windZones={s.windZones}
           isExpanded={expanded.has(s.slug)}
+          showArome={showArome}
           onToggle={() => setExpanded(prev => {
             const next = new Set(prev)
-            next.has(s.slug) ? next.delete(s.slug) : next.add(s.slug)
+            if (next.has(s.slug)) { next.delete(s.slug) } else { next.add(s.slug) }
             return next
           })}
         />

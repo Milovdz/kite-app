@@ -138,6 +138,16 @@ def fetch_spot(client, spot):
         "timezone": "Europe/Amsterdam",
     })[0]
 
+    # --- AROME forecast (wind only, 4-day horizon) ---
+    arome_resp = client.weather_api("https://api.open-meteo.com/v1/forecast", params={
+        "latitude": lat,
+        "longitude": lon,
+        "hourly": ["wind_speed_10m", "wind_gusts_10m"],
+        "models": "meteofrance_arome_france_hd",
+        "forecast_days": 4,
+        "timezone": "Europe/Amsterdam",
+    })[0]
+
     # --- Marine / wave forecast ---
     wave_resp = client.weather_api("https://marine-api.open-meteo.com/v1/marine", params={
         "latitude": lat,
@@ -163,6 +173,20 @@ def fetch_spot(client, spot):
     temps = wh.Variables(3).ValuesAsNumpy()
     rain = wh.Variables(4).ValuesAsNumpy()
     cloud = wh.Variables(5).ValuesAsNumpy()
+
+    ah = arome_resp.Hourly()
+    arome_speeds = ah.Variables(0).ValuesAsNumpy()
+    arome_gusts  = ah.Variables(1).ValuesAsNumpy()
+    arome_start    = ah.Time()
+    arome_interval = ah.Interval()
+    arome_lookup: dict = {}
+    for j in range(len(arome_speeds)):
+        ts = datetime.fromtimestamp(arome_start + j * arome_interval, tz=timezone.utc).astimezone()
+        key = ts.strftime("%Y-%m-%dT%H:%M")
+        arome_lookup[key] = (
+            round(float(arome_speeds[j]) * KMH_TO_KN, 1),
+            round(float(arome_gusts[j])  * KMH_TO_KN, 1),
+        )
 
     mh = wave_resp.Hourly()
     wave_heights = mh.Variables(0).ValuesAsNumpy()
@@ -201,6 +225,8 @@ def fetch_spot(client, spot):
             "rainMm": round(float(rain[i]), 2),
             "cloudPct": round(float(cloud[i])),
         }
+        if iso in arome_lookup:
+            entry["aromeWindKn"], entry["aromeGustKn"] = arome_lookup[iso]
         if date_str >= today_str:
             hourly_all.append(entry)
 

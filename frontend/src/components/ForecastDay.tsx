@@ -12,6 +12,8 @@ export interface Slot {
   tempC: number
   rainMm: number
   cloudPct?: number
+  aromeWindKn?: number
+  aromeGustKn?: number
 }
 
 export interface TidePoint {
@@ -28,6 +30,7 @@ export interface ForecastDayProps {
   tides?: TidePoint[]
   rideableMin?: number
   windZones?: WindZones
+  showArome?: boolean
 }
 
 const SLOT_3H = [6, 9, 12, 15, 18, 21]
@@ -166,6 +169,7 @@ export function ForecastDay({
   tides = [],
   rideableMin = 16,
   windZones,
+  showArome = false,
 }: ForecastDayProps) {
   const [resolution, setResolution] = useState<'3h' | '1h'>('3h')
   const { day, short } = useMemo(() => formatDay(date), [date])
@@ -186,6 +190,8 @@ export function ForecastDay({
     () => computeKiteableWindows(allSlots, rideableMin, windZones),
     [allSlots, rideableMin, windZones],
   )
+
+  const hasArome = showArome && slots.some(s => s.aromeWindKn != null)
 
   const colCount = slots.length
   const gridStyle: React.CSSProperties = {
@@ -234,6 +240,11 @@ export function ForecastDay({
       </div>
 
       {/* Wind tiles */}
+      {showArome && (
+        <div style={{ fontSize: 10, color: 'var(--text-tertiary)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: 2 }}>
+          Harmonie
+        </div>
+      )}
       <div style={{ ...gridStyle, marginBottom: 2 }}>
         {slots.map((s) => {
           const band = windBand(s.windKn)
@@ -249,6 +260,31 @@ export function ForecastDay({
           )
         })}
       </div>
+      {hasArome && (
+        <>
+          <div style={{ fontSize: 10, color: 'var(--text-tertiary)', textTransform: 'uppercase', letterSpacing: '0.5px', marginTop: 4, marginBottom: 2 }}>
+            AROME
+          </div>
+          <div style={{ ...gridStyle, marginBottom: 2, opacity: 0.85 }}>
+            {slots.map((s) => {
+              const compact = resolution === '1h'
+              if (s.aromeWindKn == null) {
+                return <div key={s.hour} style={{ ...tileStyle, background: 'transparent', minHeight: compact ? 40 : 52 }} />
+              }
+              const band = windBand(s.aromeWindKn)
+              const c = COLORS[band]
+              return (
+                <div key={s.hour} style={{ ...tileStyle, background: c.bg, minHeight: compact ? 40 : 52, padding: compact ? '4px 1px' : '8px 2px' }}>
+                  <span style={{ fontSize: compact ? 13 : 20, fontWeight: 500, lineHeight: 1.1, color: c.text }}>{s.aromeWindKn}</span>
+                  <span style={{ fontSize: compact ? 9 : 11, color: ('gust' in c ? c.gust : undefined) || 'var(--text-tertiary)', marginTop: 1 }}>
+                    G{s.aromeGustKn}
+                  </span>
+                </div>
+              )
+            })}
+          </div>
+        </>
+      )}
 
       {/* Sky conditions */}
       <div style={gridStyle}>
