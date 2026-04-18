@@ -1,10 +1,10 @@
 {
   "spot": "IJmuiden",
-  "generatedAt": "2026-04-18T17:20:25+00:00",
+  "generatedAt": "2026-04-18T17:57:55+00:00",
   "current": {
-    "windKn": 6.0,
-    "gustKn": 7.3,
-    "dirDeg": 301
+    "windKn": 7.6,
+    "gustKn": 9.0,
+    "dirDeg": 305
   },
   "actuals": [
     {
@@ -630,6 +630,30 @@
       "windKn": 6.0,
       "gustKn": 7.3,
       "dirDeg": 301
+    },
+    {
+      "time": "19:20",
+      "windKn": 5.9,
+      "gustKn": 7.0,
+      "dirDeg": 304
+    },
+    {
+      "time": "19:30",
+      "windKn": 6.2,
+      "gustKn": 7.4,
+      "dirDeg": 304
+    },
+    {
+      "time": "19:40",
+      "windKn": 6.9,
+      "gustKn": 8.1,
+      "dirDeg": 302
+    },
+    {
+      "time": "19:50",
+      "windKn": 7.6,
+      "gustKn": 9.0,
+      "dirDeg": 305
     }
   ]
 }
