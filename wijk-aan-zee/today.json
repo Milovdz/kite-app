@@ -1,33 +1,33 @@
 {
   "spot": "Wijk aan Zee",
-  "generatedAt": "2026-04-20T22:32:52+00:00",
+  "generatedAt": "2026-04-20T23:33:10+00:00",
   "current": {
-    "windKn": 9.7,
-    "gustKn": 18.5,
-    "dirDeg": 42
+    "windKn": 8.7,
+    "gustKn": 16.7,
+    "dirDeg": 43
   },
   "hourly": [
     {
       "hour": 22,
-      "forecastWindKn": 9.3,
-      "forecastGustKn": 17.5,
-      "dirDeg": 42,
+      "forecastWindKn": 7.8,
+      "forecastGustKn": 14.2,
+      "dirDeg": 31,
       "waveM": 0.22,
       "wavePeriodS": 4.8,
-      "tempC": 9.0,
-      "rainMm": 0.0,
-      "cloudPct": 99
+      "tempC": 8.4,
+      "rainMm": 0.1,
+      "cloudPct": 100
     },
     {
       "hour": 23,
-      "forecastWindKn": 9.9,
-      "forecastGustKn": 18.9,
-      "dirDeg": 46,
+      "forecastWindKn": 8.9,
+      "forecastGustKn": 16.5,
+      "dirDeg": 43,
       "waveM": 0.22,
       "wavePeriodS": 4.6,
-      "tempC": 8.5,
+      "tempC": 7.9,
       "rainMm": 0.0,
-      "cloudPct": 82
+      "cloudPct": 56
     }
   ]
 }
