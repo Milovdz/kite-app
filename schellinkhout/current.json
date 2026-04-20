@@ -1,10 +1,10 @@
 {
   "spot": "Schellinkhout",
-  "generatedAt": "2026-04-20T01:47:41+00:00",
+  "generatedAt": "2026-04-20T04:51:06+00:00",
   "current": {
-    "windKn": 3.5,
-    "gustKn": 5.2,
-    "dirDeg": 341
+    "windKn": 1.2,
+    "gustKn": 2.0,
+    "dirDeg": 271
   },
   "actuals": [
     {
@@ -72,6 +72,114 @@
       "windKn": 3.5,
       "gustKn": 5.2,
       "dirDeg": 341
+    },
+    {
+      "time": "03:50",
+      "windKn": 4.3,
+      "gustKn": 7.1,
+      "dirDeg": 333
+    },
+    {
+      "time": "04:00",
+      "windKn": 4.6,
+      "gustKn": 6.9,
+      "dirDeg": 336
+    },
+    {
+      "time": "04:10",
+      "windKn": 3.7,
+      "gustKn": 5.8,
+      "dirDeg": 336
+    },
+    {
+      "time": "04:20",
+      "windKn": 3.9,
+      "gustKn": 6.1,
+      "dirDeg": 338
+    },
+    {
+      "time": "04:30",
+      "windKn": 4.0,
+      "gustKn": 6.0,
+      "dirDeg": 336
+    },
+    {
+      "time": "04:40",
+      "windKn": 3.9,
+      "gustKn": 6.2,
+      "dirDeg": 338
+    },
+    {
+      "time": "04:50",
+      "windKn": 3.6,
+      "gustKn": 5.9,
+      "dirDeg": 342
+    },
+    {
+      "time": "05:00",
+      "windKn": 3.0,
+      "gustKn": 4.7,
+      "dirDeg": 340
+    },
+    {
+      "time": "05:10",
+      "windKn": 3.3,
+      "gustKn": 5.4,
+      "dirDeg": 327
+    },
+    {
+      "time": "05:20",
+      "windKn": 3.7,
+      "gustKn": 6.0,
+      "dirDeg": 330
+    },
+    {
+      "time": "05:30",
+      "windKn": 3.4,
+      "gustKn": 4.8,
+      "dirDeg": 335
+    },
+    {
+      "time": "05:40",
+      "windKn": 2.8,
+      "gustKn": 4.8,
+      "dirDeg": 336
+    },
+    {
+      "time": "05:50",
+      "windKn": 2.8,
+      "gustKn": 4.2,
+      "dirDeg": 340
+    },
+    {
+      "time": "06:00",
+      "windKn": 2.8,
+      "gustKn": 4.8,
+      "dirDeg": 339
+    },
+    {
+      "time": "06:10",
+      "windKn": 2.4,
+      "gustKn": 3.8,
+      "dirDeg": 341
+    },
+    {
+      "time": "06:20",
+      "windKn": 1.9,
+      "gustKn": 2.9,
+      "dirDeg": 288
+    },
+    {
+      "time": "06:30",
+      "windKn": 2.3,
+      "gustKn": 3.1,
+      "dirDeg": 295
+    },
+    {
+      "time": "06:40",
+      "windKn": 1.2,
+      "gustKn": 2.0,
+      "dirDeg": 271
     }
   ]
 }
