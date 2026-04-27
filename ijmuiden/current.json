@@ -1,10 +1,10 @@
 {
   "spot": "IJmuiden",
-  "generatedAt": "2026-04-27T05:00:21+00:00",
+  "generatedAt": "2026-04-27T07:41:28+00:00",
   "current": {
-    "windKn": 8.2,
-    "gustKn": 10.0,
-    "dirDeg": 91
+    "windKn": 11.4,
+    "gustKn": 13.3,
+    "dirDeg": 87
   },
   "actuals": [
     {
@@ -186,6 +186,102 @@
       "windKn": 8.2,
       "gustKn": 10.0,
       "dirDeg": 91
+    },
+    {
+      "time": "07:00",
+      "windKn": 8.7,
+      "gustKn": 10.6,
+      "dirDeg": 95
+    },
+    {
+      "time": "07:10",
+      "windKn": 8.7,
+      "gustKn": 10.8,
+      "dirDeg": 92
+    },
+    {
+      "time": "07:20",
+      "windKn": 8.4,
+      "gustKn": 11.1,
+      "dirDeg": 90
+    },
+    {
+      "time": "07:30",
+      "windKn": 7.4,
+      "gustKn": 10.0,
+      "dirDeg": 89
+    },
+    {
+      "time": "07:40",
+      "windKn": 8.8,
+      "gustKn": 10.3,
+      "dirDeg": 87
+    },
+    {
+      "time": "07:50",
+      "windKn": 9.1,
+      "gustKn": 10.5,
+      "dirDeg": 81
+    },
+    {
+      "time": "08:00",
+      "windKn": 8.8,
+      "gustKn": 10.2,
+      "dirDeg": 86
+    },
+    {
+      "time": "08:10",
+      "windKn": 7.3,
+      "gustKn": 10.8,
+      "dirDeg": 94
+    },
+    {
+      "time": "08:20",
+      "windKn": 7.4,
+      "gustKn": 10.3,
+      "dirDeg": 94
+    },
+    {
+      "time": "08:30",
+      "windKn": 7.8,
+      "gustKn": 9.1,
+      "dirDeg": 86
+    },
+    {
+      "time": "08:40",
+      "windKn": 7.9,
+      "gustKn": 9.9,
+      "dirDeg": 89
+    },
+    {
+      "time": "08:50",
+      "windKn": 8.4,
+      "gustKn": 10.7,
+      "dirDeg": 83
+    },
+    {
+      "time": "09:00",
+      "windKn": 9.1,
+      "gustKn": 10.6,
+      "dirDeg": 80
+    },
+    {
+      "time": "09:10",
+      "windKn": 9.5,
+      "gustKn": 11.6,
+      "dirDeg": 84
+    },
+    {
+      "time": "09:20",
+      "windKn": 11.1,
+      "gustKn": 12.8,
+      "dirDeg": 82
+    },
+    {
+      "time": "09:30",
+      "windKn": 11.4,
+      "gustKn": 13.3,
+      "dirDeg": 87
     }
   ]
 }
