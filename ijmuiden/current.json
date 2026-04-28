@@ -1,10 +1,10 @@
 {
   "spot": "IJmuiden",
-  "generatedAt": "2026-04-28T04:50:16+00:00",
+  "generatedAt": "2026-04-28T07:27:00+00:00",
   "current": {
-    "windKn": 13.7,
-    "gustKn": 16.8,
-    "dirDeg": 29
+    "windKn": 14.8,
+    "gustKn": 19.8,
+    "dirDeg": 50
   },
   "actuals": [
     {
@@ -180,6 +180,102 @@
       "windKn": 13.7,
       "gustKn": 16.8,
       "dirDeg": 29
+    },
+    {
+      "time": "06:50",
+      "windKn": 14.1,
+      "gustKn": 17.9,
+      "dirDeg": 28
+    },
+    {
+      "time": "07:00",
+      "windKn": 14.3,
+      "gustKn": 17.5,
+      "dirDeg": 29
+    },
+    {
+      "time": "07:10",
+      "windKn": 15.1,
+      "gustKn": 18.5,
+      "dirDeg": 31
+    },
+    {
+      "time": "07:20",
+      "windKn": 14.8,
+      "gustKn": 18.4,
+      "dirDeg": 37
+    },
+    {
+      "time": "07:30",
+      "windKn": 15.1,
+      "gustKn": 19.7,
+      "dirDeg": 34
+    },
+    {
+      "time": "07:40",
+      "windKn": 15.9,
+      "gustKn": 19.2,
+      "dirDeg": 32
+    },
+    {
+      "time": "07:50",
+      "windKn": 14.9,
+      "gustKn": 19.7,
+      "dirDeg": 37
+    },
+    {
+      "time": "08:00",
+      "windKn": 17.1,
+      "gustKn": 23.0,
+      "dirDeg": 40
+    },
+    {
+      "time": "08:10",
+      "windKn": 17.2,
+      "gustKn": 22.8,
+      "dirDeg": 42
+    },
+    {
+      "time": "08:20",
+      "windKn": 17.9,
+      "gustKn": 25.5,
+      "dirDeg": 43
+    },
+    {
+      "time": "08:30",
+      "windKn": 17.6,
+      "gustKn": 26.2,
+      "dirDeg": 39
+    },
+    {
+      "time": "08:40",
+      "windKn": 16.5,
+      "gustKn": 22.1,
+      "dirDeg": 40
+    },
+    {
+      "time": "08:50",
+      "windKn": 18.5,
+      "gustKn": 22.7,
+      "dirDeg": 42
+    },
+    {
+      "time": "09:00",
+      "windKn": 16.1,
+      "gustKn": 19.9,
+      "dirDeg": 44
+    },
+    {
+      "time": "09:10",
+      "windKn": 16.6,
+      "gustKn": 20.9,
+      "dirDeg": 41
+    },
+    {
+      "time": "09:20",
+      "windKn": 14.8,
+      "gustKn": 19.8,
+      "dirDeg": 50
     }
   ]
 }
