@@ -1,33 +1,33 @@
 {
   "spot": "IJmuiden",
-  "generatedAt": "2026-05-01T22:39:09+00:00",
+  "generatedAt": "2026-05-01T23:41:11+00:00",
   "current": {
-    "windKn": 4.1,
-    "gustKn": 5.4,
-    "dirDeg": 124
+    "windKn": 5.4,
+    "gustKn": 7.8,
+    "dirDeg": 126
   },
   "hourly": [
     {
       "hour": 22,
-      "forecastWindKn": 3.1,
-      "forecastGustKn": 3.5,
-      "dirDeg": 124,
+      "forecastWindKn": 2.9,
+      "forecastGustKn": 3.7,
+      "dirDeg": 100,
       "waveM": 0.1,
       "wavePeriodS": 4.4,
       "tempC": 16.2,
       "rainMm": 0.0,
-      "cloudPct": 95
+      "cloudPct": 0
     },
     {
       "hour": 23,
       "forecastWindKn": 5.1,
-      "forecastGustKn": 7.2,
-      "dirDeg": 143,
+      "forecastGustKn": 6.8,
+      "dirDeg": 126,
       "waveM": 0.08,
       "wavePeriodS": 4.8,
       "tempC": 15.3,
       "rainMm": 0.0,
-      "cloudPct": 96
+      "cloudPct": 98
     }
   ]
 }
