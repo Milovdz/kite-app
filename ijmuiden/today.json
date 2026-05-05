@@ -1,10 +1,10 @@
 {
   "spot": "IJmuiden",
-  "generatedAt": "2026-05-05T20:51:26+00:00",
+  "generatedAt": "2026-05-05T21:52:03+00:00",
   "current": {
-    "windKn": 8.9,
-    "gustKn": 18.5,
-    "dirDeg": 27
+    "windKn": 8.2,
+    "gustKn": 16.9,
+    "dirDeg": 29
   },
   "hourly": [
     {
@@ -218,9 +218,9 @@
     },
     {
       "hour": 19,
-      "forecastWindKn": 9.7,
-      "forecastGustKn": 19.4,
-      "dirDeg": 29,
+      "forecastWindKn": 8.6,
+      "forecastGustKn": 17.3,
+      "dirDeg": 25,
       "waveM": 0.8,
       "wavePeriodS": 3.9,
       "tempC": 11.2,
@@ -229,47 +229,47 @@
     },
     {
       "hour": 20,
-      "forecastWindKn": 9.7,
-      "forecastGustKn": 18.3,
-      "dirDeg": 27,
+      "forecastWindKn": 9.9,
+      "forecastGustKn": 18.7,
+      "dirDeg": 29,
       "waveM": 0.76,
       "wavePeriodS": 4.0,
-      "tempC": 10.6,
+      "tempC": 10.7,
       "rainMm": 0.0,
       "cloudPct": 100
     },
     {
       "hour": 21,
-      "forecastWindKn": 8.7,
+      "forecastWindKn": 8.9,
       "forecastGustKn": 18.5,
-      "dirDeg": 35,
+      "dirDeg": 29,
       "waveM": 0.72,
       "wavePeriodS": 4.1,
       "tempC": 10.4,
       "rainMm": 0.0,
-      "cloudPct": 99
-    },
-    {
-      "hour": 22,
-      "forecastWindKn": 7.6,
-      "forecastGustKn": 16.1,
-      "dirDeg": 36,
-      "waveM": 0.66,
-      "wavePeriodS": 4.1,
-      "tempC": 10.1,
-      "rainMm": 0.0,
       "cloudPct": 100
     },
     {
-      "hour": 23,
-      "forecastWindKn": 7.6,
-      "forecastGustKn": 14.4,
-      "dirDeg": 36,
-      "waveM": 0.64,
+      "hour": 22,
+      "forecastWindKn": 8.0,
+      "forecastGustKn": 16.5,
+      "dirDeg": 42,
+      "waveM": 0.66,
       "wavePeriodS": 4.1,
-      "tempC": 9.7,
+      "tempC": 10.2,
       "rainMm": 0.0,
       "cloudPct": 99
+    },
+    {
+      "hour": 23,
+      "forecastWindKn": 7.2,
+      "forecastGustKn": 15.0,
+      "dirDeg": 43,
+      "waveM": 0.64,
+      "wavePeriodS": 4.1,
+      "tempC": 10.3,
+      "rainMm": 0.0,
+      "cloudPct": 100
     }
   ]
 }
