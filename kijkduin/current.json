@@ -1,10 +1,10 @@
 {
   "spot": "Kijkduin",
-  "generatedAt": "2026-05-07T09:26:00+00:00",
+  "generatedAt": "2026-05-07T11:24:59+00:00",
   "current": {
-    "windKn": 6.8,
-    "gustKn": 10.4,
-    "dirDeg": 15
+    "windKn": 6.5,
+    "gustKn": 10.0,
+    "dirDeg": 33
   },
   "actuals": [
     {
@@ -348,6 +348,78 @@
       "windKn": 6.8,
       "gustKn": 10.4,
       "dirDeg": 15
+    },
+    {
+      "time": "11:30",
+      "windKn": 7.4,
+      "gustKn": 11.8,
+      "dirDeg": 22
+    },
+    {
+      "time": "11:40",
+      "windKn": 7.9,
+      "gustKn": 11.5,
+      "dirDeg": 21
+    },
+    {
+      "time": "11:50",
+      "windKn": 7.0,
+      "gustKn": 12.6,
+      "dirDeg": 27
+    },
+    {
+      "time": "12:00",
+      "windKn": 6.6,
+      "gustKn": 10.7,
+      "dirDeg": 36
+    },
+    {
+      "time": "12:10",
+      "windKn": 6.5,
+      "gustKn": 10.8,
+      "dirDeg": 19
+    },
+    {
+      "time": "12:20",
+      "windKn": 7.0,
+      "gustKn": 11.8,
+      "dirDeg": 352
+    },
+    {
+      "time": "12:30",
+      "windKn": 7.6,
+      "gustKn": 11.1,
+      "dirDeg": 344
+    },
+    {
+      "time": "12:40",
+      "windKn": 8.0,
+      "gustKn": 12.6,
+      "dirDeg": 5
+    },
+    {
+      "time": "12:50",
+      "windKn": 7.6,
+      "gustKn": 12.5,
+      "dirDeg": 30
+    },
+    {
+      "time": "13:00",
+      "windKn": 6.4,
+      "gustKn": 12.5,
+      "dirDeg": 10
+    },
+    {
+      "time": "13:10",
+      "windKn": 6.9,
+      "gustKn": 12.7,
+      "dirDeg": 2
+    },
+    {
+      "time": "13:20",
+      "windKn": 6.5,
+      "gustKn": 10.0,
+      "dirDeg": 33
     }
   ]
 }
