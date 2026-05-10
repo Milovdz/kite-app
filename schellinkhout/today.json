@@ -1,10 +1,10 @@
 {
   "spot": "Schellinkhout",
-  "generatedAt": "2026-05-10T16:40:27+00:00",
+  "generatedAt": "2026-05-10T17:41:34+00:00",
   "current": {
-    "windKn": 14.2,
-    "gustKn": 24.7,
-    "dirDeg": 18
+    "windKn": 13.2,
+    "gustKn": 23.3,
+    "dirDeg": 19
   },
   "hourly": [
     {
@@ -163,113 +163,113 @@
     },
     {
       "hour": 14,
-      "forecastWindKn": 13.6,
-      "forecastGustKn": 25.1,
-      "dirDeg": 11,
+      "forecastWindKn": 14.6,
+      "forecastGustKn": 25.5,
+      "dirDeg": 14,
       "waveM": 0.58,
       "wavePeriodS": 2.8,
-      "tempC": 13.8,
+      "tempC": 13.2,
       "rainMm": 0.0,
-      "cloudPct": 26
+      "cloudPct": 4
     },
     {
       "hour": 15,
-      "forecastWindKn": 14.8,
-      "forecastGustKn": 26.4,
-      "dirDeg": 18,
+      "forecastWindKn": 12.8,
+      "forecastGustKn": 25.5,
+      "dirDeg": 16,
       "waveM": 0.64,
       "wavePeriodS": 2.9,
-      "tempC": 12.8,
+      "tempC": 13.1,
       "rainMm": 0.0,
-      "cloudPct": 96
+      "cloudPct": 48
     },
     {
       "hour": 16,
-      "forecastWindKn": 14.4,
-      "forecastGustKn": 25.3,
-      "dirDeg": 17,
+      "forecastWindKn": 13.4,
+      "forecastGustKn": 23.3,
+      "dirDeg": 15,
       "waveM": 0.66,
       "wavePeriodS": 3.0,
-      "tempC": 12.0,
+      "tempC": 12.4,
       "rainMm": 0.0,
-      "cloudPct": 99
+      "cloudPct": 78
     },
     {
       "hour": 17,
-      "forecastWindKn": 13.8,
-      "forecastGustKn": 24.3,
-      "dirDeg": 18,
+      "forecastWindKn": 13.6,
+      "forecastGustKn": 23.3,
+      "dirDeg": 15,
       "waveM": 0.62,
       "wavePeriodS": 3.0,
-      "tempC": 11.5,
+      "tempC": 11.7,
       "rainMm": 0.0,
-      "cloudPct": 99
+      "cloudPct": 6
     },
     {
       "hour": 18,
-      "forecastWindKn": 12.1,
-      "forecastGustKn": 23.3,
-      "dirDeg": 26,
+      "forecastWindKn": 12.6,
+      "forecastGustKn": 23.1,
+      "dirDeg": 23,
       "waveM": 0.58,
       "wavePeriodS": 3.0,
-      "tempC": 10.9,
+      "tempC": 10.8,
+      "rainMm": 0.0,
+      "cloudPct": 41
+    },
+    {
+      "hour": 19,
+      "forecastWindKn": 11.3,
+      "forecastGustKn": 21.0,
+      "dirDeg": 30,
+      "waveM": 0.56,
+      "wavePeriodS": 3.0,
+      "tempC": 9.9,
+      "rainMm": 0.0,
+      "cloudPct": 97
+    },
+    {
+      "hour": 20,
+      "forecastWindKn": 9.3,
+      "forecastGustKn": 18.5,
+      "dirDeg": 34,
+      "waveM": 0.5,
+      "wavePeriodS": 3.0,
+      "tempC": 9.3,
       "rainMm": 0.0,
       "cloudPct": 100
     },
     {
-      "hour": 19,
-      "forecastWindKn": 12.1,
-      "forecastGustKn": 20.4,
-      "dirDeg": 31,
-      "waveM": 0.56,
-      "wavePeriodS": 3.0,
-      "tempC": 10.3,
-      "rainMm": 0.0,
-      "cloudPct": 76
-    },
-    {
-      "hour": 20,
-      "forecastWindKn": 10.7,
-      "forecastGustKn": 19.8,
-      "dirDeg": 32,
-      "waveM": 0.5,
-      "wavePeriodS": 3.0,
-      "tempC": 9.6,
-      "rainMm": 0.0,
-      "cloudPct": 73
-    },
-    {
       "hour": 21,
-      "forecastWindKn": 10.5,
-      "forecastGustKn": 17.7,
-      "dirDeg": 32,
+      "forecastWindKn": 9.9,
+      "forecastGustKn": 16.1,
+      "dirDeg": 31,
       "waveM": 0.44,
       "wavePeriodS": 2.9,
-      "tempC": 9.3,
+      "tempC": 9.1,
       "rainMm": 0.0,
-      "cloudPct": 98
+      "cloudPct": 99
     },
     {
       "hour": 22,
-      "forecastWindKn": 9.5,
-      "forecastGustKn": 17.3,
-      "dirDeg": 34,
+      "forecastWindKn": 9.3,
+      "forecastGustKn": 16.5,
+      "dirDeg": 31,
       "waveM": 0.42,
       "wavePeriodS": 2.8,
-      "tempC": 9.1,
+      "tempC": 8.9,
       "rainMm": 0.0,
-      "cloudPct": 73
+      "cloudPct": 100
     },
     {
       "hour": 23,
-      "forecastWindKn": 8.4,
-      "forecastGustKn": 15.6,
-      "dirDeg": 38,
+      "forecastWindKn": 7.8,
+      "forecastGustKn": 15.4,
+      "dirDeg": 36,
       "waveM": 0.38,
       "wavePeriodS": 2.7,
-      "tempC": 8.8,
+      "tempC": 8.7,
       "rainMm": 0.0,
-      "cloudPct": 85
+      "cloudPct": 91
     }
   ]
 }
