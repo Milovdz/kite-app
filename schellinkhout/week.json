@@ -1,301 +1,15 @@
 {
   "spot": "Schellinkhout",
-  "generatedAt": "2026-05-19T20:22:53+00:00",
+  "generatedAt": "2026-05-19T22:04:25+00:00",
   "forecast": [
     {
-      "iso": "2026-05-19T00:00",
-      "windKn": 6.8,
-      "gustKn": 9.3,
-      "dirDeg": 188,
-      "waveM": 0.04,
-      "wavePeriodS": 1.4,
-      "tempC": 10.2,
-      "rainMm": 0.0,
-      "cloudPct": 10,
-      "aromeWindKn": 9.0,
-      "aromeGustKn": 10.5
-    },
-    {
-      "iso": "2026-05-19T01:00",
-      "windKn": 8.2,
-      "gustKn": 11.7,
-      "dirDeg": 201,
-      "waveM": 0.08,
-      "wavePeriodS": 1.4,
-      "tempC": 10.4,
-      "rainMm": 0.0,
-      "cloudPct": 45,
-      "aromeWindKn": 9.5,
-      "aromeGustKn": 13.6
-    },
-    {
-      "iso": "2026-05-19T02:00",
-      "windKn": 8.7,
-      "gustKn": 11.9,
-      "dirDeg": 193,
-      "waveM": 0.18,
-      "wavePeriodS": 1.6,
-      "tempC": 10.5,
-      "rainMm": 0.0,
-      "cloudPct": 61,
-      "aromeWindKn": 10.1,
-      "aromeGustKn": 14.0
-    },
-    {
-      "iso": "2026-05-19T03:00",
-      "windKn": 9.5,
-      "gustKn": 13.4,
-      "dirDeg": 182,
-      "waveM": 0.18,
-      "wavePeriodS": 1.9,
-      "tempC": 10.5,
-      "rainMm": 0.0,
-      "cloudPct": 0,
-      "aromeWindKn": 10.6,
-      "aromeGustKn": 15.4
-    },
-    {
-      "iso": "2026-05-19T04:00",
-      "windKn": 9.7,
-      "gustKn": 13.8,
-      "dirDeg": 175,
-      "waveM": 0.18,
-      "wavePeriodS": 2.0,
-      "tempC": 10.5,
-      "rainMm": 0.0,
-      "cloudPct": 70,
-      "aromeWindKn": 10.6,
-      "aromeGustKn": 15.6
-    },
-    {
-      "iso": "2026-05-19T05:00",
-      "windKn": 9.5,
-      "gustKn": 14.2,
-      "dirDeg": 157,
-      "waveM": 0.2,
-      "wavePeriodS": 2.0,
-      "tempC": 10.7,
-      "rainMm": 0.0,
-      "cloudPct": 95,
-      "aromeWindKn": 11.6,
-      "aromeGustKn": 16.7
-    },
-    {
-      "iso": "2026-05-19T06:00",
-      "windKn": 9.5,
-      "gustKn": 14.8,
-      "dirDeg": 166,
-      "waveM": 0.24,
-      "wavePeriodS": 2.1,
-      "tempC": 11.1,
-      "rainMm": 0.0,
-      "cloudPct": 94,
-      "aromeWindKn": 8.9,
-      "aromeGustKn": 16.7
-    },
-    {
-      "iso": "2026-05-19T07:00",
-      "windKn": 8.7,
-      "gustKn": 14.0,
-      "dirDeg": 168,
-      "waveM": 0.26,
-      "wavePeriodS": 2.2,
-      "tempC": 11.6,
-      "rainMm": 0.0,
-      "cloudPct": 99,
-      "aromeWindKn": 10.3,
-      "aromeGustKn": 15.4
-    },
-    {
-      "iso": "2026-05-19T08:00",
-      "windKn": 10.9,
-      "gustKn": 17.3,
-      "dirDeg": 160,
-      "waveM": 0.3,
-      "wavePeriodS": 2.2,
-      "tempC": 12.4,
-      "rainMm": 0.0,
-      "cloudPct": 25,
-      "aromeWindKn": 12.4,
-      "aromeGustKn": 18.9
-    },
-    {
-      "iso": "2026-05-19T09:00",
-      "windKn": 9.5,
-      "gustKn": 15.7,
-      "dirDeg": 157,
-      "waveM": 0.34,
-      "wavePeriodS": 2.3,
-      "tempC": 13.5,
-      "rainMm": 0.0,
-      "cloudPct": 91,
-      "aromeWindKn": 12.1,
-      "aromeGustKn": 18.7
-    },
-    {
-      "iso": "2026-05-19T10:00",
-      "windKn": 10.1,
-      "gustKn": 15.9,
-      "dirDeg": 170,
-      "waveM": 0.38,
-      "wavePeriodS": 2.4,
-      "tempC": 13.9,
-      "rainMm": 0.0,
-      "cloudPct": 100,
-      "aromeWindKn": 13.2,
-      "aromeGustKn": 19.4
-    },
-    {
-      "iso": "2026-05-19T11:00",
-      "windKn": 14.2,
-      "gustKn": 21.6,
-      "dirDeg": 181,
-      "waveM": 0.42,
-      "wavePeriodS": 2.4,
-      "tempC": 14.5,
-      "rainMm": 0.0,
-      "cloudPct": 31,
-      "aromeWindKn": 13.0,
-      "aromeGustKn": 20.8
-    },
-    {
-      "iso": "2026-05-19T12:00",
-      "windKn": 13.8,
-      "gustKn": 20.6,
-      "dirDeg": 194,
-      "waveM": 0.52,
-      "wavePeriodS": 2.6,
-      "tempC": 14.0,
-      "rainMm": 0.0,
-      "cloudPct": 100,
-      "aromeWindKn": 10.7,
-      "aromeGustKn": 19.2
-    },
-    {
-      "iso": "2026-05-19T13:00",
-      "windKn": 9.9,
-      "gustKn": 14.8,
-      "dirDeg": 162,
-      "waveM": 0.52,
-      "wavePeriodS": 2.7,
-      "tempC": 14.6,
-      "rainMm": 0.0,
-      "cloudPct": 100,
-      "aromeWindKn": 12.7,
-      "aromeGustKn": 18.9
-    },
-    {
-      "iso": "2026-05-19T14:00",
-      "windKn": 11.3,
-      "gustKn": 17.5,
-      "dirDeg": 153,
-      "waveM": 0.5,
-      "wavePeriodS": 2.7,
-      "tempC": 14.0,
-      "rainMm": 0.0,
-      "cloudPct": 100,
-      "aromeWindKn": 11.8,
-      "aromeGustKn": 19.0
-    },
-    {
-      "iso": "2026-05-19T15:00",
-      "windKn": 11.1,
-      "gustKn": 17.3,
-      "dirDeg": 140,
-      "waveM": 0.48,
-      "wavePeriodS": 2.7,
-      "tempC": 13.4,
-      "rainMm": 0.1,
-      "cloudPct": 100,
-      "aromeWindKn": 14.4,
-      "aromeGustKn": 21.0
-    },
-    {
-      "iso": "2026-05-19T16:00",
-      "windKn": 11.3,
-      "gustKn": 17.5,
-      "dirDeg": 161,
-      "waveM": 0.48,
-      "wavePeriodS": 2.7,
-      "tempC": 13.7,
-      "rainMm": 0.2,
-      "cloudPct": 100,
-      "aromeWindKn": 14.8,
-      "aromeGustKn": 22.0
-    },
-    {
-      "iso": "2026-05-19T17:00",
-      "windKn": 10.9,
-      "gustKn": 16.5,
-      "dirDeg": 147,
-      "waveM": 0.5,
-      "wavePeriodS": 2.7,
-      "tempC": 13.0,
-      "rainMm": 0.2,
-      "cloudPct": 100,
-      "aromeWindKn": 12.9,
-      "aromeGustKn": 22.9
-    },
-    {
-      "iso": "2026-05-19T18:00",
-      "windKn": 10.5,
-      "gustKn": 18.7,
-      "dirDeg": 171,
-      "waveM": 0.52,
-      "wavePeriodS": 2.7,
-      "tempC": 13.0,
-      "rainMm": 0.0,
-      "cloudPct": 100,
-      "aromeWindKn": 12.6,
-      "aromeGustKn": 19.4
-    },
-    {
-      "iso": "2026-05-19T19:00",
-      "windKn": 11.7,
-      "gustKn": 17.3,
-      "dirDeg": 179,
-      "waveM": 0.52,
-      "wavePeriodS": 2.7,
-      "tempC": 12.9,
-      "rainMm": 0.1,
-      "cloudPct": 100,
-      "aromeWindKn": 13.8,
-      "aromeGustKn": 20.2
-    },
-    {
-      "iso": "2026-05-19T20:00",
-      "windKn": 11.7,
-      "gustKn": 18.1,
-      "dirDeg": 187,
-      "waveM": 0.52,
-      "wavePeriodS": 2.7,
-      "tempC": 12.8,
-      "rainMm": 0.0,
-      "cloudPct": 100,
-      "aromeWindKn": 13.3,
-      "aromeGustKn": 19.8
-    },
-    {
-      "iso": "2026-05-19T21:00",
-      "windKn": 11.5,
-      "gustKn": 18.3,
-      "dirDeg": 183,
-      "waveM": 0.54,
-      "wavePeriodS": 2.8,
-      "tempC": 12.7,
-      "rainMm": 0.0,
-      "cloudPct": 100,
-      "aromeWindKn": 14.6,
-      "aromeGustKn": 21.8
-    },
-    {
       "iso": "2026-05-19T22:00",
-      "windKn": 12.4,
-      "gustKn": 18.9,
-      "dirDeg": 189,
+      "windKn": 13.6,
+      "gustKn": 20.4,
+      "dirDeg": 184,
       "waveM": 0.56,
       "wavePeriodS": 2.8,
-      "tempC": 12.6,
+      "tempC": 12.8,
       "rainMm": 0.0,
       "cloudPct": 100,
       "aromeWindKn": 13.3,
@@ -303,12 +17,12 @@
     },
     {
       "iso": "2026-05-19T23:00",
-      "windKn": 12.8,
-      "gustKn": 19.2,
-      "dirDeg": 194,
+      "windKn": 12.6,
+      "gustKn": 20.4,
+      "dirDeg": 188,
       "waveM": 0.56,
       "wavePeriodS": 2.8,
-      "tempC": 12.6,
+      "tempC": 12.9,
       "rainMm": 0.0,
       "cloudPct": 100,
       "aromeWindKn": 13.5,
@@ -316,103 +30,103 @@
     },
     {
       "iso": "2026-05-20T00:00",
-      "windKn": 11.9,
+      "windKn": 12.4,
       "gustKn": 19.2,
-      "dirDeg": 197,
+      "dirDeg": 194,
       "waveM": 0.54,
       "wavePeriodS": 2.8,
-      "tempC": 12.6,
+      "tempC": 12.9,
       "rainMm": 0.0,
-      "cloudPct": 100,
+      "cloudPct": 94,
       "aromeWindKn": 13.3,
       "aromeGustKn": 19.6
     },
     {
       "iso": "2026-05-20T01:00",
-      "windKn": 11.7,
-      "gustKn": 17.7,
+      "windKn": 11.9,
+      "gustKn": 18.5,
       "dirDeg": 198,
       "waveM": 0.52,
       "wavePeriodS": 2.8,
       "tempC": 12.7,
       "rainMm": 0.0,
-      "cloudPct": 98,
+      "cloudPct": 1,
       "aromeWindKn": 12.5,
       "aromeGustKn": 20.0
     },
     {
       "iso": "2026-05-20T02:00",
-      "windKn": 10.7,
-      "gustKn": 17.3,
-      "dirDeg": 199,
+      "windKn": 10.9,
+      "gustKn": 17.5,
+      "dirDeg": 196,
       "waveM": 0.46,
       "wavePeriodS": 2.7,
-      "tempC": 12.8,
+      "tempC": 12.4,
       "rainMm": 0.0,
-      "cloudPct": 100,
+      "cloudPct": 33,
       "aromeWindKn": 14.2,
       "aromeGustKn": 20.6
     },
     {
       "iso": "2026-05-20T03:00",
-      "windKn": 10.9,
-      "gustKn": 16.1,
-      "dirDeg": 195,
+      "windKn": 11.5,
+      "gustKn": 17.3,
+      "dirDeg": 206,
       "waveM": 0.4,
       "wavePeriodS": 2.6,
-      "tempC": 12.5,
-      "rainMm": 0.0,
+      "tempC": 12.6,
+      "rainMm": 0.1,
       "cloudPct": 100,
       "aromeWindKn": 16.4,
       "aromeGustKn": 23.9
     },
     {
       "iso": "2026-05-20T04:00",
-      "windKn": 11.5,
-      "gustKn": 16.9,
-      "dirDeg": 210,
+      "windKn": 12.8,
+      "gustKn": 19.0,
+      "dirDeg": 223,
       "waveM": 0.36,
       "wavePeriodS": 2.5,
-      "tempC": 12.7,
-      "rainMm": 0.0,
-      "cloudPct": 100,
+      "tempC": 12.6,
+      "rainMm": 0.3,
+      "cloudPct": 39,
       "aromeWindKn": 15.1,
       "aromeGustKn": 25.9
     },
     {
       "iso": "2026-05-20T05:00",
-      "windKn": 13.4,
-      "gustKn": 19.8,
-      "dirDeg": 223,
+      "windKn": 10.9,
+      "gustKn": 19.2,
+      "dirDeg": 217,
       "waveM": 0.36,
       "wavePeriodS": 2.5,
-      "tempC": 12.7,
+      "tempC": 12.5,
       "rainMm": 0.0,
-      "cloudPct": 100,
+      "cloudPct": 70,
       "aromeWindKn": 13.3,
       "aromeGustKn": 23.5
     },
     {
       "iso": "2026-05-20T06:00",
-      "windKn": 13.4,
-      "gustKn": 20.2,
-      "dirDeg": 221,
+      "windKn": 9.9,
+      "gustKn": 18.7,
+      "dirDeg": 212,
       "waveM": 0.4,
       "wavePeriodS": 2.5,
-      "tempC": 13.0,
-      "rainMm": 0.0,
-      "cloudPct": 0,
+      "tempC": 12.3,
+      "rainMm": 1.1,
+      "cloudPct": 100,
       "aromeWindKn": 14.6,
       "aromeGustKn": 21.2
     },
     {
       "iso": "2026-05-20T07:00",
-      "windKn": 14.8,
-      "gustKn": 22.2,
+      "windKn": 13.6,
+      "gustKn": 20.4,
       "dirDeg": 229,
       "waveM": 0.44,
       "wavePeriodS": 2.5,
-      "tempC": 13.2,
+      "tempC": 13.1,
       "rainMm": 0.0,
       "cloudPct": 100,
       "aromeWindKn": 16.1,
@@ -420,151 +134,151 @@
     },
     {
       "iso": "2026-05-20T08:00",
-      "windKn": 15.7,
-      "gustKn": 23.5,
-      "dirDeg": 233,
+      "windKn": 12.1,
+      "gustKn": 21.8,
+      "dirDeg": 230,
       "waveM": 0.5,
       "wavePeriodS": 2.5,
       "tempC": 13.3,
       "rainMm": 0.0,
-      "cloudPct": 100,
+      "cloudPct": 93,
       "aromeWindKn": 16.6,
       "aromeGustKn": 24.3
     },
     {
       "iso": "2026-05-20T09:00",
-      "windKn": 14.0,
-      "gustKn": 23.5,
-      "dirDeg": 239,
+      "windKn": 12.1,
+      "gustKn": 21.4,
+      "dirDeg": 232,
       "waveM": 0.52,
       "wavePeriodS": 2.6,
-      "tempC": 13.7,
+      "tempC": 13.8,
       "rainMm": 0.1,
-      "cloudPct": 87,
+      "cloudPct": 94,
       "aromeWindKn": 17.2,
       "aromeGustKn": 25.1
     },
     {
       "iso": "2026-05-20T10:00",
-      "windKn": 13.6,
-      "gustKn": 22.2,
-      "dirDeg": 241,
+      "windKn": 13.0,
+      "gustKn": 20.2,
+      "dirDeg": 244,
       "waveM": 0.52,
       "wavePeriodS": 2.6,
-      "tempC": 14.6,
-      "rainMm": 0.0,
-      "cloudPct": 99,
+      "tempC": 14.4,
+      "rainMm": 0.1,
+      "cloudPct": 97,
       "aromeWindKn": 17.2,
       "aromeGustKn": 25.3
     },
     {
       "iso": "2026-05-20T11:00",
-      "windKn": 15.9,
-      "gustKn": 24.3,
-      "dirDeg": 242,
+      "windKn": 14.4,
+      "gustKn": 22.4,
+      "dirDeg": 246,
       "waveM": 0.52,
       "wavePeriodS": 2.7,
-      "tempC": 14.8,
+      "tempC": 15.0,
       "rainMm": 0.0,
-      "cloudPct": 100,
+      "cloudPct": 98,
       "aromeWindKn": 17.0,
       "aromeGustKn": 24.9
     },
     {
       "iso": "2026-05-20T12:00",
-      "windKn": 16.1,
-      "gustKn": 24.9,
-      "dirDeg": 241,
+      "windKn": 15.6,
+      "gustKn": 25.3,
+      "dirDeg": 249,
       "waveM": 0.54,
       "wavePeriodS": 2.6,
-      "tempC": 14.9,
+      "tempC": 14.7,
       "rainMm": 0.0,
-      "cloudPct": 9,
+      "cloudPct": 19,
       "aromeWindKn": 18.3,
       "aromeGustKn": 26.4
     },
     {
       "iso": "2026-05-20T13:00",
-      "windKn": 14.8,
-      "gustKn": 24.7,
-      "dirDeg": 250,
+      "windKn": 15.4,
+      "gustKn": 24.3,
+      "dirDeg": 251,
       "waveM": 0.54,
       "wavePeriodS": 2.7,
-      "tempC": 15.3,
+      "tempC": 15.2,
       "rainMm": 0.0,
-      "cloudPct": 14,
+      "cloudPct": 94,
       "aromeWindKn": 17.5,
       "aromeGustKn": 26.4
     },
     {
       "iso": "2026-05-20T14:00",
-      "windKn": 14.8,
-      "gustKn": 23.1,
-      "dirDeg": 250,
+      "windKn": 14.4,
+      "gustKn": 23.9,
+      "dirDeg": 249,
       "waveM": 0.54,
       "wavePeriodS": 2.7,
-      "tempC": 15.6,
+      "tempC": 15.4,
       "rainMm": 0.0,
-      "cloudPct": 12,
+      "cloudPct": 9,
       "aromeWindKn": 17.6,
       "aromeGustKn": 25.7
     },
     {
       "iso": "2026-05-20T15:00",
-      "windKn": 14.0,
-      "gustKn": 22.9,
-      "dirDeg": 244,
+      "windKn": 13.0,
+      "gustKn": 22.5,
+      "dirDeg": 249,
       "waveM": 0.52,
       "wavePeriodS": 2.7,
       "tempC": 15.6,
       "rainMm": 0.0,
-      "cloudPct": 0,
+      "cloudPct": 2,
       "aromeWindKn": 16.5,
       "aromeGustKn": 25.7
     },
     {
       "iso": "2026-05-20T16:00",
-      "windKn": 12.4,
-      "gustKn": 21.8,
-      "dirDeg": 251,
+      "windKn": 13.0,
+      "gustKn": 20.8,
+      "dirDeg": 249,
       "waveM": 0.46,
       "wavePeriodS": 2.6,
-      "tempC": 15.3,
+      "tempC": 15.4,
       "rainMm": 0.0,
-      "cloudPct": 99,
+      "cloudPct": 51,
       "aromeWindKn": 15.0,
       "aromeGustKn": 23.9
     },
     {
       "iso": "2026-05-20T17:00",
-      "windKn": 11.7,
-      "gustKn": 19.2,
+      "windKn": 10.1,
+      "gustKn": 20.2,
       "dirDeg": 244,
       "waveM": 0.4,
       "wavePeriodS": 2.5,
-      "tempC": 14.8,
+      "tempC": 14.6,
       "rainMm": 0.0,
-      "cloudPct": 99,
+      "cloudPct": 100,
       "aromeWindKn": 14.7,
       "aromeGustKn": 22.4
     },
     {
       "iso": "2026-05-20T18:00",
-      "windKn": 11.1,
-      "gustKn": 18.5,
-      "dirDeg": 247,
+      "windKn": 10.9,
+      "gustKn": 16.3,
+      "dirDeg": 250,
       "waveM": 0.3,
       "wavePeriodS": 2.3,
-      "tempC": 14.0,
+      "tempC": 14.3,
       "rainMm": 0.0,
-      "cloudPct": 100,
+      "cloudPct": 84,
       "aromeWindKn": 13.9,
       "aromeGustKn": 21.6
     },
     {
       "iso": "2026-05-20T19:00",
-      "windKn": 9.7,
-      "gustKn": 16.7,
+      "windKn": 8.4,
+      "gustKn": 16.3,
       "dirDeg": 248,
       "waveM": 0.24,
       "wavePeriodS": 2.2,
@@ -576,9 +290,9 @@
     },
     {
       "iso": "2026-05-20T20:00",
-      "windKn": 7.8,
-      "gustKn": 14.6,
-      "dirDeg": 237,
+      "windKn": 7.4,
+      "gustKn": 12.4,
+      "dirDeg": 236,
       "waveM": 0.18,
       "wavePeriodS": 2.0,
       "tempC": 13.3,
@@ -589,51 +303,51 @@
     },
     {
       "iso": "2026-05-20T21:00",
-      "windKn": 7.0,
-      "gustKn": 11.5,
-      "dirDeg": 229,
+      "windKn": 7.2,
+      "gustKn": 10.7,
+      "dirDeg": 233,
       "waveM": 0.14,
       "wavePeriodS": 1.9,
-      "tempC": 12.7,
+      "tempC": 12.8,
       "rainMm": 0.0,
-      "cloudPct": 93,
+      "cloudPct": 85,
       "aromeWindKn": 7.6,
       "aromeGustKn": 13.6
     },
     {
       "iso": "2026-05-20T22:00",
-      "windKn": 8.2,
-      "gustKn": 12.1,
-      "dirDeg": 225,
+      "windKn": 8.0,
+      "gustKn": 11.5,
+      "dirDeg": 224,
       "waveM": 0.16,
       "wavePeriodS": 1.8,
-      "tempC": 12.7,
+      "tempC": 12.6,
       "rainMm": 0.0,
-      "cloudPct": 84,
+      "cloudPct": 98,
       "aromeWindKn": 11.3,
       "aromeGustKn": 15.9
     },
     {
       "iso": "2026-05-20T23:00",
-      "windKn": 9.3,
-      "gustKn": 13.6,
+      "windKn": 8.7,
+      "gustKn": 13.0,
       "dirDeg": 225,
       "waveM": 0.18,
       "wavePeriodS": 1.9,
-      "tempC": 12.4,
+      "tempC": 12.7,
       "rainMm": 0.0,
-      "cloudPct": 100,
+      "cloudPct": 9,
       "aromeWindKn": 9.9,
       "aromeGustKn": 16.1
     },
     {
       "iso": "2026-05-21T00:00",
-      "windKn": 8.9,
-      "gustKn": 14.0,
-      "dirDeg": 223,
+      "windKn": 8.2,
+      "gustKn": 12.8,
+      "dirDeg": 231,
       "waveM": 0.18,
       "wavePeriodS": 2.0,
-      "tempC": 12.7,
+      "tempC": 12.6,
       "rainMm": 0.0,
       "cloudPct": 100,
       "aromeWindKn": 10.1,
@@ -641,12 +355,12 @@
     },
     {
       "iso": "2026-05-21T01:00",
-      "windKn": 6.8,
-      "gustKn": 13.4,
-      "dirDeg": 229,
+      "windKn": 7.6,
+      "gustKn": 12.1,
+      "dirDeg": 226,
       "waveM": 0.18,
       "wavePeriodS": 2.0,
-      "tempC": 12.8,
+      "tempC": 12.7,
       "rainMm": 0.0,
       "cloudPct": 100,
       "aromeWindKn": 10.1,
@@ -654,367 +368,367 @@
     },
     {
       "iso": "2026-05-21T02:00",
-      "windKn": 8.2,
-      "gustKn": 12.1,
-      "dirDeg": 232,
+      "windKn": 7.0,
+      "gustKn": 11.7,
+      "dirDeg": 219,
       "waveM": 0.18,
       "wavePeriodS": 2.0,
-      "tempC": 12.8,
+      "tempC": 12.7,
       "rainMm": 0.0,
-      "cloudPct": 100,
+      "cloudPct": 97,
       "aromeWindKn": 10.2,
       "aromeGustKn": 15.4
     },
     {
       "iso": "2026-05-21T03:00",
       "windKn": 7.6,
-      "gustKn": 12.2,
-      "dirDeg": 228,
+      "gustKn": 11.1,
+      "dirDeg": 217,
       "waveM": 0.18,
       "wavePeriodS": 2.0,
-      "tempC": 12.6,
+      "tempC": 12.7,
       "rainMm": 0.0,
-      "cloudPct": 10,
+      "cloudPct": 40,
       "aromeWindKn": 9.0,
       "aromeGustKn": 14.6
     },
     {
       "iso": "2026-05-21T04:00",
-      "windKn": 6.8,
-      "gustKn": 11.1,
-      "dirDeg": 229,
+      "windKn": 8.6,
+      "gustKn": 12.6,
+      "dirDeg": 225,
       "waveM": 0.16,
       "wavePeriodS": 2.0,
-      "tempC": 12.0,
+      "tempC": 12.2,
       "rainMm": 0.0,
-      "cloudPct": 6,
+      "cloudPct": 87,
       "aromeWindKn": 8.2,
       "aromeGustKn": 12.4
     },
     {
       "iso": "2026-05-21T05:00",
-      "windKn": 7.8,
-      "gustKn": 11.9,
-      "dirDeg": 222,
+      "windKn": 8.6,
+      "gustKn": 14.0,
+      "dirDeg": 236,
       "waveM": 0.18,
       "wavePeriodS": 2.0,
       "tempC": 12.4,
       "rainMm": 0.0,
-      "cloudPct": 95,
+      "cloudPct": 43,
       "aromeWindKn": 8.5,
       "aromeGustKn": 12.1
     },
     {
       "iso": "2026-05-21T06:00",
-      "windKn": 10.3,
-      "gustKn": 15.9,
-      "dirDeg": 238,
+      "windKn": 8.4,
+      "gustKn": 13.0,
+      "dirDeg": 240,
       "waveM": 0.2,
       "wavePeriodS": 2.0,
       "tempC": 13.2,
       "rainMm": 0.0,
-      "cloudPct": 37,
+      "cloudPct": 28,
       "aromeWindKn": 9.0,
       "aromeGustKn": 13.4
     },
     {
       "iso": "2026-05-21T07:00",
-      "windKn": 8.4,
-      "gustKn": 15.9,
-      "dirDeg": 247,
+      "windKn": 8.0,
+      "gustKn": 13.4,
+      "dirDeg": 239,
       "waveM": 0.2,
       "wavePeriodS": 2.0,
       "tempC": 14.5,
       "rainMm": 0.0,
-      "cloudPct": 43,
+      "cloudPct": 50,
       "aromeWindKn": 10.4,
       "aromeGustKn": 15.6
     },
     {
       "iso": "2026-05-21T08:00",
       "windKn": 7.6,
-      "gustKn": 13.6,
-      "dirDeg": 245,
+      "gustKn": 12.8,
+      "dirDeg": 232,
       "waveM": 0.2,
       "wavePeriodS": 2.0,
-      "tempC": 15.3,
+      "tempC": 15.6,
       "rainMm": 0.0,
-      "cloudPct": 98,
+      "cloudPct": 34,
       "aromeWindKn": 10.6,
       "aromeGustKn": 16.1
     },
     {
       "iso": "2026-05-21T09:00",
-      "windKn": 8.0,
-      "gustKn": 12.8,
-      "dirDeg": 248,
+      "windKn": 7.2,
+      "gustKn": 12.6,
+      "dirDeg": 246,
       "waveM": 0.22,
       "wavePeriodS": 2.1,
-      "tempC": 15.6,
+      "tempC": 16.7,
       "rainMm": 0.0,
-      "cloudPct": 100,
+      "cloudPct": 18,
       "aromeWindKn": 10.0,
       "aromeGustKn": 16.1
     },
     {
       "iso": "2026-05-21T10:00",
-      "windKn": 6.0,
-      "gustKn": 13.2,
-      "dirDeg": 226,
+      "windKn": 6.8,
+      "gustKn": 12.6,
+      "dirDeg": 252,
       "waveM": 0.22,
       "wavePeriodS": 2.1,
-      "tempC": 16.3,
+      "tempC": 17.3,
       "rainMm": 0.0,
-      "cloudPct": 41,
+      "cloudPct": 30,
       "aromeWindKn": 10.3,
       "aromeGustKn": 15.7
     },
     {
       "iso": "2026-05-21T11:00",
-      "windKn": 10.1,
-      "gustKn": 15.9,
-      "dirDeg": 237,
+      "windKn": 7.0,
+      "gustKn": 13.0,
+      "dirDeg": 248,
       "waveM": 0.24,
       "wavePeriodS": 2.1,
-      "tempC": 16.5,
+      "tempC": 17.7,
       "rainMm": 0.0,
-      "cloudPct": 95,
+      "cloudPct": 22,
       "aromeWindKn": 11.5,
       "aromeGustKn": 16.9
     },
     {
       "iso": "2026-05-21T12:00",
-      "windKn": 12.2,
-      "gustKn": 19.2,
-      "dirDeg": 238,
+      "windKn": 8.7,
+      "gustKn": 14.4,
+      "dirDeg": 240,
       "waveM": 0.26,
       "wavePeriodS": 2.1,
-      "tempC": 17.1,
+      "tempC": 17.8,
       "rainMm": 0.0,
-      "cloudPct": 62,
+      "cloudPct": 100,
       "aromeWindKn": 10.8,
       "aromeGustKn": 16.9
     },
     {
       "iso": "2026-05-21T13:00",
-      "windKn": 11.3,
-      "gustKn": 19.2,
-      "dirDeg": 248,
+      "windKn": 10.1,
+      "gustKn": 16.1,
+      "dirDeg": 239,
       "waveM": 0.24,
       "wavePeriodS": 2.2,
-      "tempC": 17.3,
+      "tempC": 18.1,
       "rainMm": 0.0,
-      "cloudPct": 36,
+      "cloudPct": 97,
       "aromeWindKn": 12.3,
       "aromeGustKn": 18.5
     },
     {
       "iso": "2026-05-21T14:00",
-      "windKn": 10.5,
-      "gustKn": 18.1,
-      "dirDeg": 245,
+      "windKn": 10.7,
+      "gustKn": 18.9,
+      "dirDeg": 249,
       "waveM": 0.24,
       "wavePeriodS": 2.2,
-      "tempC": 17.9,
+      "tempC": 17.2,
       "rainMm": 0.0,
-      "cloudPct": 0,
+      "cloudPct": 43,
       "aromeWindKn": 12.2,
       "aromeGustKn": 19.0
     },
     {
       "iso": "2026-05-21T15:00",
-      "windKn": 10.9,
-      "gustKn": 18.1,
-      "dirDeg": 248,
+      "windKn": 8.9,
+      "gustKn": 17.1,
+      "dirDeg": 245,
       "waveM": 0.24,
       "wavePeriodS": 2.1,
-      "tempC": 17.8,
+      "tempC": 17.6,
       "rainMm": 0.0,
-      "cloudPct": 0,
+      "cloudPct": 2,
       "aromeWindKn": 10.6,
       "aromeGustKn": 18.1
     },
     {
       "iso": "2026-05-21T16:00",
-      "windKn": 9.9,
-      "gustKn": 17.5,
-      "dirDeg": 244,
+      "windKn": 7.8,
+      "gustKn": 14.4,
+      "dirDeg": 243,
       "waveM": 0.2,
       "wavePeriodS": 2.1,
-      "tempC": 17.8,
+      "tempC": 17.7,
       "rainMm": 0.0,
-      "cloudPct": 0,
+      "cloudPct": 1,
       "aromeWindKn": 10.5,
       "aromeGustKn": 16.5
     },
     {
       "iso": "2026-05-21T17:00",
-      "windKn": 8.0,
-      "gustKn": 15.6,
-      "dirDeg": 243,
+      "windKn": 6.8,
+      "gustKn": 12.4,
+      "dirDeg": 247,
       "waveM": 0.14,
       "wavePeriodS": 2.0,
-      "tempC": 17.7,
+      "tempC": 17.6,
       "rainMm": 0.0,
-      "cloudPct": 5,
+      "cloudPct": 0,
       "aromeWindKn": 9.6,
       "aromeGustKn": 15.7
     },
     {
       "iso": "2026-05-21T18:00",
-      "windKn": 4.9,
-      "gustKn": 12.1,
-      "dirDeg": 233,
+      "windKn": 4.3,
+      "gustKn": 10.5,
+      "dirDeg": 237,
       "waveM": 0.1,
       "wavePeriodS": 2.0,
       "tempC": 17.2,
       "rainMm": 0.0,
-      "cloudPct": 66,
+      "cloudPct": 61,
       "aromeWindKn": 7.3,
       "aromeGustKn": 14.2
     },
     {
       "iso": "2026-05-21T19:00",
-      "windKn": 3.3,
-      "gustKn": 6.6,
-      "dirDeg": 239,
+      "windKn": 2.3,
+      "gustKn": 5.6,
+      "dirDeg": 170,
       "waveM": 0.06,
       "wavePeriodS": 1.9,
-      "tempC": 16.1,
+      "tempC": 15.7,
       "rainMm": 0.0,
-      "cloudPct": 87
+      "cloudPct": 35
     },
     {
       "iso": "2026-05-21T20:00",
-      "windKn": 2.1,
-      "gustKn": 3.7,
-      "dirDeg": 198,
+      "windKn": 1.9,
+      "gustKn": 2.5,
+      "dirDeg": 136,
       "waveM": 0.04,
       "wavePeriodS": 1.9,
-      "tempC": 14.5,
+      "tempC": 13.3,
       "rainMm": 0.0,
-      "cloudPct": 25
+      "cloudPct": 29
     },
     {
       "iso": "2026-05-21T21:00",
-      "windKn": 2.3,
-      "gustKn": 2.7,
-      "dirDeg": 178,
+      "windKn": 4.1,
+      "gustKn": 4.7,
+      "dirDeg": 162,
       "waveM": 0.04,
       "wavePeriodS": 1.8,
-      "tempC": 13.5,
+      "tempC": 12.3,
       "rainMm": 0.0,
-      "cloudPct": 100
+      "cloudPct": 2
     },
     {
       "iso": "2026-05-21T22:00",
-      "windKn": 4.7,
-      "gustKn": 5.4,
-      "dirDeg": 173,
+      "windKn": 2.3,
+      "gustKn": 4.9,
+      "dirDeg": 131,
       "waveM": 0.02,
       "wavePeriodS": 1.7,
-      "tempC": 13.4,
+      "tempC": 12.1,
       "rainMm": 0.0,
-      "cloudPct": 100
+      "cloudPct": 3
     },
     {
       "iso": "2026-05-21T23:00",
-      "windKn": 4.5,
-      "gustKn": 4.9,
-      "dirDeg": 183,
+      "windKn": 4.3,
+      "gustKn": 4.7,
+      "dirDeg": 137,
       "waveM": 0.02,
       "wavePeriodS": 1.6,
-      "tempC": 13.9,
+      "tempC": 11.6,
       "rainMm": 0.0,
-      "cloudPct": 100
+      "cloudPct": 0
     },
     {
       "iso": "2026-05-22T00:00",
-      "windKn": 5.4,
+      "windKn": 5.8,
       "gustKn": 7.4,
-      "dirDeg": 169,
+      "dirDeg": 138,
       "waveM": 0.02,
       "wavePeriodS": 1.6,
-      "tempC": 14.3,
+      "tempC": 12.1,
       "rainMm": 0.0,
-      "cloudPct": 100
+      "cloudPct": 0
     },
     {
       "iso": "2026-05-22T01:00",
-      "windKn": 5.2,
-      "gustKn": 7.6,
-      "dirDeg": 167,
+      "windKn": 5.1,
+      "gustKn": 7.2,
+      "dirDeg": 139,
       "waveM": 0.02,
       "wavePeriodS": 1.5,
-      "tempC": 14.4,
+      "tempC": 11.9,
       "rainMm": 0.0,
-      "cloudPct": 100
+      "cloudPct": 7
     },
     {
       "iso": "2026-05-22T02:00",
-      "windKn": 4.5,
-      "gustKn": 7.2,
-      "dirDeg": 164,
+      "windKn": 5.1,
+      "gustKn": 6.6,
+      "dirDeg": 147,
       "waveM": 0.02,
       "wavePeriodS": 1.5,
-      "tempC": 14.3,
+      "tempC": 12.0,
       "rainMm": 0.0,
-      "cloudPct": 100
+      "cloudPct": 51
     },
     {
       "iso": "2026-05-22T03:00",
-      "windKn": 5.3,
-      "gustKn": 7.5,
-      "dirDeg": 175,
+      "windKn": 5.8,
+      "gustKn": 7.6,
+      "dirDeg": 165,
       "waveM": 0.02,
       "wavePeriodS": 1.5,
-      "tempC": 13.5,
-      "rainMm": 0.0,
-      "cloudPct": 94
-    },
-    {
-      "iso": "2026-05-22T04:00",
-      "windKn": 5.9,
-      "gustKn": 9.3,
-      "dirDeg": 185,
-      "waveM": 0.02,
-      "wavePeriodS": 1.4,
-      "tempC": 13.1,
-      "rainMm": 0.0,
-      "cloudPct": 97
-    },
-    {
-      "iso": "2026-05-22T05:00",
-      "windKn": 6.0,
-      "gustKn": 10.1,
-      "dirDeg": 189,
-      "waveM": 0.04,
-      "wavePeriodS": 1.3,
-      "tempC": 14.0,
+      "tempC": 12.5,
       "rainMm": 0.0,
       "cloudPct": 99
     },
     {
+      "iso": "2026-05-22T04:00",
+      "windKn": 5.6,
+      "gustKn": 8.4,
+      "dirDeg": 157,
+      "waveM": 0.02,
+      "wavePeriodS": 1.4,
+      "tempC": 12.8,
+      "rainMm": 0.0,
+      "cloudPct": 99
+    },
+    {
+      "iso": "2026-05-22T05:00",
+      "windKn": 6.0,
+      "gustKn": 9.4,
+      "dirDeg": 172,
+      "waveM": 0.04,
+      "wavePeriodS": 1.3,
+      "tempC": 13.6,
+      "rainMm": 0.0,
+      "cloudPct": 30
+    },
+    {
       "iso": "2026-05-22T06:00",
-      "windKn": 4.2,
-      "gustKn": 9.9,
-      "dirDeg": 195,
+      "windKn": 4.1,
+      "gustKn": 9.3,
+      "dirDeg": 188,
       "waveM": 0.06,
       "wavePeriodS": 1.3,
-      "tempC": 15.5,
+      "tempC": 14.9,
       "rainMm": 0.0,
-      "cloudPct": 86
+      "cloudPct": 10
     },
     {
       "iso": "2026-05-22T07:00",
-      "windKn": 3.5,
-      "gustKn": 8.2,
-      "dirDeg": 191,
+      "windKn": 3.7,
+      "gustKn": 8.0,
+      "dirDeg": 183,
       "waveM": 0.1,
       "wavePeriodS": 1.5,
-      "tempC": 17.3,
+      "tempC": 16.8,
       "rainMm": 0.0,
-      "cloudPct": 27
+      "cloudPct": 4
     },
     {
       "iso": "2026-05-22T08:00",
@@ -1025,7 +739,7 @@
       "wavePeriodS": 1.5,
       "tempC": 19.2,
       "rainMm": 0.0,
-      "cloudPct": 85
+      "cloudPct": 1
     },
     {
       "iso": "2026-05-22T09:00",
@@ -1036,7 +750,7 @@
       "wavePeriodS": 1.5,
       "tempC": 20.7,
       "rainMm": 0.0,
-      "cloudPct": 6
+      "cloudPct": 7
     },
     {
       "iso": "2026-05-22T10:00",
@@ -1047,7 +761,7 @@
       "wavePeriodS": 1.5,
       "tempC": 21.9,
       "rainMm": 0.0,
-      "cloudPct": 58
+      "cloudPct": 1
     },
     {
       "iso": "2026-05-22T11:00",
@@ -1058,7 +772,7 @@
       "wavePeriodS": 1.5,
       "tempC": 22.7,
       "rainMm": 0.0,
-      "cloudPct": 98
+      "cloudPct": 51
     },
     {
       "iso": "2026-05-22T12:00",
@@ -1069,7 +783,7 @@
       "wavePeriodS": 1.5,
       "tempC": 23.3,
       "rainMm": 0.0,
-      "cloudPct": 100
+      "cloudPct": 73
     },
     {
       "iso": "2026-05-22T13:00",
@@ -1080,7 +794,7 @@
       "wavePeriodS": 1.5,
       "tempC": 23.6,
       "rainMm": 0.0,
-      "cloudPct": 98
+      "cloudPct": 69
     },
     {
       "iso": "2026-05-22T14:00",
@@ -1102,7 +816,7 @@
       "wavePeriodS": 1.4,
       "tempC": 23.2,
       "rainMm": 0.0,
-      "cloudPct": 88
+      "cloudPct": 97
     },
     {
       "iso": "2026-05-22T16:00",
@@ -1113,7 +827,7 @@
       "wavePeriodS": 1.4,
       "tempC": 23.1,
       "rainMm": 0.0,
-      "cloudPct": 6
+      "cloudPct": 95
     },
     {
       "iso": "2026-05-22T17:00",
@@ -1124,7 +838,7 @@
       "wavePeriodS": 1.4,
       "tempC": 22.4,
       "rainMm": 0.0,
-      "cloudPct": 29
+      "cloudPct": 95
     },
     {
       "iso": "2026-05-22T18:00",
@@ -1135,7 +849,7 @@
       "wavePeriodS": 1.4,
       "tempC": 21.0,
       "rainMm": 0.0,
-      "cloudPct": 10
+      "cloudPct": 21
     },
     {
       "iso": "2026-05-22T19:00",
@@ -1146,7 +860,7 @@
       "wavePeriodS": 0.0,
       "tempC": 19.0,
       "rainMm": 0.0,
-      "cloudPct": 16
+      "cloudPct": 32
     },
     {
       "iso": "2026-05-22T20:00",
@@ -1157,7 +871,7 @@
       "wavePeriodS": 0.0,
       "tempC": 16.8,
       "rainMm": 0.0,
-      "cloudPct": 6
+      "cloudPct": 2
     },
     {
       "iso": "2026-05-22T21:00",
@@ -1168,7 +882,7 @@
       "wavePeriodS": 0.0,
       "tempC": 15.6,
       "rainMm": 0.0,
-      "cloudPct": 20
+      "cloudPct": 13
     },
     {
       "iso": "2026-05-22T22:00",
@@ -1179,7 +893,7 @@
       "wavePeriodS": 0.0,
       "tempC": 15.0,
       "rainMm": 0.0,
-      "cloudPct": 11
+      "cloudPct": 53
     },
     {
       "iso": "2026-05-22T23:00",
@@ -1190,7 +904,7 @@
       "wavePeriodS": 0.0,
       "tempC": 14.8,
       "rainMm": 0.0,
-      "cloudPct": 7
+      "cloudPct": 27
     },
     {
       "iso": "2026-05-23T00:00",
@@ -1201,7 +915,7 @@
       "wavePeriodS": 0.0,
       "tempC": 14.6,
       "rainMm": 0.0,
-      "cloudPct": 2
+      "cloudPct": 1
     },
     {
       "iso": "2026-05-23T01:00",
@@ -1212,7 +926,7 @@
       "wavePeriodS": 0.0,
       "tempC": 14.4,
       "rainMm": 0.0,
-      "cloudPct": 4
+      "cloudPct": 14
     },
     {
       "iso": "2026-05-23T02:00",
@@ -1223,7 +937,7 @@
       "wavePeriodS": 0.0,
       "tempC": 14.3,
       "rainMm": 0.0,
-      "cloudPct": 11
+      "cloudPct": 36
     },
     {
       "iso": "2026-05-23T03:00",
@@ -1234,7 +948,7 @@
       "wavePeriodS": 0.0,
       "tempC": 14.4,
       "rainMm": 0.0,
-      "cloudPct": 23
+      "cloudPct": 80
     },
     {
       "iso": "2026-05-23T04:00",
@@ -1245,7 +959,7 @@
       "wavePeriodS": 0.0,
       "tempC": 15.0,
       "rainMm": 0.0,
-      "cloudPct": 49
+      "cloudPct": 54
     },
     {
       "iso": "2026-05-23T05:00",
@@ -1256,7 +970,7 @@
       "wavePeriodS": 0.0,
       "tempC": 15.8,
       "rainMm": 0.0,
-      "cloudPct": 81
+      "cloudPct": 66
     },
     {
       "iso": "2026-05-23T06:00",
@@ -1267,7 +981,7 @@
       "wavePeriodS": 0.0,
       "tempC": 17.0,
       "rainMm": 0.0,
-      "cloudPct": 98
+      "cloudPct": 63
     },
     {
       "iso": "2026-05-23T07:00",
@@ -1278,7 +992,7 @@
       "wavePeriodS": 0.0,
       "tempC": 19.0,
       "rainMm": 0.0,
-      "cloudPct": 89
+      "cloudPct": 43
     },
     {
       "iso": "2026-05-23T08:00",
@@ -1289,7 +1003,7 @@
       "wavePeriodS": 0.0,
       "tempC": 21.4,
       "rainMm": 0.0,
-      "cloudPct": 64
+      "cloudPct": 18
     },
     {
       "iso": "2026-05-23T09:00",
@@ -1300,7 +1014,7 @@
       "wavePeriodS": 0.0,
       "tempC": 23.2,
       "rainMm": 0.0,
-      "cloudPct": 42
+      "cloudPct": 0
     },
     {
       "iso": "2026-05-23T10:00",
@@ -1311,7 +1025,7 @@
       "wavePeriodS": 0.0,
       "tempC": 23.9,
       "rainMm": 0.0,
-      "cloudPct": 25
+      "cloudPct": 0
     },
     {
       "iso": "2026-05-23T11:00",
@@ -1322,7 +1036,7 @@
       "wavePeriodS": 0.0,
       "tempC": 23.9,
       "rainMm": 0.0,
-      "cloudPct": 10
+      "cloudPct": 0
     },
     {
       "iso": "2026-05-23T12:00",
@@ -1343,7 +1057,7 @@
       "waveM": 0.0,
       "wavePeriodS": 0.0,
       "tempC": 24.2,
-      "rainMm": 0.0,
+      "rainMm": 0.1,
       "cloudPct": 0
     },
     {
@@ -1354,7 +1068,7 @@
       "waveM": 0.0,
       "wavePeriodS": 0.0,
       "tempC": 24.5,
-      "rainMm": 0.0,
+      "rainMm": 0.1,
       "cloudPct": 0
     },
     {
@@ -1365,7 +1079,7 @@
       "waveM": 0.0,
       "wavePeriodS": 0.0,
       "tempC": 24.1,
-      "rainMm": 0.0,
+      "rainMm": 0.1,
       "cloudPct": 0
     },
     {
@@ -1377,7 +1091,7 @@
       "wavePeriodS": 0.0,
       "tempC": 22.9,
       "rainMm": 0.0,
-      "cloudPct": 1
+      "cloudPct": 0
     },
     {
       "iso": "2026-05-23T17:00",
@@ -1388,7 +1102,7 @@
       "wavePeriodS": 0.0,
       "tempC": 21.1,
       "rainMm": 0.0,
-      "cloudPct": 3
+      "cloudPct": 0
     },
     {
       "iso": "2026-05-23T18:00",
@@ -1399,7 +1113,7 @@
       "wavePeriodS": 0.0,
       "tempC": 19.2,
       "rainMm": 0.0,
-      "cloudPct": 5
+      "cloudPct": 0
     },
     {
       "iso": "2026-05-23T19:00",
@@ -1410,7 +1124,7 @@
       "wavePeriodS": 0.0,
       "tempC": 17.1,
       "rainMm": 0.0,
-      "cloudPct": 8
+      "cloudPct": 0
     },
     {
       "iso": "2026-05-23T20:00",
@@ -1421,7 +1135,7 @@
       "wavePeriodS": 0.0,
       "tempC": 14.9,
       "rainMm": 0.0,
-      "cloudPct": 12
+      "cloudPct": 0
     },
     {
       "iso": "2026-05-23T21:00",
@@ -1432,7 +1146,7 @@
       "wavePeriodS": 0.0,
       "tempC": 13.3,
       "rainMm": 0.0,
-      "cloudPct": 14
+      "cloudPct": 0
     },
     {
       "iso": "2026-05-23T22:00",
@@ -1443,7 +1157,7 @@
       "wavePeriodS": 0.0,
       "tempC": 12.5,
       "rainMm": 0.0,
-      "cloudPct": 13
+      "cloudPct": 0
     },
     {
       "iso": "2026-05-23T23:00",
@@ -1454,7 +1168,7 @@
       "wavePeriodS": 0.0,
       "tempC": 12.3,
       "rainMm": 0.0,
-      "cloudPct": 11
+      "cloudPct": 0
     },
     {
       "iso": "2026-05-24T00:00",
@@ -1465,7 +1179,7 @@
       "wavePeriodS": 0.0,
       "tempC": 12.2,
       "rainMm": 0.0,
-      "cloudPct": 8
+      "cloudPct": 0
     },
     {
       "iso": "2026-05-24T01:00",
@@ -1476,7 +1190,7 @@
       "wavePeriodS": 0.0,
       "tempC": 11.9,
       "rainMm": 0.0,
-      "cloudPct": 5
+      "cloudPct": 30
     },
     {
       "iso": "2026-05-24T02:00",
@@ -1487,7 +1201,7 @@
       "wavePeriodS": 0.0,
       "tempC": 11.7,
       "rainMm": 0.0,
-      "cloudPct": 3
+      "cloudPct": 70
     },
     {
       "iso": "2026-05-24T03:00",
@@ -1498,7 +1212,7 @@
       "wavePeriodS": 0.0,
       "tempC": 11.8,
       "rainMm": 0.0,
-      "cloudPct": 1
+      "cloudPct": 90
     },
     {
       "iso": "2026-05-24T04:00",
@@ -1509,7 +1223,7 @@
       "wavePeriodS": 0.0,
       "tempC": 12.5,
       "rainMm": 0.0,
-      "cloudPct": 1
+      "cloudPct": 68
     },
     {
       "iso": "2026-05-24T05:00",
@@ -1520,7 +1234,7 @@
       "wavePeriodS": 0.0,
       "tempC": 13.5,
       "rainMm": 0.0,
-      "cloudPct": 1
+      "cloudPct": 26
     },
     {
       "iso": "2026-05-24T06:00",
@@ -1531,7 +1245,7 @@
       "wavePeriodS": 0.0,
       "tempC": 14.7,
       "rainMm": 0.0,
-      "cloudPct": 1
+      "cloudPct": 2
     },
     {
       "iso": "2026-05-24T07:00",
@@ -1542,7 +1256,7 @@
       "wavePeriodS": 0.0,
       "tempC": 16.2,
       "rainMm": 0.0,
-      "cloudPct": 1
+      "cloudPct": 18
     },
     {
       "iso": "2026-05-24T08:00",
@@ -1553,7 +1267,7 @@
       "wavePeriodS": 0.0,
       "tempC": 18.0,
       "rainMm": 0.0,
-      "cloudPct": 0
+      "cloudPct": 52
     },
     {
       "iso": "2026-05-24T09:00",
@@ -1564,7 +1278,7 @@
       "wavePeriodS": 0.0,
       "tempC": 19.5,
       "rainMm": 0.0,
-      "cloudPct": 0
+      "cloudPct": 80
     },
     {
       "iso": "2026-05-24T10:00",
@@ -1575,7 +1289,7 @@
       "wavePeriodS": 0.0,
       "tempC": 20.8,
       "rainMm": 0.0,
-      "cloudPct": 0
+      "cloudPct": 93
     },
     {
       "iso": "2026-05-24T11:00",
@@ -1586,7 +1300,7 @@
       "wavePeriodS": 0.0,
       "tempC": 21.9,
       "rainMm": 0.0,
-      "cloudPct": 0
+      "cloudPct": 99
     },
     {
       "iso": "2026-05-24T12:00",
@@ -1597,7 +1311,7 @@
       "wavePeriodS": 0.0,
       "tempC": 22.8,
       "rainMm": 0.0,
-      "cloudPct": 0
+      "cloudPct": 99
     },
     {
       "iso": "2026-05-24T13:00",
@@ -1608,7 +1322,7 @@
       "wavePeriodS": 0.0,
       "tempC": 23.3,
       "rainMm": 0.0,
-      "cloudPct": 0
+      "cloudPct": 92
     },
     {
       "iso": "2026-05-24T14:00",
@@ -1619,7 +1333,7 @@
       "wavePeriodS": 0.0,
       "tempC": 23.5,
       "rainMm": 0.0,
-      "cloudPct": 0
+      "cloudPct": 80
     },
     {
       "iso": "2026-05-24T15:00",
@@ -1630,7 +1344,7 @@
       "wavePeriodS": 0.0,
       "tempC": 23.4,
       "rainMm": 0.0,
-      "cloudPct": 3
+      "cloudPct": 66
     },
     {
       "iso": "2026-05-24T16:00",
@@ -1641,7 +1355,7 @@
       "wavePeriodS": 0.0,
       "tempC": 22.9,
       "rainMm": 0.0,
-      "cloudPct": 10
+      "cloudPct": 50
     },
     {
       "iso": "2026-05-24T17:00",
@@ -1652,7 +1366,7 @@
       "wavePeriodS": 0.0,
       "tempC": 22.1,
       "rainMm": 0.0,
-      "cloudPct": 19
+      "cloudPct": 32
     },
     {
       "iso": "2026-05-24T18:00",
@@ -1663,7 +1377,7 @@
       "wavePeriodS": 0.0,
       "tempC": 20.8,
       "rainMm": 0.0,
-      "cloudPct": 27
+      "cloudPct": 23
     },
     {
       "iso": "2026-05-24T19:00",
@@ -1674,7 +1388,7 @@
       "wavePeriodS": 0.0,
       "tempC": 18.9,
       "rainMm": 0.0,
-      "cloudPct": 31
+      "cloudPct": 29
     },
     {
       "iso": "2026-05-24T20:00",
@@ -1685,7 +1399,7 @@
       "wavePeriodS": 0.0,
       "tempC": 16.5,
       "rainMm": 0.0,
-      "cloudPct": 34
+      "cloudPct": 43
     },
     {
       "iso": "2026-05-24T21:00",
@@ -1696,7 +1410,7 @@
       "wavePeriodS": 0.0,
       "tempC": 14.7,
       "rainMm": 0.0,
-      "cloudPct": 41
+      "cloudPct": 51
     },
     {
       "iso": "2026-05-24T22:00",
@@ -1707,7 +1421,7 @@
       "wavePeriodS": 0.0,
       "tempC": 13.9,
       "rainMm": 0.0,
-      "cloudPct": 59
+      "cloudPct": 48
     },
     {
       "iso": "2026-05-24T23:00",
@@ -1718,7 +1432,7 @@
       "wavePeriodS": 0.0,
       "tempC": 13.6,
       "rainMm": 0.0,
-      "cloudPct": 81
+      "cloudPct": 41
     },
     {
       "iso": "2026-05-25T00:00",
@@ -1729,7 +1443,7 @@
       "wavePeriodS": 0.0,
       "tempC": 13.4,
       "rainMm": 0.0,
-      "cloudPct": 98
+      "cloudPct": 32
     },
     {
       "iso": "2026-05-25T01:00",
@@ -1740,7 +1454,7 @@
       "wavePeriodS": 0.0,
       "tempC": 13.0,
       "rainMm": 0.0,
-      "cloudPct": 100
+      "cloudPct": 23
     },
     {
       "iso": "2026-05-25T02:00",
@@ -1751,7 +1465,7 @@
       "wavePeriodS": 0.0,
       "tempC": 12.6,
       "rainMm": 0.0,
-      "cloudPct": 100
+      "cloudPct": 14
     },
     {
       "iso": "2026-05-25T03:00",
@@ -1762,7 +1476,7 @@
       "wavePeriodS": 0.0,
       "tempC": 12.7,
       "rainMm": 0.0,
-      "cloudPct": 100
+      "cloudPct": 7
     },
     {
       "iso": "2026-05-25T04:00",
@@ -1773,7 +1487,7 @@
       "wavePeriodS": 0.0,
       "tempC": 13.4,
       "rainMm": 0.0,
-      "cloudPct": 97
+      "cloudPct": 3
     },
     {
       "iso": "2026-05-25T05:00",
@@ -1784,7 +1498,7 @@
       "wavePeriodS": 0.0,
       "tempC": 14.5,
       "rainMm": 0.0,
-      "cloudPct": 93
+      "cloudPct": 1
     },
     {
       "iso": "2026-05-25T06:00",
@@ -1795,7 +1509,7 @@
       "wavePeriodS": 0.0,
       "tempC": 15.4,
       "rainMm": 0.0,
-      "cloudPct": 90
+      "cloudPct": 0
     },
     {
       "iso": "2026-05-25T07:00",
@@ -1806,7 +1520,7 @@
       "wavePeriodS": 0.0,
       "tempC": 12.9,
       "rainMm": 0.0,
-      "cloudPct": 68
+      "cloudPct": 0
     },
     {
       "iso": "2026-05-25T08:00",
@@ -1817,7 +1531,7 @@
       "wavePeriodS": 0.0,
       "tempC": 14.1,
       "rainMm": 0.0,
-      "cloudPct": 55
+      "cloudPct": 0
     },
     {
       "iso": "2026-05-25T09:00",
@@ -1828,7 +1542,7 @@
       "wavePeriodS": 0.0,
       "tempC": 15.5,
       "rainMm": 0.0,
-      "cloudPct": 40
+      "cloudPct": 0
     },
     {
       "iso": "2026-05-25T10:00",
@@ -1839,7 +1553,7 @@
       "wavePeriodS": 0.0,
       "tempC": 16.9,
       "rainMm": 0.0,
-      "cloudPct": 25
+      "cloudPct": 0
     },
     {
       "iso": "2026-05-25T11:00",
@@ -1850,7 +1564,7 @@
       "wavePeriodS": 0.0,
       "tempC": 18.1,
       "rainMm": 0.0,
-      "cloudPct": 11
+      "cloudPct": 0
     },
     {
       "iso": "2026-05-25T12:00",
@@ -1861,7 +1575,7 @@
       "wavePeriodS": 0.0,
       "tempC": 18.9,
       "rainMm": 0.0,
-      "cloudPct": 2
+      "cloudPct": 0
     },
     {
       "iso": "2026-05-25T13:00",
@@ -1961,31 +1675,273 @@
       "tempC": 15.2,
       "rainMm": 0.0,
       "cloudPct": 0
+    },
+    {
+      "iso": "2026-05-25T22:00",
+      "windKn": 6.6,
+      "gustKn": 13.8,
+      "dirDeg": 75,
+      "waveM": 0.0,
+      "wavePeriodS": 0.0,
+      "tempC": 13.9,
+      "rainMm": 0.0,
+      "cloudPct": 0
+    },
+    {
+      "iso": "2026-05-25T23:00",
+      "windKn": 6.4,
+      "gustKn": 13.6,
+      "dirDeg": 79,
+      "waveM": 0.0,
+      "wavePeriodS": 0.0,
+      "tempC": 12.9,
+      "rainMm": 0.0,
+      "cloudPct": 0
+    },
+    {
+      "iso": "2026-05-26T00:00",
+      "windKn": 6.3,
+      "gustKn": 13.2,
+      "dirDeg": 82,
+      "waveM": 0.0,
+      "wavePeriodS": 0.0,
+      "tempC": 12.2,
+      "rainMm": 0.0,
+      "cloudPct": 0
+    },
+    {
+      "iso": "2026-05-26T01:00",
+      "windKn": 6.0,
+      "gustKn": 12.8,
+      "dirDeg": 84,
+      "waveM": 0.0,
+      "wavePeriodS": 0.0,
+      "tempC": 11.9,
+      "rainMm": 0.0,
+      "cloudPct": 0
+    },
+    {
+      "iso": "2026-05-26T02:00",
+      "windKn": 5.5,
+      "gustKn": 12.2,
+      "dirDeg": 86,
+      "waveM": 0.0,
+      "wavePeriodS": 0.0,
+      "tempC": 11.9,
+      "rainMm": 0.0,
+      "cloudPct": 0
+    },
+    {
+      "iso": "2026-05-26T03:00",
+      "windKn": 4.9,
+      "gustKn": 11.5,
+      "dirDeg": 88,
+      "waveM": 0.0,
+      "wavePeriodS": 0.0,
+      "tempC": 12.1,
+      "rainMm": 0.0,
+      "cloudPct": 0
+    },
+    {
+      "iso": "2026-05-26T04:00",
+      "windKn": 4.4,
+      "gustKn": 11.1,
+      "dirDeg": 89,
+      "waveM": 0.0,
+      "wavePeriodS": 0.0,
+      "tempC": 12.4,
+      "rainMm": 0.0,
+      "cloudPct": 0
+    },
+    {
+      "iso": "2026-05-26T05:00",
+      "windKn": 4.0,
+      "gustKn": 10.7,
+      "dirDeg": 89,
+      "waveM": 0.0,
+      "wavePeriodS": 0.0,
+      "tempC": 12.9,
+      "rainMm": 0.0,
+      "cloudPct": 0
+    },
+    {
+      "iso": "2026-05-26T06:00",
+      "windKn": 3.9,
+      "gustKn": 10.7,
+      "dirDeg": 89,
+      "waveM": 0.0,
+      "wavePeriodS": 0.0,
+      "tempC": 13.6,
+      "rainMm": 0.0,
+      "cloudPct": 0
+    },
+    {
+      "iso": "2026-05-26T07:00",
+      "windKn": 4.2,
+      "gustKn": 11.1,
+      "dirDeg": 87,
+      "waveM": 0.0,
+      "wavePeriodS": 0.0,
+      "tempC": 14.6,
+      "rainMm": 0.0,
+      "cloudPct": 0
+    },
+    {
+      "iso": "2026-05-26T08:00",
+      "windKn": 4.9,
+      "gustKn": 12.1,
+      "dirDeg": 85,
+      "waveM": 0.0,
+      "wavePeriodS": 0.0,
+      "tempC": 15.9,
+      "rainMm": 0.0,
+      "cloudPct": 0
+    },
+    {
+      "iso": "2026-05-26T09:00",
+      "windKn": 5.8,
+      "gustKn": 13.2,
+      "dirDeg": 83,
+      "waveM": 0.0,
+      "wavePeriodS": 0.0,
+      "tempC": 17.4,
+      "rainMm": 0.0,
+      "cloudPct": 0
+    },
+    {
+      "iso": "2026-05-26T10:00",
+      "windKn": 6.6,
+      "gustKn": 14.4,
+      "dirDeg": 81,
+      "waveM": 0.0,
+      "wavePeriodS": 0.0,
+      "tempC": 18.9,
+      "rainMm": 0.0,
+      "cloudPct": 0
+    },
+    {
+      "iso": "2026-05-26T11:00",
+      "windKn": 7.2,
+      "gustKn": 15.4,
+      "dirDeg": 78,
+      "waveM": 0.0,
+      "wavePeriodS": 0.0,
+      "tempC": 20.1,
+      "rainMm": 0.0,
+      "cloudPct": 0
+    },
+    {
+      "iso": "2026-05-26T12:00",
+      "windKn": 7.4,
+      "gustKn": 15.9,
+      "dirDeg": 75,
+      "waveM": 0.0,
+      "wavePeriodS": 0.0,
+      "tempC": 20.9,
+      "rainMm": 0.0,
+      "cloudPct": 0
+    },
+    {
+      "iso": "2026-05-26T13:00",
+      "windKn": 7.0,
+      "gustKn": 16.3,
+      "dirDeg": 69,
+      "waveM": 0.0,
+      "wavePeriodS": 0.0,
+      "tempC": 21.2,
+      "rainMm": 0.0,
+      "cloudPct": 0
+    },
+    {
+      "iso": "2026-05-26T14:00",
+      "windKn": 6.3,
+      "gustKn": 16.3,
+      "dirDeg": 58,
+      "waveM": 0.0,
+      "wavePeriodS": 0.0,
+      "tempC": 21.1,
+      "rainMm": 0.0,
+      "cloudPct": 0
+    },
+    {
+      "iso": "2026-05-26T15:00",
+      "windKn": 5.8,
+      "gustKn": 16.3,
+      "dirDeg": 44,
+      "waveM": 0.0,
+      "wavePeriodS": 0.0,
+      "tempC": 20.8,
+      "rainMm": 0.0,
+      "cloudPct": 0
+    },
+    {
+      "iso": "2026-05-26T16:00",
+      "windKn": 5.7,
+      "gustKn": 16.3,
+      "dirDeg": 27,
+      "waveM": 0.0,
+      "wavePeriodS": 0.0,
+      "tempC": 20.4,
+      "rainMm": 0.0,
+      "cloudPct": 0
+    },
+    {
+      "iso": "2026-05-26T17:00",
+      "windKn": 5.8,
+      "gustKn": 16.1,
+      "dirDeg": 14,
+      "waveM": 0.0,
+      "wavePeriodS": 0.0,
+      "tempC": 19.8,
+      "rainMm": 0.0,
+      "cloudPct": 0
+    },
+    {
+      "iso": "2026-05-26T18:00",
+      "windKn": 6.1,
+      "gustKn": 15.9,
+      "dirDeg": 6,
+      "waveM": 0.0,
+      "wavePeriodS": 0.0,
+      "tempC": 19.1,
+      "rainMm": 0.0,
+      "cloudPct": 0
+    },
+    {
+      "iso": "2026-05-26T19:00",
+      "windKn": 6.0,
+      "gustKn": 15.7,
+      "dirDeg": 5,
+      "waveM": 0.0,
+      "wavePeriodS": 0.0,
+      "tempC": 18.3,
+      "rainMm": 0.0,
+      "cloudPct": 0
+    },
+    {
+      "iso": "2026-05-26T20:00",
+      "windKn": 5.7,
+      "gustKn": 15.2,
+      "dirDeg": 6,
+      "waveM": 0.0,
+      "wavePeriodS": 0.0,
+      "tempC": 17.1,
+      "rainMm": 0.0,
+      "cloudPct": 0
+    },
+    {
+      "iso": "2026-05-26T21:00",
+      "windKn": 5.2,
+      "gustKn": 14.8,
+      "dirDeg": 11,
+      "waveM": 0.0,
+      "wavePeriodS": 0.0,
+      "tempC": 15.8,
+      "rainMm": 0.0,
+      "cloudPct": 0
     }
   ],
   "tidesByDate": {
-    "2026-05-19": [
-      {
-        "time": "01:30",
-        "heightM": -0.9,
-        "type": "low"
-      },
-      {
-        "time": "07:50",
-        "heightM": 1.01,
-        "type": "high"
-      },
-      {
-        "time": "14:10",
-        "heightM": -1.06,
-        "type": "low"
-      },
-      {
-        "time": "20:20",
-        "heightM": 0.79,
-        "type": "high"
-      }
-    ],
     "2026-05-20": [
       {
         "time": "02:20",
@@ -2109,6 +2065,28 @@
       },
       {
         "time": "19:50",
+        "heightM": -0.69,
+        "type": "low"
+      }
+    ],
+    "2026-05-26": [
+      {
+        "time": "02:20",
+        "heightM": 0.66,
+        "type": "high"
+      },
+      {
+        "time": "08:30",
+        "heightM": -0.6,
+        "type": "low"
+      },
+      {
+        "time": "14:40",
+        "heightM": 0.56,
+        "type": "high"
+      },
+      {
+        "time": "20:50",
         "heightM": -0.69,
         "type": "low"
       }
