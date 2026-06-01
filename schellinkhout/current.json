@@ -1,10 +1,10 @@
 {
   "spot": "Schellinkhout",
-  "generatedAt": "2026-06-01T20:03:53+00:00",
+  "generatedAt": "2026-06-01T22:35:43+00:00",
   "current": {
-    "windKn": 9.8,
-    "gustKn": 16.2,
-    "dirDeg": 221
+    "windKn": 7.8,
+    "gustKn": 10.3,
+    "dirDeg": 180
   },
   "actuals": [
     {
@@ -726,6 +726,102 @@
       "windKn": 9.8,
       "gustKn": 16.2,
       "dirDeg": 221
+    },
+    {
+      "time": "22:00",
+      "windKn": 9.3,
+      "gustKn": 13.9,
+      "dirDeg": 221
+    },
+    {
+      "time": "22:10",
+      "windKn": 10.8,
+      "gustKn": 16.8,
+      "dirDeg": 220
+    },
+    {
+      "time": "22:20",
+      "windKn": 10.0,
+      "gustKn": 13.9,
+      "dirDeg": 217
+    },
+    {
+      "time": "22:30",
+      "windKn": 9.7,
+      "gustKn": 14.6,
+      "dirDeg": 216
+    },
+    {
+      "time": "22:40",
+      "windKn": 10.7,
+      "gustKn": 15.1,
+      "dirDeg": 219
+    },
+    {
+      "time": "22:50",
+      "windKn": 10.3,
+      "gustKn": 14.2,
+      "dirDeg": 220
+    },
+    {
+      "time": "23:00",
+      "windKn": 10.6,
+      "gustKn": 16.5,
+      "dirDeg": 220
+    },
+    {
+      "time": "23:10",
+      "windKn": 11.6,
+      "gustKn": 15.8,
+      "dirDeg": 210
+    },
+    {
+      "time": "23:20",
+      "windKn": 10.7,
+      "gustKn": 15.1,
+      "dirDeg": 207
+    },
+    {
+      "time": "23:30",
+      "windKn": 9.2,
+      "gustKn": 13.2,
+      "dirDeg": 204
+    },
+    {
+      "time": "23:40",
+      "windKn": 8.5,
+      "gustKn": 12.6,
+      "dirDeg": 196
+    },
+    {
+      "time": "23:50",
+      "windKn": 8.0,
+      "gustKn": 10.3,
+      "dirDeg": 190
+    },
+    {
+      "time": "00:00",
+      "windKn": 7.7,
+      "gustKn": 10.0,
+      "dirDeg": 188
+    },
+    {
+      "time": "00:10",
+      "windKn": 8.2,
+      "gustKn": 10.7,
+      "dirDeg": 184
+    },
+    {
+      "time": "00:20",
+      "windKn": 7.5,
+      "gustKn": 10.1,
+      "dirDeg": 180
+    },
+    {
+      "time": "00:30",
+      "windKn": 7.8,
+      "gustKn": 10.3,
+      "dirDeg": 180
     }
   ]
 }
