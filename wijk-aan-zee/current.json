@@ -1,10 +1,10 @@
 {
   "spot": "Wijk aan Zee",
-  "generatedAt": "2026-06-10T16:58:28+00:00",
+  "generatedAt": "2026-06-10T19:34:08+00:00",
   "current": {
-    "windKn": 8.9,
-    "gustKn": 11.6,
-    "dirDeg": 301
+    "windKn": 4.5,
+    "gustKn": 6.1,
+    "dirDeg": 233
   },
   "actuals": [
     {
@@ -618,6 +618,102 @@
       "windKn": 8.9,
       "gustKn": 11.6,
       "dirDeg": 301
+    },
+    {
+      "time": "19:00",
+      "windKn": 6.8,
+      "gustKn": 9.2,
+      "dirDeg": 302
+    },
+    {
+      "time": "19:10",
+      "windKn": 6.9,
+      "gustKn": 9.5,
+      "dirDeg": 278
+    },
+    {
+      "time": "19:20",
+      "windKn": 8.2,
+      "gustKn": 10.5,
+      "dirDeg": 272
+    },
+    {
+      "time": "19:30",
+      "windKn": 9.6,
+      "gustKn": 12.6,
+      "dirDeg": 267
+    },
+    {
+      "time": "19:40",
+      "windKn": 10.8,
+      "gustKn": 13.7,
+      "dirDeg": 264
+    },
+    {
+      "time": "19:50",
+      "windKn": 10.1,
+      "gustKn": 13.0,
+      "dirDeg": 261
+    },
+    {
+      "time": "20:00",
+      "windKn": 10.9,
+      "gustKn": 15.1,
+      "dirDeg": 260
+    },
+    {
+      "time": "20:10",
+      "windKn": 12.1,
+      "gustKn": 15.6,
+      "dirDeg": 258
+    },
+    {
+      "time": "20:20",
+      "windKn": 8.8,
+      "gustKn": 11.9,
+      "dirDeg": 252
+    },
+    {
+      "time": "20:30",
+      "windKn": 6.7,
+      "gustKn": 8.8,
+      "dirDeg": 263
+    },
+    {
+      "time": "20:40",
+      "windKn": 7.9,
+      "gustKn": 10.7,
+      "dirDeg": 281
+    },
+    {
+      "time": "20:50",
+      "windKn": 4.0,
+      "gustKn": 6.6,
+      "dirDeg": 290
+    },
+    {
+      "time": "21:00",
+      "windKn": 3.7,
+      "gustKn": 5.4,
+      "dirDeg": 311
+    },
+    {
+      "time": "21:10",
+      "windKn": 3.7,
+      "gustKn": 5.1,
+      "dirDeg": 264
+    },
+    {
+      "time": "21:20",
+      "windKn": 4.5,
+      "gustKn": 7.1,
+      "dirDeg": 259
+    },
+    {
+      "time": "21:30",
+      "windKn": 4.5,
+      "gustKn": 6.1,
+      "dirDeg": 233
     }
   ]
 }
