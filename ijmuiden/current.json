@@ -1,10 +1,10 @@
 {
   "spot": "IJmuiden",
-  "generatedAt": "2026-06-29T20:19:46+00:00",
+  "generatedAt": "2026-06-29T21:49:08+00:00",
   "current": {
-    "windKn": 5.7,
-    "gustKn": 7.5,
-    "dirDeg": 19
+    "windKn": 6.9,
+    "gustKn": 8.1,
+    "dirDeg": 40
   },
   "actuals": [
     {
@@ -738,6 +738,60 @@
       "windKn": 5.7,
       "gustKn": 7.5,
       "dirDeg": 19
+    },
+    {
+      "time": "22:20",
+      "windKn": 5.2,
+      "gustKn": 6.5,
+      "dirDeg": 33
+    },
+    {
+      "time": "22:30",
+      "windKn": 5.9,
+      "gustKn": 6.5,
+      "dirDeg": 41
+    },
+    {
+      "time": "22:40",
+      "windKn": 6.5,
+      "gustKn": 8.2,
+      "dirDeg": 40
+    },
+    {
+      "time": "22:50",
+      "windKn": 6.2,
+      "gustKn": 7.2,
+      "dirDeg": 38
+    },
+    {
+      "time": "23:00",
+      "windKn": 5.8,
+      "gustKn": 6.9,
+      "dirDeg": 35
+    },
+    {
+      "time": "23:10",
+      "windKn": 5.9,
+      "gustKn": 7.1,
+      "dirDeg": 35
+    },
+    {
+      "time": "23:20",
+      "windKn": 6.3,
+      "gustKn": 7.9,
+      "dirDeg": 36
+    },
+    {
+      "time": "23:30",
+      "windKn": 6.3,
+      "gustKn": 7.4,
+      "dirDeg": 37
+    },
+    {
+      "time": "23:40",
+      "windKn": 6.9,
+      "gustKn": 8.1,
+      "dirDeg": 40
     }
   ]
 }
