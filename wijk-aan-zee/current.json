@@ -1,10 +1,10 @@
 {
   "spot": "Wijk aan Zee",
-  "generatedAt": "2026-06-30T12:27:19+00:00",
+  "generatedAt": "2026-06-30T15:08:04+00:00",
   "current": {
-    "windKn": 8.9,
-    "gustKn": 10.5,
-    "dirDeg": 270
+    "windKn": 2.5,
+    "gustKn": 3.3,
+    "dirDeg": 316
   },
   "actuals": [
     {
@@ -456,6 +456,102 @@
       "windKn": 8.9,
       "gustKn": 10.5,
       "dirDeg": 270
+    },
+    {
+      "time": "14:30",
+      "windKn": 8.2,
+      "gustKn": 9.6,
+      "dirDeg": 269
+    },
+    {
+      "time": "14:40",
+      "windKn": 7.7,
+      "gustKn": 9.5,
+      "dirDeg": 267
+    },
+    {
+      "time": "14:50",
+      "windKn": 6.6,
+      "gustKn": 9.2,
+      "dirDeg": 267
+    },
+    {
+      "time": "15:00",
+      "windKn": 6.8,
+      "gustKn": 8.8,
+      "dirDeg": 266
+    },
+    {
+      "time": "15:10",
+      "windKn": 5.6,
+      "gustKn": 7.1,
+      "dirDeg": 262
+    },
+    {
+      "time": "15:20",
+      "windKn": 5.6,
+      "gustKn": 6.7,
+      "dirDeg": 263
+    },
+    {
+      "time": "15:30",
+      "windKn": 6.1,
+      "gustKn": 7.7,
+      "dirDeg": 257
+    },
+    {
+      "time": "15:40",
+      "windKn": 6.4,
+      "gustKn": 8.5,
+      "dirDeg": 250
+    },
+    {
+      "time": "15:50",
+      "windKn": 6.5,
+      "gustKn": 7.9,
+      "dirDeg": 243
+    },
+    {
+      "time": "16:00",
+      "windKn": 5.7,
+      "gustKn": 7.3,
+      "dirDeg": 248
+    },
+    {
+      "time": "16:10",
+      "windKn": 3.8,
+      "gustKn": 5.9,
+      "dirDeg": 258
+    },
+    {
+      "time": "16:20",
+      "windKn": 3.4,
+      "gustKn": 4.6,
+      "dirDeg": 286
+    },
+    {
+      "time": "16:30",
+      "windKn": 2.2,
+      "gustKn": 3.7,
+      "dirDeg": 275
+    },
+    {
+      "time": "16:40",
+      "windKn": 1.8,
+      "gustKn": 2.5,
+      "dirDeg": 249
+    },
+    {
+      "time": "16:50",
+      "windKn": 1.8,
+      "gustKn": 3.0,
+      "dirDeg": 275
+    },
+    {
+      "time": "17:00",
+      "windKn": 2.5,
+      "gustKn": 3.3,
+      "dirDeg": 316
     }
   ]
 }
