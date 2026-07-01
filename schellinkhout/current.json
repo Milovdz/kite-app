@@ -1,10 +1,10 @@
 {
   "spot": "Schellinkhout",
-  "generatedAt": "2026-07-01T13:21:38+00:00",
+  "generatedAt": "2026-07-01T16:00:18+00:00",
   "current": {
-    "windKn": 9.8,
-    "gustKn": 15.3,
-    "dirDeg": 295
+    "windKn": 6.2,
+    "gustKn": 9.3,
+    "dirDeg": 324
   },
   "actuals": [
     {
@@ -486,6 +486,102 @@
       "windKn": 9.8,
       "gustKn": 15.3,
       "dirDeg": 295
+    },
+    {
+      "time": "15:20",
+      "windKn": 8.8,
+      "gustKn": 12.8,
+      "dirDeg": 299
+    },
+    {
+      "time": "15:30",
+      "windKn": 9.1,
+      "gustKn": 13.9,
+      "dirDeg": 297
+    },
+    {
+      "time": "15:40",
+      "windKn": 8.5,
+      "gustKn": 12.9,
+      "dirDeg": 297
+    },
+    {
+      "time": "15:50",
+      "windKn": 9.7,
+      "gustKn": 14.8,
+      "dirDeg": 296
+    },
+    {
+      "time": "16:00",
+      "windKn": 10.1,
+      "gustKn": 14.1,
+      "dirDeg": 290
+    },
+    {
+      "time": "16:10",
+      "windKn": 9.7,
+      "gustKn": 14.5,
+      "dirDeg": 304
+    },
+    {
+      "time": "16:20",
+      "windKn": 10.1,
+      "gustKn": 14.9,
+      "dirDeg": 301
+    },
+    {
+      "time": "16:30",
+      "windKn": 10.9,
+      "gustKn": 14.7,
+      "dirDeg": 302
+    },
+    {
+      "time": "16:40",
+      "windKn": 10.0,
+      "gustKn": 13.7,
+      "dirDeg": 292
+    },
+    {
+      "time": "16:50",
+      "windKn": 9.4,
+      "gustKn": 15.0,
+      "dirDeg": 296
+    },
+    {
+      "time": "17:00",
+      "windKn": 8.0,
+      "gustKn": 12.1,
+      "dirDeg": 318
+    },
+    {
+      "time": "17:10",
+      "windKn": 8.5,
+      "gustKn": 13.1,
+      "dirDeg": 318
+    },
+    {
+      "time": "17:20",
+      "windKn": 7.5,
+      "gustKn": 11.1,
+      "dirDeg": 314
+    },
+    {
+      "time": "17:30",
+      "windKn": 7.7,
+      "gustKn": 11.3,
+      "dirDeg": 313
+    },
+    {
+      "time": "17:40",
+      "windKn": 7.9,
+      "gustKn": 11.9,
+      "dirDeg": 324
+    },
+    {
+      "time": "17:50",
+      "windKn": 6.2,
+      "gustKn": 9.3,
+      "dirDeg": 324
     }
   ]
 }
