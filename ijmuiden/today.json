@@ -1,10 +1,10 @@
 {
   "spot": "IJmuiden",
-  "generatedAt": "2026-07-05T18:57:31+00:00",
+  "generatedAt": "2026-07-05T20:09:36+00:00",
   "current": {
-    "windKn": 8.4,
-    "gustKn": 16.7,
-    "dirDeg": 299
+    "windKn": 6.4,
+    "gustKn": 14.4,
+    "dirDeg": 291
   },
   "hourly": [
     {
@@ -201,7 +201,7 @@
       "dirDeg": 292,
       "waveM": 0.94,
       "wavePeriodS": 4.2,
-      "tempC": 19.4,
+      "tempC": 19.1,
       "rainMm": 0.0,
       "cloudPct": 100
     },
@@ -214,7 +214,7 @@
       "wavePeriodS": 4.3,
       "tempC": 18.9,
       "rainMm": 0.0,
-      "cloudPct": 100
+      "cloudPct": 99
     },
     {
       "hour": 19,
@@ -223,7 +223,7 @@
       "dirDeg": 300,
       "waveM": 0.8,
       "wavePeriodS": 4.4,
-      "tempC": 18.3,
+      "tempC": 18.4,
       "rainMm": 0.0,
       "cloudPct": 100
     },
@@ -234,9 +234,9 @@
       "dirDeg": 291,
       "waveM": 0.76,
       "wavePeriodS": 4.4,
-      "tempC": 18.0,
+      "tempC": 18.1,
       "rainMm": 0.0,
-      "cloudPct": 96
+      "cloudPct": 100
     },
     {
       "hour": 21,
@@ -245,9 +245,9 @@
       "dirDeg": 261,
       "waveM": 0.7,
       "wavePeriodS": 4.4,
-      "tempC": 18.1,
+      "tempC": 18.0,
       "rainMm": 0.0,
-      "cloudPct": 65
+      "cloudPct": 93
     },
     {
       "hour": 22,
@@ -256,9 +256,9 @@
       "dirDeg": 244,
       "waveM": 0.68,
       "wavePeriodS": 4.4,
-      "tempC": 18.2,
+      "tempC": 18.1,
       "rainMm": 0.0,
-      "cloudPct": 36
+      "cloudPct": 100
     },
     {
       "hour": 23,
@@ -267,9 +267,9 @@
       "dirDeg": 237,
       "waveM": 0.66,
       "wavePeriodS": 4.2,
-      "tempC": 18.5,
+      "tempC": 18.2,
       "rainMm": 0.0,
-      "cloudPct": 100
+      "cloudPct": 94
     }
   ]
 }
