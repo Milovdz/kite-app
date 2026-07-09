@@ -1,10 +1,10 @@
 {
   "spot": "IJmuiden",
-  "generatedAt": "2026-07-09T13:42:01+00:00",
+  "generatedAt": "2026-07-09T16:14:31+00:00",
   "current": {
-    "windKn": 11.0,
-    "gustKn": 12.7,
-    "dirDeg": 352
+    "windKn": 13.2,
+    "gustKn": 16.3,
+    "dirDeg": 3
   },
   "actuals": [
     {
@@ -498,6 +498,102 @@
       "windKn": 11.0,
       "gustKn": 12.7,
       "dirDeg": 352
+    },
+    {
+      "time": "15:40",
+      "windKn": 11.9,
+      "gustKn": 13.4,
+      "dirDeg": 350
+    },
+    {
+      "time": "15:50",
+      "windKn": 12.0,
+      "gustKn": 13.5,
+      "dirDeg": 352
+    },
+    {
+      "time": "16:00",
+      "windKn": 11.2,
+      "gustKn": 12.9,
+      "dirDeg": 354
+    },
+    {
+      "time": "16:10",
+      "windKn": 11.9,
+      "gustKn": 13.7,
+      "dirDeg": 356
+    },
+    {
+      "time": "16:20",
+      "windKn": 12.0,
+      "gustKn": 13.8,
+      "dirDeg": 351
+    },
+    {
+      "time": "16:30",
+      "windKn": 12.2,
+      "gustKn": 14.1,
+      "dirDeg": 350
+    },
+    {
+      "time": "16:40",
+      "windKn": 11.7,
+      "gustKn": 13.6,
+      "dirDeg": 354
+    },
+    {
+      "time": "16:50",
+      "windKn": 12.2,
+      "gustKn": 14.5,
+      "dirDeg": 356
+    },
+    {
+      "time": "17:00",
+      "windKn": 12.3,
+      "gustKn": 15.1,
+      "dirDeg": 358
+    },
+    {
+      "time": "17:10",
+      "windKn": 12.9,
+      "gustKn": 15.0,
+      "dirDeg": 1
+    },
+    {
+      "time": "17:20",
+      "windKn": 12.1,
+      "gustKn": 14.0,
+      "dirDeg": 6
+    },
+    {
+      "time": "17:30",
+      "windKn": 11.5,
+      "gustKn": 15.0,
+      "dirDeg": 6
+    },
+    {
+      "time": "17:40",
+      "windKn": 13.1,
+      "gustKn": 14.9,
+      "dirDeg": 8
+    },
+    {
+      "time": "17:50",
+      "windKn": 11.7,
+      "gustKn": 14.1,
+      "dirDeg": 10
+    },
+    {
+      "time": "18:00",
+      "windKn": 12.5,
+      "gustKn": 16.0,
+      "dirDeg": 8
+    },
+    {
+      "time": "18:10",
+      "windKn": 13.2,
+      "gustKn": 16.3,
+      "dirDeg": 3
     }
   ]
 }
