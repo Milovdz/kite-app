@@ -1,33 +1,33 @@
 {
   "spot": "Kijkduin",
-  "generatedAt": "2026-07-10T22:48:01+00:00",
+  "generatedAt": "2026-07-10T23:45:29+00:00",
   "current": {
-    "windKn": 8.2,
+    "windKn": 7.4,
     "gustKn": 13.4,
-    "dirDeg": 49
+    "dirDeg": 55
   },
   "hourly": [
     {
       "hour": 22,
-      "forecastWindKn": 8.6,
-      "forecastGustKn": 13.6,
-      "dirDeg": 49,
+      "forecastWindKn": 8.9,
+      "forecastGustKn": 15.2,
+      "dirDeg": 46,
       "waveM": 0.42,
       "wavePeriodS": 3.5,
-      "tempC": 21.3,
+      "tempC": 21.4,
       "rainMm": 0.0,
       "cloudPct": 0
     },
     {
       "hour": 23,
-      "forecastWindKn": 8.2,
-      "forecastGustKn": 13.4,
-      "dirDeg": 49,
+      "forecastWindKn": 8.4,
+      "forecastGustKn": 14.2,
+      "dirDeg": 50,
       "waveM": 0.38,
       "wavePeriodS": 3.5,
       "tempC": 20.7,
       "rainMm": 0.0,
-      "cloudPct": 0
+      "cloudPct": 39
     }
   ]
 }
