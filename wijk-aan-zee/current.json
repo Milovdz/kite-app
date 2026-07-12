@@ -1,10 +1,10 @@
 {
   "spot": "Wijk aan Zee",
-  "generatedAt": "2026-07-12T03:52:33+00:00",
+  "generatedAt": "2026-07-12T06:25:27+00:00",
   "current": {
-    "windKn": 9.7,
-    "gustKn": 11.5,
-    "dirDeg": 41
+    "windKn": 13.6,
+    "gustKn": 17.8,
+    "dirDeg": 63
   },
   "actuals": [
     {
@@ -144,6 +144,102 @@
       "windKn": 9.7,
       "gustKn": 11.5,
       "dirDeg": 41
+    },
+    {
+      "time": "05:50",
+      "windKn": 9.7,
+      "gustKn": 15.2,
+      "dirDeg": 49
+    },
+    {
+      "time": "06:00",
+      "windKn": 14.4,
+      "gustKn": 17.5,
+      "dirDeg": 62
+    },
+    {
+      "time": "06:10",
+      "windKn": 14.2,
+      "gustKn": 18.4,
+      "dirDeg": 70
+    },
+    {
+      "time": "06:20",
+      "windKn": 13.4,
+      "gustKn": 18.3,
+      "dirDeg": 65
+    },
+    {
+      "time": "06:30",
+      "windKn": 14.2,
+      "gustKn": 16.6,
+      "dirDeg": 64
+    },
+    {
+      "time": "06:40",
+      "windKn": 14.2,
+      "gustKn": 16.8,
+      "dirDeg": 65
+    },
+    {
+      "time": "06:50",
+      "windKn": 13.6,
+      "gustKn": 16.1,
+      "dirDeg": 66
+    },
+    {
+      "time": "07:00",
+      "windKn": 12.5,
+      "gustKn": 15.1,
+      "dirDeg": 61
+    },
+    {
+      "time": "07:10",
+      "windKn": 13.5,
+      "gustKn": 15.5,
+      "dirDeg": 62
+    },
+    {
+      "time": "07:20",
+      "windKn": 11.5,
+      "gustKn": 14.4,
+      "dirDeg": 62
+    },
+    {
+      "time": "07:30",
+      "windKn": 12.4,
+      "gustKn": 15.7,
+      "dirDeg": 36
+    },
+    {
+      "time": "07:40",
+      "windKn": 12.4,
+      "gustKn": 15.6,
+      "dirDeg": 37
+    },
+    {
+      "time": "07:50",
+      "windKn": 13.3,
+      "gustKn": 16.3,
+      "dirDeg": 37
+    },
+    {
+      "time": "08:00",
+      "windKn": 11.3,
+      "gustKn": 14.1,
+      "dirDeg": 41
+    },
+    {
+      "time": "08:10",
+      "windKn": 12.4,
+      "gustKn": 16.6,
+      "dirDeg": 50
+    },
+    {
+      "time": "08:20",
+      "windKn": 13.6,
+      "gustKn": 17.8,
+      "dirDeg": 63
     }
   ]
 }
