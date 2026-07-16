@@ -1,10 +1,10 @@
 {
   "spot": "Kijkduin",
-  "generatedAt": "2026-07-16T20:42:47+00:00",
+  "generatedAt": "2026-07-16T21:53:30+00:00",
   "current": {
-    "windKn": 8.6,
-    "gustKn": 15.0,
-    "dirDeg": 33
+    "windKn": 11.1,
+    "gustKn": 18.7,
+    "dirDeg": 22
   },
   "hourly": [
     {
@@ -218,56 +218,56 @@
     },
     {
       "hour": 19,
-      "forecastWindKn": 9.7,
-      "forecastGustKn": 17.5,
-      "dirDeg": 19,
+      "forecastWindKn": 13.2,
+      "forecastGustKn": 21.0,
+      "dirDeg": 22,
       "waveM": 0.66,
       "wavePeriodS": 4.0,
-      "tempC": 22.2,
+      "tempC": 20.7,
       "rainMm": 0.0,
       "cloudPct": 0
     },
     {
       "hour": 20,
       "forecastWindKn": 9.7,
-      "forecastGustKn": 15.2,
-      "dirDeg": 25,
+      "forecastGustKn": 21.0,
+      "dirDeg": 30,
       "waveM": 0.62,
       "wavePeriodS": 4.0,
-      "tempC": 21.5,
-      "rainMm": 0.0,
-      "cloudPct": 0
-    },
-    {
-      "hour": 21,
-      "forecastWindKn": 7.4,
-      "forecastGustKn": 15.0,
-      "dirDeg": 40,
-      "waveM": 0.6,
-      "wavePeriodS": 4.1,
       "tempC": 20.9,
       "rainMm": 0.0,
       "cloudPct": 0
     },
     {
+      "hour": 21,
+      "forecastWindKn": 12.1,
+      "forecastGustKn": 18.5,
+      "dirDeg": 21,
+      "waveM": 0.6,
+      "wavePeriodS": 4.1,
+      "tempC": 20.1,
+      "rainMm": 0.0,
+      "cloudPct": 0
+    },
+    {
       "hour": 22,
-      "forecastWindKn": 8.9,
-      "forecastGustKn": 13.6,
-      "dirDeg": 19,
+      "forecastWindKn": 10.7,
+      "forecastGustKn": 18.7,
+      "dirDeg": 22,
       "waveM": 0.58,
       "wavePeriodS": 4.1,
-      "tempC": 19.9,
+      "tempC": 19.8,
       "rainMm": 0.0,
       "cloudPct": 0
     },
     {
       "hour": 23,
-      "forecastWindKn": 8.9,
-      "forecastGustKn": 15.4,
-      "dirDeg": 20,
+      "forecastWindKn": 9.3,
+      "forecastGustKn": 16.5,
+      "dirDeg": 12,
       "waveM": 0.54,
       "wavePeriodS": 4.1,
-      "tempC": 19.6,
+      "tempC": 19.5,
       "rainMm": 0.0,
       "cloudPct": 0
     }
