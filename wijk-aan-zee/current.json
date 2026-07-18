@@ -1,10 +1,10 @@
 {
   "spot": "Wijk aan Zee",
-  "generatedAt": "2026-07-18T00:13:59+00:00",
+  "generatedAt": "2026-07-18T03:31:33+00:00",
   "current": {
-    "windKn": 13.5,
-    "gustKn": 18.8,
-    "dirDeg": 305
+    "windKn": 15.3,
+    "gustKn": 18.9,
+    "dirDeg": 311
   },
   "actuals": [
     {
@@ -18,6 +18,120 @@
       "windKn": 13.5,
       "gustKn": 18.8,
       "dirDeg": 305
+    },
+    {
+      "time": "02:20",
+      "windKn": 16.3,
+      "gustKn": 19.9,
+      "dirDeg": 299
+    },
+    {
+      "time": "02:30",
+      "windKn": 12.8,
+      "gustKn": 17.8,
+      "dirDeg": 298
+    },
+    {
+      "time": "02:40",
+      "windKn": 15.2,
+      "gustKn": 18.5,
+      "dirDeg": 314
+    },
+    {
+      "time": "02:50",
+      "windKn": 14.9,
+      "gustKn": 18.7,
+      "dirDeg": 306
+    },
+    {
+      "time": "03:00",
+      "windKn": 13.9,
+      "gustKn": 17.6,
+      "dirDeg": 297
+    },
+    {
+      "time": "03:10",
+      "windKn": 14.1,
+      "gustKn": 17.1,
+      "dirDeg": 308
+    },
+    {
+      "time": "03:20",
+      "windKn": 14.2,
+      "gustKn": 18.7,
+      "dirDeg": 301
+    },
+    {
+      "time": "03:30",
+      "windKn": 13.5,
+      "gustKn": 17.1,
+      "dirDeg": 290
+    },
+    {
+      "time": "03:40",
+      "windKn": 12.9,
+      "gustKn": 15.7,
+      "dirDeg": 288
+    },
+    {
+      "time": "03:50",
+      "windKn": 13.2,
+      "gustKn": 16.8,
+      "dirDeg": 293
+    },
+    {
+      "time": "04:00",
+      "windKn": 13.5,
+      "gustKn": 16.7,
+      "dirDeg": 300
+    },
+    {
+      "time": "04:10",
+      "windKn": 14.2,
+      "gustKn": 17.5,
+      "dirDeg": 294
+    },
+    {
+      "time": "04:20",
+      "windKn": 14.1,
+      "gustKn": 17.1,
+      "dirDeg": 288
+    },
+    {
+      "time": "04:30",
+      "windKn": 14.1,
+      "gustKn": 18.1,
+      "dirDeg": 286
+    },
+    {
+      "time": "04:40",
+      "windKn": 15.4,
+      "gustKn": 18.4,
+      "dirDeg": 286
+    },
+    {
+      "time": "04:50",
+      "windKn": 14.3,
+      "gustKn": 18.9,
+      "dirDeg": 306
+    },
+    {
+      "time": "05:00",
+      "windKn": 14.2,
+      "gustKn": 18.0,
+      "dirDeg": 322
+    },
+    {
+      "time": "05:10",
+      "windKn": 15.1,
+      "gustKn": 18.2,
+      "dirDeg": 317
+    },
+    {
+      "time": "05:20",
+      "windKn": 15.3,
+      "gustKn": 18.9,
+      "dirDeg": 311
     }
   ]
 }
