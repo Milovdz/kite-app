@@ -1,10 +1,10 @@
 {
   "spot": "Kijkduin",
-  "generatedAt": "2026-07-20T20:58:17+00:00",
+  "generatedAt": "2026-07-20T21:57:12+00:00",
   "current": {
-    "windKn": 11.9,
-    "gustKn": 18.9,
-    "dirDeg": 7
+    "windKn": 10.5,
+    "gustKn": 17.3,
+    "dirDeg": 10
   },
   "hourly": [
     {
@@ -218,53 +218,53 @@
     },
     {
       "hour": 19,
-      "forecastWindKn": 12.8,
-      "forecastGustKn": 20.6,
+      "forecastWindKn": 11.7,
+      "forecastGustKn": 18.5,
       "dirDeg": 3,
       "waveM": 0.86,
       "wavePeriodS": 5.0,
+      "tempC": 17.2,
+      "rainMm": 0.0,
+      "cloudPct": 1
+    },
+    {
+      "hour": 20,
+      "forecastWindKn": 10.7,
+      "forecastGustKn": 18.5,
+      "dirDeg": 5,
+      "waveM": 0.84,
+      "wavePeriodS": 4.9,
+      "tempC": 16.9,
+      "rainMm": 0.0,
+      "cloudPct": 0
+    },
+    {
+      "hour": 21,
+      "forecastWindKn": 11.3,
+      "forecastGustKn": 17.5,
+      "dirDeg": 7,
+      "waveM": 0.82,
+      "wavePeriodS": 4.9,
       "tempC": 16.7,
       "rainMm": 0.0,
       "cloudPct": 0
     },
     {
-      "hour": 20,
-      "forecastWindKn": 12.2,
-      "forecastGustKn": 19.8,
-      "dirDeg": 6,
-      "waveM": 0.84,
+      "hour": 22,
+      "forecastWindKn": 10.1,
+      "forecastGustKn": 17.1,
+      "dirDeg": 11,
+      "waveM": 0.78,
       "wavePeriodS": 4.9,
       "tempC": 16.5,
       "rainMm": 0.0,
       "cloudPct": 0
     },
     {
-      "hour": 21,
-      "forecastWindKn": 11.7,
-      "forecastGustKn": 18.7,
-      "dirDeg": 7,
-      "waveM": 0.82,
-      "wavePeriodS": 4.9,
-      "tempC": 16.4,
-      "rainMm": 0.0,
-      "cloudPct": 0
-    },
-    {
-      "hour": 22,
-      "forecastWindKn": 10.5,
-      "forecastGustKn": 17.9,
-      "dirDeg": 18,
-      "waveM": 0.78,
-      "wavePeriodS": 4.9,
-      "tempC": 16.4,
-      "rainMm": 0.0,
-      "cloudPct": 0
-    },
-    {
       "hour": 23,
       "forecastWindKn": 9.3,
-      "forecastGustKn": 16.3,
-      "dirDeg": 18,
+      "forecastGustKn": 15.7,
+      "dirDeg": 17,
       "waveM": 0.76,
       "wavePeriodS": 5.0,
       "tempC": 16.4,
