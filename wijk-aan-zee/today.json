@@ -1,10 +1,10 @@
 {
   "spot": "Wijk aan Zee",
-  "generatedAt": "2026-07-21T20:11:26+00:00",
+  "generatedAt": "2026-07-21T21:52:27+00:00",
   "current": {
-    "windKn": 8.7,
-    "gustKn": 16.3,
-    "dirDeg": 340
+    "windKn": 8.0,
+    "gustKn": 14.8,
+    "dirDeg": 334
   },
   "hourly": [
     {
@@ -208,66 +208,66 @@
     {
       "hour": 18,
       "forecastWindKn": 8.0,
-      "forecastGustKn": 15.4,
-      "dirDeg": 325,
+      "forecastGustKn": 15.7,
+      "dirDeg": 333,
       "waveM": 0.24,
       "wavePeriodS": 3.3,
-      "tempC": 18.2,
+      "tempC": 18.1,
       "rainMm": 0.0,
-      "cloudPct": 1
+      "cloudPct": 7
     },
     {
       "hour": 19,
-      "forecastWindKn": 8.9,
-      "forecastGustKn": 16.1,
-      "dirDeg": 335,
+      "forecastWindKn": 8.2,
+      "forecastGustKn": 15.6,
+      "dirDeg": 343,
       "waveM": 0.26,
       "wavePeriodS": 3.4,
       "tempC": 17.6,
       "rainMm": 0.0,
-      "cloudPct": 5
+      "cloudPct": 100
     },
     {
       "hour": 20,
-      "forecastWindKn": 8.7,
-      "forecastGustKn": 16.3,
-      "dirDeg": 340,
+      "forecastWindKn": 8.0,
+      "forecastGustKn": 15.9,
+      "dirDeg": 347,
       "waveM": 0.26,
       "wavePeriodS": 3.5,
-      "tempC": 17.3,
+      "tempC": 17.6,
       "rainMm": 0.0,
       "cloudPct": 100
     },
     {
       "hour": 21,
-      "forecastWindKn": 8.4,
-      "forecastGustKn": 15.6,
-      "dirDeg": 335,
+      "forecastWindKn": 7.8,
+      "forecastGustKn": 14.6,
+      "dirDeg": 336,
       "waveM": 0.3,
       "wavePeriodS": 3.5,
-      "tempC": 17.2,
+      "tempC": 17.5,
       "rainMm": 0.0,
       "cloudPct": 100
     },
     {
       "hour": 22,
-      "forecastWindKn": 8.7,
-      "forecastGustKn": 15.6,
-      "dirDeg": 331,
+      "forecastWindKn": 8.2,
+      "forecastGustKn": 15.0,
+      "dirDeg": 333,
       "waveM": 0.4,
       "wavePeriodS": 3.8,
-      "tempC": 17.1,
+      "tempC": 17.2,
       "rainMm": 0.0,
       "cloudPct": 100
     },
     {
       "hour": 23,
-      "forecastWindKn": 8.4,
-      "forecastGustKn": 15.7,
-      "dirDeg": 328,
+      "forecastWindKn": 8.6,
+      "forecastGustKn": 15.9,
+      "dirDeg": 332,
       "waveM": 0.38,
       "wavePeriodS": 4.0,
-      "tempC": 17.1,
+      "tempC": 17.2,
       "rainMm": 0.0,
       "cloudPct": 100
     }
