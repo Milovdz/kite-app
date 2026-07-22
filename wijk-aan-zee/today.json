@@ -1,10 +1,10 @@
 {
   "spot": "Wijk aan Zee",
-  "generatedAt": "2026-07-22T20:53:02+00:00",
+  "generatedAt": "2026-07-22T21:54:28+00:00",
   "current": {
-    "windKn": 11.7,
-    "gustKn": 21.2,
-    "dirDeg": 335
+    "windKn": 13.0,
+    "gustKn": 24.1,
+    "dirDeg": 342
   },
   "hourly": [
     {
@@ -218,57 +218,57 @@
     },
     {
       "hour": 19,
-      "forecastWindKn": 10.9,
-      "forecastGustKn": 20.4,
-      "dirDeg": 338,
+      "forecastWindKn": 10.5,
+      "forecastGustKn": 19.2,
+      "dirDeg": 331,
       "waveM": 0.74,
       "wavePeriodS": 6.0,
-      "tempC": 17.0,
+      "tempC": 17.3,
       "rainMm": 0.0,
-      "cloudPct": 98
+      "cloudPct": 100
     },
     {
       "hour": 20,
       "forecastWindKn": 10.9,
-      "forecastGustKn": 20.4,
-      "dirDeg": 334,
+      "forecastGustKn": 19.4,
+      "dirDeg": 332,
       "waveM": 0.74,
       "wavePeriodS": 6.0,
-      "tempC": 17.1,
-      "rainMm": 0.0,
-      "cloudPct": 96
-    },
-    {
-      "hour": 21,
-      "forecastWindKn": 11.7,
-      "forecastGustKn": 21.4,
-      "dirDeg": 335,
-      "waveM": 0.74,
-      "wavePeriodS": 5.9,
       "tempC": 17.2,
       "rainMm": 0.0,
       "cloudPct": 100
     },
     {
-      "hour": 22,
-      "forecastWindKn": 10.5,
-      "forecastGustKn": 20.8,
-      "dirDeg": 332,
+      "hour": 21,
+      "forecastWindKn": 11.1,
+      "forecastGustKn": 19.8,
+      "dirDeg": 337,
       "waveM": 0.74,
       "wavePeriodS": 5.9,
-      "tempC": 17.2,
+      "tempC": 17.1,
+      "rainMm": 0.0,
+      "cloudPct": 99
+    },
+    {
+      "hour": 22,
+      "forecastWindKn": 13.0,
+      "forecastGustKn": 25.1,
+      "dirDeg": 344,
+      "waveM": 0.74,
+      "wavePeriodS": 5.9,
+      "tempC": 17.1,
       "rainMm": 0.0,
       "cloudPct": 100
     },
     {
       "hour": 23,
-      "forecastWindKn": 8.9,
-      "forecastGustKn": 19.6,
-      "dirDeg": 332,
+      "forecastWindKn": 8.6,
+      "forecastGustKn": 23.1,
+      "dirDeg": 345,
       "waveM": 0.74,
       "wavePeriodS": 5.8,
-      "tempC": 16.9,
-      "rainMm": 0.1,
+      "tempC": 17.1,
+      "rainMm": 0.0,
       "cloudPct": 100
     }
   ]
