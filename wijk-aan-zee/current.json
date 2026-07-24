@@ -1,10 +1,10 @@
 {
   "spot": "Wijk aan Zee",
-  "generatedAt": "2026-07-24T04:28:49+00:00",
+  "generatedAt": "2026-07-24T07:06:48+00:00",
   "current": {
-    "windKn": 8.7,
-    "gustKn": 12.9,
-    "dirDeg": 343
+    "windKn": 1.9,
+    "gustKn": 3.4,
+    "dirDeg": 216
   },
   "actuals": [
     {
@@ -168,6 +168,102 @@
       "windKn": 8.7,
       "gustKn": 12.9,
       "dirDeg": 343
+    },
+    {
+      "time": "06:30",
+      "windKn": 7.3,
+      "gustKn": 8.9,
+      "dirDeg": 35
+    },
+    {
+      "time": "06:40",
+      "windKn": 6.9,
+      "gustKn": 9.8,
+      "dirDeg": 73
+    },
+    {
+      "time": "06:50",
+      "windKn": 4.9,
+      "gustKn": 6.7,
+      "dirDeg": 86
+    },
+    {
+      "time": "07:00",
+      "windKn": 4.6,
+      "gustKn": 5.7,
+      "dirDeg": 93
+    },
+    {
+      "time": "07:10",
+      "windKn": 4.0,
+      "gustKn": 5.4,
+      "dirDeg": 98
+    },
+    {
+      "time": "07:20",
+      "windKn": 3.6,
+      "gustKn": 4.8,
+      "dirDeg": 106
+    },
+    {
+      "time": "07:30",
+      "windKn": 3.8,
+      "gustKn": 4.6,
+      "dirDeg": 112
+    },
+    {
+      "time": "07:40",
+      "windKn": 3.5,
+      "gustKn": 4.5,
+      "dirDeg": 136
+    },
+    {
+      "time": "07:50",
+      "windKn": 3.6,
+      "gustKn": 4.6,
+      "dirDeg": 129
+    },
+    {
+      "time": "08:00",
+      "windKn": 3.0,
+      "gustKn": 4.3,
+      "dirDeg": 128
+    },
+    {
+      "time": "08:10",
+      "windKn": 3.3,
+      "gustKn": 4.6,
+      "dirDeg": 126
+    },
+    {
+      "time": "08:20",
+      "windKn": 3.2,
+      "gustKn": 4.6,
+      "dirDeg": 139
+    },
+    {
+      "time": "08:30",
+      "windKn": 4.1,
+      "gustKn": 5.3,
+      "dirDeg": 160
+    },
+    {
+      "time": "08:40",
+      "windKn": 3.2,
+      "gustKn": 4.7,
+      "dirDeg": 170
+    },
+    {
+      "time": "08:50",
+      "windKn": 2.3,
+      "gustKn": 4.8,
+      "dirDeg": 193
+    },
+    {
+      "time": "09:00",
+      "windKn": 1.9,
+      "gustKn": 3.4,
+      "dirDeg": 216
     }
   ]
 }
