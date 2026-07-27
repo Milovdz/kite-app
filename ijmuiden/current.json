@@ -1,10 +1,10 @@
 {
   "spot": "IJmuiden",
-  "generatedAt": "2026-07-27T16:01:40+00:00",
+  "generatedAt": "2026-07-27T17:53:14+00:00",
   "current": {
-    "windKn": 12.7,
-    "gustKn": 15.3,
-    "dirDeg": 286
+    "windKn": 13.0,
+    "gustKn": 15.5,
+    "dirDeg": 264
   },
   "actuals": [
     {
@@ -582,6 +582,72 @@
       "windKn": 12.7,
       "gustKn": 15.3,
       "dirDeg": 286
+    },
+    {
+      "time": "18:00",
+      "windKn": 12.5,
+      "gustKn": 15.1,
+      "dirDeg": 283
+    },
+    {
+      "time": "18:10",
+      "windKn": 13.0,
+      "gustKn": 16.2,
+      "dirDeg": 279
+    },
+    {
+      "time": "18:20",
+      "windKn": 12.8,
+      "gustKn": 15.5,
+      "dirDeg": 279
+    },
+    {
+      "time": "18:30",
+      "windKn": 12.9,
+      "gustKn": 15.6,
+      "dirDeg": 276
+    },
+    {
+      "time": "18:40",
+      "windKn": 12.3,
+      "gustKn": 15.1,
+      "dirDeg": 282
+    },
+    {
+      "time": "18:50",
+      "windKn": 12.5,
+      "gustKn": 15.4,
+      "dirDeg": 273
+    },
+    {
+      "time": "19:00",
+      "windKn": 12.9,
+      "gustKn": 17.2,
+      "dirDeg": 270
+    },
+    {
+      "time": "19:10",
+      "windKn": 13.1,
+      "gustKn": 15.7,
+      "dirDeg": 265
+    },
+    {
+      "time": "19:20",
+      "windKn": 12.5,
+      "gustKn": 14.9,
+      "dirDeg": 267
+    },
+    {
+      "time": "19:30",
+      "windKn": 13.1,
+      "gustKn": 15.8,
+      "dirDeg": 264
+    },
+    {
+      "time": "19:40",
+      "windKn": 13.0,
+      "gustKn": 15.5,
+      "dirDeg": 264
     }
   ]
 }
