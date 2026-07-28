@@ -1,10 +1,10 @@
 {
   "spot": "Wijk aan Zee",
-  "generatedAt": "2026-07-28T07:31:56+00:00",
+  "generatedAt": "2026-07-28T10:13:33+00:00",
   "current": {
-    "windKn": 12.2,
-    "gustKn": 13.9,
-    "dirDeg": 202
+    "windKn": 14.3,
+    "gustKn": 17.6,
+    "dirDeg": 222
   },
   "actuals": [
     {
@@ -276,6 +276,102 @@
       "windKn": 12.2,
       "gustKn": 13.9,
       "dirDeg": 202
+    },
+    {
+      "time": "09:30",
+      "windKn": 13.5,
+      "gustKn": 15.8,
+      "dirDeg": 208
+    },
+    {
+      "time": "09:40",
+      "windKn": 14.8,
+      "gustKn": 17.3,
+      "dirDeg": 210
+    },
+    {
+      "time": "09:50",
+      "windKn": 14.0,
+      "gustKn": 16.2,
+      "dirDeg": 213
+    },
+    {
+      "time": "10:00",
+      "windKn": 15.2,
+      "gustKn": 16.8,
+      "dirDeg": 211
+    },
+    {
+      "time": "10:10",
+      "windKn": 14.5,
+      "gustKn": 17.9,
+      "dirDeg": 210
+    },
+    {
+      "time": "10:20",
+      "windKn": 15.2,
+      "gustKn": 17.9,
+      "dirDeg": 211
+    },
+    {
+      "time": "10:30",
+      "windKn": 16.2,
+      "gustKn": 18.5,
+      "dirDeg": 213
+    },
+    {
+      "time": "10:40",
+      "windKn": 14.9,
+      "gustKn": 17.6,
+      "dirDeg": 214
+    },
+    {
+      "time": "10:50",
+      "windKn": 15.1,
+      "gustKn": 17.0,
+      "dirDeg": 211
+    },
+    {
+      "time": "11:00",
+      "windKn": 15.4,
+      "gustKn": 18.0,
+      "dirDeg": 213
+    },
+    {
+      "time": "11:10",
+      "windKn": 14.9,
+      "gustKn": 18.2,
+      "dirDeg": 213
+    },
+    {
+      "time": "11:20",
+      "windKn": 15.6,
+      "gustKn": 18.1,
+      "dirDeg": 216
+    },
+    {
+      "time": "11:30",
+      "windKn": 15.8,
+      "gustKn": 18.5,
+      "dirDeg": 218
+    },
+    {
+      "time": "11:40",
+      "windKn": 15.6,
+      "gustKn": 18.7,
+      "dirDeg": 218
+    },
+    {
+      "time": "11:50",
+      "windKn": 15.3,
+      "gustKn": 17.0,
+      "dirDeg": 222
+    },
+    {
+      "time": "12:00",
+      "windKn": 14.3,
+      "gustKn": 17.6,
+      "dirDeg": 222
     }
   ]
 }
