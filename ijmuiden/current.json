@@ -1,10 +1,10 @@
 {
   "spot": "IJmuiden",
-  "generatedAt": "2026-08-02T04:36:16+00:00",
+  "generatedAt": "2026-08-02T07:15:27+00:00",
   "current": {
-    "windKn": 6.5,
-    "gustKn": 8.1,
-    "dirDeg": 96
+    "windKn": 5.6,
+    "gustKn": 7.2,
+    "dirDeg": 79
   },
   "actuals": [
     {
@@ -174,6 +174,102 @@
       "windKn": 6.5,
       "gustKn": 8.1,
       "dirDeg": 96
+    },
+    {
+      "time": "06:40",
+      "windKn": 6.9,
+      "gustKn": 9.1,
+      "dirDeg": 101
+    },
+    {
+      "time": "06:50",
+      "windKn": 6.8,
+      "gustKn": 8.7,
+      "dirDeg": 104
+    },
+    {
+      "time": "07:00",
+      "windKn": 7.1,
+      "gustKn": 8.8,
+      "dirDeg": 102
+    },
+    {
+      "time": "07:10",
+      "windKn": 6.6,
+      "gustKn": 7.9,
+      "dirDeg": 101
+    },
+    {
+      "time": "07:20",
+      "windKn": 5.9,
+      "gustKn": 7.4,
+      "dirDeg": 103
+    },
+    {
+      "time": "07:30",
+      "windKn": 5.7,
+      "gustKn": 7.1,
+      "dirDeg": 98
+    },
+    {
+      "time": "07:40",
+      "windKn": 5.9,
+      "gustKn": 7.2,
+      "dirDeg": 94
+    },
+    {
+      "time": "07:50",
+      "windKn": 5.9,
+      "gustKn": 7.7,
+      "dirDeg": 96
+    },
+    {
+      "time": "08:00",
+      "windKn": 6.1,
+      "gustKn": 7.9,
+      "dirDeg": 98
+    },
+    {
+      "time": "08:10",
+      "windKn": 5.6,
+      "gustKn": 7.8,
+      "dirDeg": 93
+    },
+    {
+      "time": "08:20",
+      "windKn": 5.7,
+      "gustKn": 7.2,
+      "dirDeg": 94
+    },
+    {
+      "time": "08:30",
+      "windKn": 5.7,
+      "gustKn": 7.6,
+      "dirDeg": 104
+    },
+    {
+      "time": "08:40",
+      "windKn": 5.8,
+      "gustKn": 7.7,
+      "dirDeg": 102
+    },
+    {
+      "time": "08:50",
+      "windKn": 5.1,
+      "gustKn": 7.4,
+      "dirDeg": 100
+    },
+    {
+      "time": "09:00",
+      "windKn": 5.2,
+      "gustKn": 6.6,
+      "dirDeg": 92
+    },
+    {
+      "time": "09:10",
+      "windKn": 5.6,
+      "gustKn": 7.2,
+      "dirDeg": 79
     }
   ]
 }
