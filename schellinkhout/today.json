@@ -1,9 +1,9 @@
 {
   "spot": "Schellinkhout",
-  "generatedAt": "2026-08-03T20:52:27+00:00",
+  "generatedAt": "2026-08-03T21:56:33+00:00",
   "current": {
-    "windKn": 4.7,
-    "gustKn": 7.6,
+    "windKn": 4.5,
+    "gustKn": 6.6,
     "dirDeg": 285
   },
   "hourly": [
@@ -218,58 +218,58 @@
     },
     {
       "hour": 19,
-      "forecastWindKn": 5.8,
-      "forecastGustKn": 11.9,
-      "dirDeg": 303,
+      "forecastWindKn": 4.3,
+      "forecastGustKn": 6.6,
+      "dirDeg": 311,
       "waveM": 0.2,
       "wavePeriodS": 1.8,
-      "tempC": 25.8,
+      "tempC": 25.0,
       "rainMm": 0.0,
       "cloudPct": 0
     },
     {
       "hour": 20,
-      "forecastWindKn": 5.6,
-      "forecastGustKn": 8.2,
-      "dirDeg": 307,
+      "forecastWindKn": 3.5,
+      "forecastGustKn": 6.6,
+      "dirDeg": 264,
       "waveM": 0.12,
       "wavePeriodS": 1.9,
-      "tempC": 23.8,
+      "tempC": 22.6,
+      "rainMm": 0.0,
+      "cloudPct": 72
+    },
+    {
+      "hour": 21,
+      "forecastWindKn": 4.9,
+      "forecastGustKn": 5.8,
+      "dirDeg": 272,
+      "waveM": 0.08,
+      "wavePeriodS": 1.9,
+      "tempC": 20.7,
       "rainMm": 0.0,
       "cloudPct": 0
     },
     {
-      "hour": 21,
-      "forecastWindKn": 4.5,
-      "forecastGustKn": 7.4,
-      "dirDeg": 277,
-      "waveM": 0.08,
-      "wavePeriodS": 1.9,
-      "tempC": 22.0,
-      "rainMm": 0.0,
-      "cloudPct": 97
-    },
-    {
       "hour": 22,
-      "forecastWindKn": 3.9,
-      "forecastGustKn": 6.0,
-      "dirDeg": 276,
+      "forecastWindKn": 4.3,
+      "forecastGustKn": 6.6,
+      "dirDeg": 289,
       "waveM": 0.06,
       "wavePeriodS": 1.8,
-      "tempC": 20.8,
+      "tempC": 20.4,
       "rainMm": 0.0,
-      "cloudPct": 100
+      "cloudPct": 99
     },
     {
       "hour": 23,
-      "forecastWindKn": 6.0,
-      "forecastGustKn": 9.9,
-      "dirDeg": 221,
+      "forecastWindKn": 4.5,
+      "forecastGustKn": 5.2,
+      "dirDeg": 271,
       "waveM": 0.04,
       "wavePeriodS": 1.8,
-      "tempC": 20.3,
+      "tempC": 19.5,
       "rainMm": 0.0,
-      "cloudPct": 100
+      "cloudPct": 78
     }
   ]
 }
