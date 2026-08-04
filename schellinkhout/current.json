@@ -1,10 +1,10 @@
 {
   "spot": "Schellinkhout",
-  "generatedAt": "2026-08-04T20:39:54+00:00",
+  "generatedAt": "2026-08-04T21:52:49+00:00",
   "current": {
-    "windKn": 11.9,
-    "gustKn": 17.4,
-    "dirDeg": 208
+    "windKn": 10.0,
+    "gustKn": 13.5,
+    "dirDeg": 210
   },
   "actuals": [
     {
@@ -750,6 +750,48 @@
       "windKn": 11.9,
       "gustKn": 17.4,
       "dirDeg": 208
+    },
+    {
+      "time": "22:40",
+      "windKn": 12.5,
+      "gustKn": 16.4,
+      "dirDeg": 207
+    },
+    {
+      "time": "22:50",
+      "windKn": 12.4,
+      "gustKn": 18.1,
+      "dirDeg": 206
+    },
+    {
+      "time": "23:00",
+      "windKn": 12.1,
+      "gustKn": 16.7,
+      "dirDeg": 211
+    },
+    {
+      "time": "23:10",
+      "windKn": 12.5,
+      "gustKn": 17.4,
+      "dirDeg": 207
+    },
+    {
+      "time": "23:20",
+      "windKn": 11.8,
+      "gustKn": 17.1,
+      "dirDeg": 211
+    },
+    {
+      "time": "23:30",
+      "windKn": 10.9,
+      "gustKn": 15.6,
+      "dirDeg": 212
+    },
+    {
+      "time": "23:40",
+      "windKn": 10.0,
+      "gustKn": 13.5,
+      "dirDeg": 210
     }
   ]
 }
