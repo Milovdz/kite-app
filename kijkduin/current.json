@@ -1,10 +1,10 @@
 {
   "spot": "Kijkduin",
-  "generatedAt": "2026-08-22T19:42:52+00:00",
+  "generatedAt": "2026-08-22T19:55:19+00:00",
   "current": {
-    "windKn": 4.6,
-    "gustKn": 6.2,
-    "dirDeg": 276
+    "windKn": 5.3,
+    "gustKn": 7.2,
+    "dirDeg": 265
   },
   "actuals": [
     {
@@ -714,6 +714,18 @@
       "windKn": 4.6,
       "gustKn": 6.2,
       "dirDeg": 276
+    },
+    {
+      "time": "21:40",
+      "windKn": 4.9,
+      "gustKn": 7.2,
+      "dirDeg": 269
+    },
+    {
+      "time": "21:50",
+      "windKn": 5.3,
+      "gustKn": 7.2,
+      "dirDeg": 265
     }
   ]
 }
