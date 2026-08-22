@@ -1,10 +1,10 @@
 {
   "spot": "Wijk aan Zee",
-  "generatedAt": "2026-08-22T05:17:24+00:00",
+  "generatedAt": "2026-08-22T05:49:41+00:00",
   "current": {
-    "windKn": 2.6,
-    "gustKn": 4.6,
-    "dirDeg": 52
+    "windKn": 15.3,
+    "gustKn": 19.4,
+    "dirDeg": 3
   },
   "actuals": [
     {
@@ -198,6 +198,24 @@
       "windKn": 2.6,
       "gustKn": 4.6,
       "dirDeg": 52
+    },
+    {
+      "time": "07:20",
+      "windKn": 13.5,
+      "gustKn": 21.2,
+      "dirDeg": 355
+    },
+    {
+      "time": "07:30",
+      "windKn": 16.0,
+      "gustKn": 19.6,
+      "dirDeg": 0
+    },
+    {
+      "time": "07:40",
+      "windKn": 15.3,
+      "gustKn": 19.4,
+      "dirDeg": 3
     }
   ]
 }
