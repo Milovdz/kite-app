@@ -1,31 +1,31 @@
 {
   "spot": "Schellinkhout",
-  "generatedAt": "2026-08-24T22:13:20+00:00",
+  "generatedAt": "2026-08-24T23:12:22+00:00",
   "current": {
-    "windKn": 9.5,
-    "gustKn": 18.7,
-    "dirDeg": 65
+    "windKn": 13.0,
+    "gustKn": 21.2,
+    "dirDeg": 75
   },
   "hourly": [
     {
       "hour": 22,
-      "forecastWindKn": 9.5,
-      "forecastGustKn": 18.7,
-      "dirDeg": 65,
+      "forecastWindKn": 10.3,
+      "forecastGustKn": 18.9,
+      "dirDeg": 66,
       "waveM": 0.48,
       "wavePeriodS": 2.8,
-      "tempC": 16.2,
+      "tempC": 16.4,
       "rainMm": 0.0,
       "cloudPct": 0
     },
     {
       "hour": 23,
-      "forecastWindKn": 12.4,
-      "forecastGustKn": 20.2,
+      "forecastWindKn": 13.0,
+      "forecastGustKn": 21.2,
       "dirDeg": 75,
       "waveM": 0.54,
       "wavePeriodS": 2.8,
-      "tempC": 16.3,
+      "tempC": 16.5,
       "rainMm": 0.0,
       "cloudPct": 0
     }
