@@ -1,10 +1,10 @@
 {
   "spot": "Schellinkhout",
-  "generatedAt": "2026-08-24T18:21:34+00:00",
+  "generatedAt": "2026-08-24T19:20:13+00:00",
   "current": {
-    "windKn": 9.7,
-    "gustKn": 16.7,
-    "dirDeg": 61
+    "windKn": 8.2,
+    "gustKn": 12.8,
+    "dirDeg": 66
   },
   "hourly": [
     {
@@ -185,64 +185,64 @@
     },
     {
       "hour": 16,
-      "forecastWindKn": 9.7,
-      "forecastGustKn": 17.1,
-      "dirDeg": 54,
+      "forecastWindKn": 8.4,
+      "forecastGustKn": 14.8,
+      "dirDeg": 55,
       "waveM": 0.3,
-      "wavePeriodS": 2.3,
-      "tempC": 19.9,
-      "rainMm": 0.0,
-      "cloudPct": 59
-    },
-    {
-      "hour": 17,
-      "forecastWindKn": 9.5,
-      "forecastGustKn": 16.7,
-      "dirDeg": 64,
-      "waveM": 0.32,
       "wavePeriodS": 2.3,
       "tempC": 19.6,
       "rainMm": 0.0,
-      "cloudPct": 20
+      "cloudPct": 0
+    },
+    {
+      "hour": 17,
+      "forecastWindKn": 9.1,
+      "forecastGustKn": 15.0,
+      "dirDeg": 56,
+      "waveM": 0.32,
+      "wavePeriodS": 2.3,
+      "tempC": 19.0,
+      "rainMm": 0.0,
+      "cloudPct": 0
     },
     {
       "hour": 18,
-      "forecastWindKn": 9.5,
-      "forecastGustKn": 16.7,
-      "dirDeg": 57,
+      "forecastWindKn": 8.2,
+      "forecastGustKn": 14.8,
+      "dirDeg": 60,
       "waveM": 0.38,
       "wavePeriodS": 2.5,
-      "tempC": 18.7,
+      "tempC": 18.2,
       "rainMm": 0.0,
       "cloudPct": 0
     },
     {
       "hour": 19,
-      "forecastWindKn": 10.3,
-      "forecastGustKn": 16.5,
-      "dirDeg": 71,
+      "forecastWindKn": 8.2,
+      "forecastGustKn": 12.6,
+      "dirDeg": 67,
       "waveM": 0.44,
       "wavePeriodS": 2.5,
-      "tempC": 18.1,
+      "tempC": 17.5,
       "rainMm": 0.0,
-      "cloudPct": 3
+      "cloudPct": 0
     },
     {
       "hour": 20,
-      "forecastWindKn": 9.3,
-      "forecastGustKn": 16.7,
-      "dirDeg": 60,
+      "forecastWindKn": 8.9,
+      "forecastGustKn": 14.6,
+      "dirDeg": 62,
       "waveM": 0.46,
       "wavePeriodS": 2.7,
-      "tempC": 17.3,
+      "tempC": 17.1,
       "rainMm": 0.0,
       "cloudPct": 0
     },
     {
       "hour": 21,
-      "forecastWindKn": 12.1,
-      "forecastGustKn": 19.8,
-      "dirDeg": 65,
+      "forecastWindKn": 11.7,
+      "forecastGustKn": 18.9,
+      "dirDeg": 64,
       "waveM": 0.46,
       "wavePeriodS": 2.7,
       "tempC": 16.7,
@@ -251,23 +251,23 @@
     },
     {
       "hour": 22,
-      "forecastWindKn": 11.3,
-      "forecastGustKn": 20.0,
-      "dirDeg": 75,
+      "forecastWindKn": 10.5,
+      "forecastGustKn": 18.9,
+      "dirDeg": 69,
       "waveM": 0.48,
       "wavePeriodS": 2.8,
-      "tempC": 16.5,
+      "tempC": 16.4,
       "rainMm": 0.0,
       "cloudPct": 0
     },
     {
       "hour": 23,
-      "forecastWindKn": 12.6,
-      "forecastGustKn": 20.6,
-      "dirDeg": 76,
+      "forecastWindKn": 12.2,
+      "forecastGustKn": 19.8,
+      "dirDeg": 78,
       "waveM": 0.54,
       "wavePeriodS": 2.8,
-      "tempC": 16.6,
+      "tempC": 16.3,
       "rainMm": 0.0,
       "cloudPct": 0
     }
