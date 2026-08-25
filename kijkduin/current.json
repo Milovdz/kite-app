@@ -1,10 +1,10 @@
 {
   "spot": "Kijkduin",
-  "generatedAt": "2026-08-25T02:07:20+00:00",
+  "generatedAt": "2026-08-25T03:10:36+00:00",
   "current": {
-    "windKn": 6.2,
-    "gustKn": 8.3,
-    "dirDeg": 54
+    "windKn": 7.1,
+    "gustKn": 10.1,
+    "dirDeg": 49
   },
   "actuals": [
     {
@@ -84,6 +84,42 @@
       "windKn": 6.2,
       "gustKn": 8.3,
       "dirDeg": 54
+    },
+    {
+      "time": "04:10",
+      "windKn": 6.2,
+      "gustKn": 8.0,
+      "dirDeg": 54
+    },
+    {
+      "time": "04:20",
+      "windKn": 6.1,
+      "gustKn": 9.2,
+      "dirDeg": 53
+    },
+    {
+      "time": "04:30",
+      "windKn": 6.9,
+      "gustKn": 9.1,
+      "dirDeg": 49
+    },
+    {
+      "time": "04:40",
+      "windKn": 7.0,
+      "gustKn": 9.7,
+      "dirDeg": 50
+    },
+    {
+      "time": "04:50",
+      "windKn": 6.6,
+      "gustKn": 9.8,
+      "dirDeg": 51
+    },
+    {
+      "time": "05:00",
+      "windKn": 7.1,
+      "gustKn": 10.1,
+      "dirDeg": 49
     }
   ]
 }
