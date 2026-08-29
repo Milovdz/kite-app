@@ -1,10 +1,10 @@
 {
   "spot": "IJmuiden",
-  "generatedAt": "2026-08-29T18:43:00+00:00",
+  "generatedAt": "2026-08-29T21:14:48+00:00",
   "current": {
-    "windKn": 15.9,
-    "gustKn": 20.6,
-    "dirDeg": 172
+    "windKn": 30.6,
+    "gustKn": 34.3,
+    "dirDeg": 212
   },
   "actuals": [
     {
@@ -678,6 +678,102 @@
       "windKn": 15.9,
       "gustKn": 20.6,
       "dirDeg": 172
+    },
+    {
+      "time": "20:40",
+      "windKn": 16.2,
+      "gustKn": 20.3,
+      "dirDeg": 175
+    },
+    {
+      "time": "20:50",
+      "windKn": 16.3,
+      "gustKn": 21.2,
+      "dirDeg": 172
+    },
+    {
+      "time": "21:00",
+      "windKn": 14.9,
+      "gustKn": 20.7,
+      "dirDeg": 173
+    },
+    {
+      "time": "21:10",
+      "windKn": 15.6,
+      "gustKn": 21.6,
+      "dirDeg": 175
+    },
+    {
+      "time": "21:20",
+      "windKn": 16.2,
+      "gustKn": 21.2,
+      "dirDeg": 181
+    },
+    {
+      "time": "21:30",
+      "windKn": 15.9,
+      "gustKn": 20.8,
+      "dirDeg": 175
+    },
+    {
+      "time": "21:40",
+      "windKn": 14.8,
+      "gustKn": 19.0,
+      "dirDeg": 178
+    },
+    {
+      "time": "21:50",
+      "windKn": 13.1,
+      "gustKn": 17.5,
+      "dirDeg": 178
+    },
+    {
+      "time": "22:00",
+      "windKn": 12.7,
+      "gustKn": 18.7,
+      "dirDeg": 167
+    },
+    {
+      "time": "22:10",
+      "windKn": 13.9,
+      "gustKn": 23.0,
+      "dirDeg": 159
+    },
+    {
+      "time": "22:20",
+      "windKn": 16.0,
+      "gustKn": 21.0,
+      "dirDeg": 168
+    },
+    {
+      "time": "22:30",
+      "windKn": 18.0,
+      "gustKn": 25.4,
+      "dirDeg": 176
+    },
+    {
+      "time": "22:40",
+      "windKn": 18.5,
+      "gustKn": 24.4,
+      "dirDeg": 181
+    },
+    {
+      "time": "22:50",
+      "windKn": 15.0,
+      "gustKn": 18.5,
+      "dirDeg": 175
+    },
+    {
+      "time": "23:00",
+      "windKn": 19.1,
+      "gustKn": 24.8,
+      "dirDeg": 183
+    },
+    {
+      "time": "23:10",
+      "windKn": 30.6,
+      "gustKn": 34.3,
+      "dirDeg": 212
     }
   ]
 }
