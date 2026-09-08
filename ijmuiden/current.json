@@ -1,10 +1,10 @@
 {
   "spot": "IJmuiden",
-  "generatedAt": "2026-09-08T17:18:04+00:00",
+  "generatedAt": "2026-09-08T19:59:31+00:00",
   "current": {
-    "windKn": 4.9,
-    "gustKn": 6.6,
-    "dirDeg": 197
+    "windKn": 24.3,
+    "gustKn": 30.2,
+    "dirDeg": 314
   },
   "actuals": [
     {
@@ -630,6 +630,102 @@
       "windKn": 4.9,
       "gustKn": 6.6,
       "dirDeg": 197
+    },
+    {
+      "time": "19:20",
+      "windKn": 3.7,
+      "gustKn": 5.2,
+      "dirDeg": 208
+    },
+    {
+      "time": "19:30",
+      "windKn": 4.4,
+      "gustKn": 6.0,
+      "dirDeg": 243
+    },
+    {
+      "time": "19:40",
+      "windKn": 3.6,
+      "gustKn": 4.8,
+      "dirDeg": 272
+    },
+    {
+      "time": "19:50",
+      "windKn": 4.6,
+      "gustKn": 6.1,
+      "dirDeg": 289
+    },
+    {
+      "time": "20:00",
+      "windKn": 11.3,
+      "gustKn": 19.9,
+      "dirDeg": 296
+    },
+    {
+      "time": "20:10",
+      "windKn": 19.1,
+      "gustKn": 23.8,
+      "dirDeg": 302
+    },
+    {
+      "time": "20:20",
+      "windKn": 19.8,
+      "gustKn": 22.9,
+      "dirDeg": 306
+    },
+    {
+      "time": "20:30",
+      "windKn": 20.6,
+      "gustKn": 26.5,
+      "dirDeg": 307
+    },
+    {
+      "time": "20:40",
+      "windKn": 22.3,
+      "gustKn": 26.6,
+      "dirDeg": 306
+    },
+    {
+      "time": "20:50",
+      "windKn": 19.7,
+      "gustKn": 23.3,
+      "dirDeg": 317
+    },
+    {
+      "time": "21:00",
+      "windKn": 17.0,
+      "gustKn": 22.6,
+      "dirDeg": 336
+    },
+    {
+      "time": "21:10",
+      "windKn": 18.4,
+      "gustKn": 22.0,
+      "dirDeg": 333
+    },
+    {
+      "time": "21:20",
+      "windKn": 17.5,
+      "gustKn": 21.9,
+      "dirDeg": 319
+    },
+    {
+      "time": "21:30",
+      "windKn": 20.5,
+      "gustKn": 26.0,
+      "dirDeg": 319
+    },
+    {
+      "time": "21:40",
+      "windKn": 23.6,
+      "gustKn": 29.4,
+      "dirDeg": 314
+    },
+    {
+      "time": "21:50",
+      "windKn": 24.3,
+      "gustKn": 30.2,
+      "dirDeg": 314
     }
   ]
 }
