@@ -1,33 +1,275 @@
 {
   "spot": "Schellinkhout",
-  "generatedAt": "2026-10-14T22:04:44+00:00",
+  "generatedAt": "2026-10-15T01:02:08+00:00",
   "current": {
-    "windKn": 10.3,
-    "gustKn": 14.8,
-    "dirDeg": 195
+    "windKn": 12.4,
+    "gustKn": 20.4,
+    "dirDeg": 213
   },
   "hourly": [
     {
-      "hour": 22,
-      "forecastWindKn": 10.3,
-      "forecastGustKn": 14.8,
-      "dirDeg": 195,
-      "waveM": 0.28,
-      "wavePeriodS": 2.2,
-      "tempC": 14.9,
+      "hour": 0,
+      "forecastWindKn": 14.0,
+      "forecastGustKn": 20.8,
+      "dirDeg": 208,
+      "waveM": 0.3,
+      "wavePeriodS": 2.3,
+      "tempC": 14.3,
       "rainMm": 0.0,
-      "cloudPct": 63
+      "cloudPct": 100
+    },
+    {
+      "hour": 1,
+      "forecastWindKn": 12.4,
+      "forecastGustKn": 20.4,
+      "dirDeg": 213,
+      "waveM": 0.36,
+      "wavePeriodS": 2.3,
+      "tempC": 13.9,
+      "rainMm": 0.0,
+      "cloudPct": 100
+    },
+    {
+      "hour": 2,
+      "forecastWindKn": 13.8,
+      "forecastGustKn": 20.2,
+      "dirDeg": 199,
+      "waveM": 0.38,
+      "wavePeriodS": 2.5,
+      "tempC": 13.8,
+      "rainMm": 0.0,
+      "cloudPct": 100
+    },
+    {
+      "hour": 3,
+      "forecastWindKn": 13.6,
+      "forecastGustKn": 21.0,
+      "dirDeg": 208,
+      "waveM": 0.34,
+      "wavePeriodS": 2.5,
+      "tempC": 13.6,
+      "rainMm": 0.0,
+      "cloudPct": 100
+    },
+    {
+      "hour": 4,
+      "forecastWindKn": 12.8,
+      "forecastGustKn": 19.8,
+      "dirDeg": 206,
+      "waveM": 0.36,
+      "wavePeriodS": 2.4,
+      "tempC": 13.5,
+      "rainMm": 0.0,
+      "cloudPct": 100
+    },
+    {
+      "hour": 5,
+      "forecastWindKn": 13.6,
+      "forecastGustKn": 20.0,
+      "dirDeg": 200,
+      "waveM": 0.38,
+      "wavePeriodS": 2.5,
+      "tempC": 13.6,
+      "rainMm": 0.0,
+      "cloudPct": 88
+    },
+    {
+      "hour": 6,
+      "forecastWindKn": 13.6,
+      "forecastGustKn": 21.0,
+      "dirDeg": 207,
+      "waveM": 0.42,
+      "wavePeriodS": 2.5,
+      "tempC": 13.5,
+      "rainMm": 0.0,
+      "cloudPct": 83
+    },
+    {
+      "hour": 7,
+      "forecastWindKn": 14.8,
+      "forecastGustKn": 21.6,
+      "dirDeg": 201,
+      "waveM": 0.46,
+      "wavePeriodS": 2.5,
+      "tempC": 13.2,
+      "rainMm": 0.0,
+      "cloudPct": 36
+    },
+    {
+      "hour": 8,
+      "forecastWindKn": 13.6,
+      "forecastGustKn": 21.8,
+      "dirDeg": 210,
+      "waveM": 0.48,
+      "wavePeriodS": 2.7,
+      "tempC": 13.3,
+      "rainMm": 0.0,
+      "cloudPct": 95
+    },
+    {
+      "hour": 9,
+      "forecastWindKn": 12.1,
+      "forecastGustKn": 19.8,
+      "dirDeg": 206,
+      "waveM": 0.44,
+      "wavePeriodS": 2.7,
+      "tempC": 14.0,
+      "rainMm": 0.0,
+      "cloudPct": 99
+    },
+    {
+      "hour": 10,
+      "forecastWindKn": 11.3,
+      "forecastGustKn": 17.9,
+      "dirDeg": 202,
+      "waveM": 0.42,
+      "wavePeriodS": 2.5,
+      "tempC": 15.2,
+      "rainMm": 0.0,
+      "cloudPct": 95
+    },
+    {
+      "hour": 11,
+      "forecastWindKn": 10.9,
+      "forecastGustKn": 16.7,
+      "dirDeg": 200,
+      "waveM": 0.4,
+      "wavePeriodS": 2.5,
+      "tempC": 16.5,
+      "rainMm": 0.0,
+      "cloudPct": 44
+    },
+    {
+      "hour": 12,
+      "forecastWindKn": 10.5,
+      "forecastGustKn": 16.5,
+      "dirDeg": 199,
+      "waveM": 0.38,
+      "wavePeriodS": 2.5,
+      "tempC": 17.6,
+      "rainMm": 0.0,
+      "cloudPct": 98
+    },
+    {
+      "hour": 13,
+      "forecastWindKn": 10.9,
+      "forecastGustKn": 16.7,
+      "dirDeg": 213,
+      "waveM": 0.34,
+      "wavePeriodS": 2.4,
+      "tempC": 18.1,
+      "rainMm": 0.0,
+      "cloudPct": 100
+    },
+    {
+      "hour": 14,
+      "forecastWindKn": 9.5,
+      "forecastGustKn": 16.1,
+      "dirDeg": 212,
+      "waveM": 0.32,
+      "wavePeriodS": 2.3,
+      "tempC": 18.2,
+      "rainMm": 0.0,
+      "cloudPct": 100
+    },
+    {
+      "hour": 15,
+      "forecastWindKn": 7.0,
+      "forecastGustKn": 14.0,
+      "dirDeg": 190,
+      "waveM": 0.3,
+      "wavePeriodS": 2.3,
+      "tempC": 18.0,
+      "rainMm": 0.0,
+      "cloudPct": 100
+    },
+    {
+      "hour": 16,
+      "forecastWindKn": 10.5,
+      "forecastGustKn": 15.4,
+      "dirDeg": 181,
+      "waveM": 0.28,
+      "wavePeriodS": 2.3,
+      "tempC": 17.6,
+      "rainMm": 0.0,
+      "cloudPct": 100
+    },
+    {
+      "hour": 17,
+      "forecastWindKn": 10.5,
+      "forecastGustKn": 15.9,
+      "dirDeg": 190,
+      "waveM": 0.24,
+      "wavePeriodS": 2.2,
+      "tempC": 17.6,
+      "rainMm": 0.0,
+      "cloudPct": 100
+    },
+    {
+      "hour": 18,
+      "forecastWindKn": 10.3,
+      "forecastGustKn": 15.0,
+      "dirDeg": 192,
+      "waveM": 0.26,
+      "wavePeriodS": 2.2,
+      "tempC": 17.4,
+      "rainMm": 0.0,
+      "cloudPct": 100
+    },
+    {
+      "hour": 19,
+      "forecastWindKn": 10.5,
+      "forecastGustKn": 16.3,
+      "dirDeg": 201,
+      "waveM": 0.3,
+      "wavePeriodS": 2.2,
+      "tempC": 17.3,
+      "rainMm": 0.0,
+      "cloudPct": 100
+    },
+    {
+      "hour": 20,
+      "forecastWindKn": 9.7,
+      "forecastGustKn": 15.4,
+      "dirDeg": 205,
+      "waveM": 0.34,
+      "wavePeriodS": 2.3,
+      "tempC": 17.3,
+      "rainMm": 0.0,
+      "cloudPct": 100
+    },
+    {
+      "hour": 21,
+      "forecastWindKn": 7.8,
+      "forecastGustKn": 15.2,
+      "dirDeg": 191,
+      "waveM": 0.38,
+      "wavePeriodS": 2.4,
+      "tempC": 17.1,
+      "rainMm": 0.0,
+      "cloudPct": 100
+    },
+    {
+      "hour": 22,
+      "forecastWindKn": 10.1,
+      "forecastGustKn": 14.8,
+      "dirDeg": 201,
+      "waveM": 0.38,
+      "wavePeriodS": 2.5,
+      "tempC": 17.2,
+      "rainMm": 0.0,
+      "cloudPct": 100
     },
     {
       "hour": 23,
-      "forecastWindKn": 11.9,
-      "forecastGustKn": 17.3,
-      "dirDeg": 202,
-      "waveM": 0.28,
-      "wavePeriodS": 2.2,
-      "tempC": 14.7,
+      "forecastWindKn": 9.9,
+      "forecastGustKn": 15.9,
+      "dirDeg": 201,
+      "waveM": 0.38,
+      "wavePeriodS": 2.5,
+      "tempC": 17.3,
       "rainMm": 0.0,
-      "cloudPct": 98
+      "cloudPct": 100
     }
   ]
 }
